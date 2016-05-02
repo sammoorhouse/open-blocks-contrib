@@ -1,0 +1,33 @@
+/*
+Mwalimu
+
+OpenBlocks is an open description language for building online
+courses in the coursera/codeschool model. Courses take the form
+course -> topics -> lessons -> blocks.
+
+The following text describes a lesson, which is a series of blocks.
+
+The lesson has dependencies, and the blocks are listed in the
+order in which they should be taught. Blocks may appear inline with
+the lesson, or may be referenced by filename.
+*/
+
+{
+  "title": "Introduction to Post-Impressionism",
+  "culture": "en-GB",
+  "name": "Introduction-to-Post-Impressionism",
+  "description": "A lightweight introduction to a number of post-impressionist paintings",
+  "teaching-notes": "This lesson covers the beginnings of post-impressionism, using examples from Van Gogh, Cezanne and Gauguin. Students are taught about colour, painting styles, and the history surrounding post-impressionist painters and their work. It should take about half a day. ",
+  "timespan": "About half a day",
+  "instructor-led": true,
+  "lesson-dependencies": [],
+  "physical-dependencies": [
+    "A desk and chair per student"
+  ],
+  "sections": [
+    {"section-ref": "Intro-To-Post-Impressionism-Intro.json"  },
+    {"section-ref": "Van-Gogh.json"},
+    {"section-ref": "Cezanne.json"},
+    {"section-ref": "Gauguin.json"}
+  ]
+}

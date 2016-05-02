@@ -1,0 +1,19 @@
+{
+  "name": "open-blocks",
+  "version": "0.0.1",
+  "description": "Node compiler for the openblocks lesson format",
+  "main": "index.js",
+  "scripts": {
+    "build-all": "node openblocks.js"
+  },
+  "dependencies": {
+    "njsmin": "^1.0.3",
+    "pug": "^2.0.0-alpha6"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sammoorhouse/open-blocks-contrib"
+  },
+  "author": "Sam Moorhouse",
+  "license": "MIT"
+}
