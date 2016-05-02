@@ -1,0 +1,28 @@
+span.voice-active {
+  background-color: lightyellow;
+  transition: background-color 0.2s
+}
+
+#transcript {
+  margin: auto;
+  padding: 20px 0;
+  text-align: left;
+  width: 390px;
+}
+
+#transcript p:first-letter {
+  float: left;
+  font-size: 38px;
+  line-height: 1;
+  margin: 2px 5px 0 0;
+}
+
+#transcript p:first-line {
+  font-variant: small-caps;
+  letter-spacing: 1px;
+}
+
+#transcript p:last-child {
+  margin-bottom: 30px;
+  padding-bottom: 30px;
+}
