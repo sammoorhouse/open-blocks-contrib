@@ -1,0 +1,14 @@
+mixin flags24(selectedCountryCode, ...countryCodes)
+  ul.flags
+    li
+      img(src="/img/icons/flags-iso/24/" + selectedCountryCode + ".png")
+    each countryCode in countryCodes
+      li
+        img(src="/img/icons/flags-iso/24/" + countryCode + ".png")
+mixin flags64(selectedCountryCode, ...countryCodes)
+  ul.flags
+    li
+      img(src="/img/icons/flags-iso/24/" + selectedCountryCode + ".png")
+    each countryCode in countryCodes
+      li
+        img(src="/img/icons/flags-iso/24/" + countryCode + ".png")
