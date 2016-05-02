@@ -1,0 +1,86 @@
+/*
+Mwalimu
+
+OpenBlocks is an open description language for building online
+courses in the coursera/codeschool model. Courses take the form
+course -> topics -> lessons -> sections.
+
+Starting at the bottom, a "section" is a part of a lesson - it's a
+paragraph of text, a video or audio file, an individual or group
+activity, a reference to another document, a resource for printing,
+or a slide for projection.
+*/
+{
+  "section": {
+    "name": "Intro-To-Programming-Intro",
+    "title": "Introduction",
+    "text": "Have you ever wanted to learn how to write code?
+    This instructor - led course teaches you the basics and
+    gives you the tools to learn more in your own time!",
+    "teaching-notes": "Here, we're trying to instill a passion
+    for learning. Try to let your love of the subject "
+  }
+}
+
+
+/*
+The following block contains a "lesson", which is a series of section.
+
+The lesson has dependencies and the sections are listed in the
+order in which they should be taught. Sections must appear in the
+same file as their lesson, and may be inlined with a "section" node.
+*/
+
+{
+  "lesson": {
+    "title": "Introduction to Programming",
+    "name": "Introduction-to-Programming",
+    "description": "A really easy intro to programming",
+    "teaching-notes": "This lesson covers the introduction to basic programming,
+    using javascript as the vehicle. Students are taught about variables, assignment,
+    flow control, and defining and calling functions. It should take about a day,
+    with a recommendation of 50/50 split between teaching and lab time. "
+    "timespan": "About a day",
+    "instructor-led": true,
+    "lesson-dependencies": [],
+    "physical-dependencies": [
+      "A raspberry pi, keyboard and monitor per student",
+      "A desk and chair per student"],
+    "sections": [{
+      "section-ref": "Intro-To-Programming-Intro",
+    }, {
+      "section": {
+        "video": {
+          "name": "",
+          "license": "",
+          "attribution": "",
+          "src": "",
+        }
+      }
+    }]
+  }
+}
+
+/*
+This block is a "topic", which is a series of lessons covering
+a given topic - say, loop constructs or polymorphism, and which
+is part of a course.
+*/
+
+{
+  "topic": {
+    "title": "Programming with Javascript",
+    "description": "Programming using the javascript language",
+    "dependencies": {
+      "dependency": {
+        "title": "Introduction to Programming",
+        "optional": true,
+      }
+    },
+    "lessons": {
+      "lesson-ref": "Introduction-to-Javascript",
+      "lesson-ref": "Control-flow-in-Javascript",
+      "lesson-ref": "Control-flow-in-Javascript"
+    }
+  }
+}
