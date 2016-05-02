@@ -37,4 +37,7 @@ html
 				div#commentary
 					for line in commentary
 						p!=line.text
+				div.clear
+				p commentary from
+					a(href=credit.uri)= credit.text
 	body

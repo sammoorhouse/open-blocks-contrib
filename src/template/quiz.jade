@@ -1,0 +1,27 @@
+//output:../../build/quiz.html
+//{
+    quizFile: "quiz.json"
+  }
+
+doctype html
+html
+  head
+    script(src="js/jquery/2.2.2/jquery.min.js")
+    script(src="js/slickQuiz.js")
+    script(src="js/samplequiz.js")
+    script(src="js/quiz.js")
+    link(href='/css/base.css', rel='stylesheet')
+    link(href="/css/quiz/master.css", rel="stylesheet")
+    link(href="/css/quiz/reset.css", rel="stylesheet")
+    link(href="/css/quiz/slickQuiz.css", rel="stylesheet")
+  body#slickQuiz
+    h1.quizName
+    div.quizArea
+      div.quizHeader
+        a.startQuiz="Get started!"
+    div.quizResults
+      h3.quizScore="You scored:"
+        span
+      h3.quizLevel="Ranking:"
+        span
+      div.quizResultsCopy
