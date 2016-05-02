@@ -18,26 +18,16 @@
 		],
 	}
 
-doctype html
-html
-	head
-		title=pageTitle
-		script(src="js/jquery/2.2.2/jquery.min.js")
-		script(src="js/picture-with-text.js")
-		script(src="js/jquery.loupe.min.js")
-		link(href='/css/base.css', rel='stylesheet')
-		link(href="/css/picture-with-text.css", rel="stylesheet")
 
-		div#transcript
-			h1=imageTitle
-			h2=imageSubtitle
-			div.container
-				div#image
-					img#thumb(width="600px", src=imageFile.name, type=imageFile.type)
-				div#commentary
-					for line in commentary
-						p!=line.text
-				div.clear
-				p commentary from
-					a(href=credit.uri)= credit.text
-	body
+div#transcript
+	h1=imageTitle
+	h2=imageSubtitle
+	div.container
+		div#image
+			img#thumb(width="600px", src=imageFile.name, type=imageFile.type)
+		div#commentary
+			for line in commentary
+				p!=line.text
+		div.clear
+		p commentary from
+			a(href=credit.uri)= credit.text

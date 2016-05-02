@@ -8,7 +8,7 @@
   },
   "dependencies": {
     "njsmin": "^1.0.3",
-      "merge": "^1.2.0",
+      "deepmerge": "^0.2.10",
     "pug": "^2.0.0-alpha6"
   },
   "repository": {

@@ -10,6 +10,7 @@ The following text describes a lesson, which is a series of blocks.
 The lesson has dependencies, and the blocks are listed in the
 order in which they should be taught. Blocks may appear inline with
 the lesson, or may be referenced by filename.
+
 */
 
 {
@@ -24,10 +25,15 @@ the lesson, or may be referenced by filename.
   "physical-dependencies": [
     "A desk and chair per student"
   ],
-  "sections": [
-    {"section-ref": "Intro-To-Post-Impressionism-Intro.json"  },
-    {"section-ref": "Van-Gogh.json"},
-    {"section-ref": "Cezanne.json"},
-    {"section-ref": "Gauguin.json"}
+  "sections": [{
+      "section-ref": "Intro-To-Post-Impressionism-Intro.json"
+    }, {
+      "section-ref": "Cezanne.json"
+    } ,{
+      "section-ref": "Van-Gogh.json"
+    }, {
+      "section-ref": "Gauguin.json"
+    }
+
   ]
 }

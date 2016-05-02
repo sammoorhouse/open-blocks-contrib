@@ -2,6 +2,9 @@
   "templateName": "picture-with-text",
   "pageTitle": "Discovering Cezanne",
   "name": "Discovering-Cezanne",
+  "dependencies": [
+    {"type": "img", "location": "img/Card_Players-Paul_Cezanne.jpg"}
+  ],
   "imageTitle": "The Card Players",
   "imageSubtitle": "Paul Cezanne",
   "credit": {

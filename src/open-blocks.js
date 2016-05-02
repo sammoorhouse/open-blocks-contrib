@@ -2,7 +2,7 @@ var fs = require('fs'),
   path = require('path'),
   jsmin = require('njsmin').jsmin,
   pug = require('pug'),
-  merge = require('merge');
+  merge = require('deepmerge');
 
 var args = process.argv.slice(2);
 
@@ -12,16 +12,19 @@ args.forEach(function(filename, index, array) {
 });
 
 function processLessonDescriptor(filename) {
-  console.log("Processing file " + filename)
-    //create or open an output directory for the lesson
-  var srcDir = '../src',
-    outputDirectoryName = path.parse(filename).name,
-    destinationDir = path.join(srcDir, outputDirectoryName)
 
-  var basePath = path.dirname(filename)
+  console.log("Parsing input file: " + filename)
+  var lesson = JSON.parse(jsmin(fs.readFileSync(filename, "utf8")));
 
-  if (!fs.existsSync(destinationDir)) {
-    fs.mkdirSync(destinationDir);
+  //create or open an output directory for the lesson
+  var filenamePathElements = path.parse(filename)
+
+  var sourceDirectoryName = filenamePathElements.dir
+  var outputDirectoryName = path.join(filenamePathElements.dir, filenamePathElements.name)
+
+  console.log("dir name: " + outputDirectoryName)
+  if (!fs.existsSync(outputDirectoryName)) {
+    fs.mkdirSync(outputDirectoryName);
   }
 
   //keep a running log of which include files (css, js, media elements)
@@ -33,9 +36,6 @@ function processLessonDescriptor(filename) {
     type: "text/javascript",
     name: "template/js/main.js"
   }]
-
-  console.log("Parsing input file: " + filename)
-  var lesson = JSON.parse(jsmin(fs.readFileSync(filename, "utf8")));
 
   //required elements
   var title = lesson.title,
@@ -52,79 +52,108 @@ function processLessonDescriptor(filename) {
     physicalDependencies = lesson["physical-dependencies"] || []
 
   var descriptors = sections.map(function(section) {
-      return processSectionDescriptor(basePath, section)
+      return processSectionDescriptor(sourceDirectoryName, outputDirectoryName, section)
     }) //curry?
-
-  descriptors.map(function(descriptor) {
-    console.log(descriptor)
-  })
 }
 
-function processSectionDescriptor(basePath, section) {
+function processSectionDescriptor(sourceDirectoryName, outputDirectoryName, section) {
+  var descriptor
   if (typeof section["section-ref"] !== 'undefined') {
-    return processSectionDescriptionFromFile(basePath, section["section-ref"])
+    descriptor = processSectionDescriptionFromFile(sourceDirectoryName, outputDirectoryName, section["section-ref"])
   } else {
-    return processSectionDescriptionNode(section)
+    descriptor = processSectionDescriptionNode(section, outputDirectoryName)
   }
+
+  var dependencies = descriptor.dependencies
 }
 
-function processSectionDescriptionFromFile(basepath, sectionFilename) {
-  var section = JSON.parse(jsmin(fs.readFileSync(path.join(basepath, sectionFilename), "utf8")));
-  return processSectionDescriptionNode(basepath, section)
+function processSectionDescriptionFromFile(sourceDirectoryName, outputDirectoryName, sectionFilename) {
+  var section = JSON.parse(jsmin(fs.readFileSync(path.join(sourceDirectoryName, sectionFilename), "utf8")));
+  var ret = processSectionDescriptionNode(sourceDirectoryName, outputDirectoryName, section)
+  //console.log(ret.dependencies)
+  return ret
 }
 
-function processSectionDescriptionNode(basepath, section) {
+function processSectionDescriptionNode(sourceDirectoryName, outputDirectoryName, section) {
   var templateName = section.templateName
   var templateFilename,
-    dependencies = []
+    templateDependencies = []
+  var locals = {}
   switch (templateName) {
     case 'text':
       templateFilename = 'template/text.pug'
-      dependencies = [{
-        "css": "css/base.css"
+      templateDependencies = [{
+        type: "css",
+        location: "css/base.css"
       }, {
-        "javascript": "js/base.js"
+        type: "javascript",
+        location: "js/base.js"
       }]
       break;
     case 'audio-with-transcript':
-      templateFilename = 'template/audio-with-transcript.pug'
-      dependencies = [{
-        "css": "css/base.css"
-      }, {
-        "css": "css/voice.css"
-      }, {
-        "javascript": "js/audio-transcript.js"
-      }]
-      break;
-    case 'picture-with-text':
-      templateFilename = 'template/picture-with-text.pug'
-      dependencies = [{
-        "css": "css/base.css"
-      }, {
-        "css": "css/picture-with-text.css"
-      }, {
-        "javascript": "js/jquery.loupe.min.js"
-      }, {
-        "javascript": "js/picture-with-text.js"
-      }]
-      break;
+        templateFilename = 'template/audio-with-transcript.pug'
+        templateDependencies = [{
+          type: "css",
+          location: "css/base.css"
+        }, {
+          type: "css",
+          location: "css/voice.css"
+        }, {
+          type: "javascript",
+          location: "js/audio-transcript.js"
+        }]
+        break;
+        case 'picture-with-text':
+            templateFilename = 'template/picture-with-text.pug'
+          templateDependencies = [{
+            type: "css",
+            location: "css/base.css"
+          }, {
+            type: "css",
+            location: "css/picture-with-text.css"
+          }, {
+            type: "javascript",
+            location: "js/jquery.loupe.min.js"
+          }, {
+            type: "javascript",
+            location: "js/picture-with-text.js"
+          }]
+          break;
+      }
+
+      var variables = merge(section, locals)
+      var blockDependencies = templateDependencies.concat(
+        (section.dependencies || []).map(function(dep) {
+        return merge(dep, {
+          "blockDependency": true
+        })
+      })
+      )
+
+      var body = pug.renderFile(templateFilename, merge(section, {
+        pretty: true
+      }));
+
+      var html = pug.renderFile("template/header.pug", merge(variables, {
+        pretty: true,
+        blockDependencies: blockDependencies,
+        body: body
+      }));
+
+      //write out html
+      var outputFilename = path.format({
+        dir: outputDirectoryName,
+        base: section.name + ".html"
+      })
+
+      fs.writeFile(outputFilename, html, function(err) {
+        if (err) {
+          console.log(err);
+        }
+      });
+
+      return {
+        "filename": outputFilename,
+        "dependencies": blockDependencies
+      }
   }
-  var html = pug.renderFile(templateFilename, section)
-
-  //write out html
-  var outputFilename = path.format({
-    dir: basepath,
-    base: section.name + ".html"
-  })
-
-  fs.writeFile(outputFilename, html, function(err) {
-    if (err) {
-      console.log(err);
-    }
-  });
-
-  return {
-    "filename": outputFilename,
-    "dependencies": dependencies.concat(section.dependencies || [])
-  }
-}

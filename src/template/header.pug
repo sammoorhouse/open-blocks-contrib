@@ -12,3 +12,15 @@ mixin flags64(selectedCountryCode, ...countryCodes)
     each countryCode in countryCodes
       li
         img(src="/img/icons/flags-iso/24/" + countryCode + ".png")
+
+html
+  head
+    title=pageTitle
+    script(src="js/jquery/2.2.2/jquery.min.js")
+    for dep in blockDependencies
+      if dep.type === "css"
+        link(href=dep.location, rel='stylesheet')
+      else if dep.type === "javascript"
+        script(src=dep.location)
+  body
+    |!{ body }
