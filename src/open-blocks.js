@@ -1,7 +1,8 @@
 var fs = require('fs'),
   path = require('path'),
   jsmin = require('njsmin').jsmin,
-  pug = require('pug');
+  pug = require('pug'),
+  merge = require('merge');
 
 var args = process.argv.slice(2);
 
@@ -50,37 +51,62 @@ function processLessonDescriptor(filename) {
     lessonDependencies = lesson["lesson-dependencies"] || [],
     physicalDependencies = lesson["physical-dependencies"] || []
 
-  sections.map(function(section) {
-      processSectionDescriptor(basePath, section)
+  var descriptors = sections.map(function(section) {
+      return processSectionDescriptor(basePath, section)
     }) //curry?
+
+  descriptors.map(function(descriptor) {
+    console.log(descriptor)
+  })
 }
 
 function processSectionDescriptor(basePath, section) {
   if (typeof section["section-ref"] !== 'undefined') {
-    processSectionDescriptionFromFile(basePath, section["section-ref"])
+    return processSectionDescriptionFromFile(basePath, section["section-ref"])
   } else {
-    processSectionDescriptionNode(section)
+    return processSectionDescriptionNode(section)
   }
 }
 
 function processSectionDescriptionFromFile(basepath, sectionFilename) {
-  // var section = JSON.parse(jsmin(fs.readFileSync(sectionFilename, "utf8")));
-  var section = JSON.parse(fs.readFileSync(path.join(basepath, sectionFilename), "utf8"));
-  processSectionDescriptionNode(basepath, section)
+  var section = JSON.parse(jsmin(fs.readFileSync(path.join(basepath, sectionFilename), "utf8")));
+  return processSectionDescriptionNode(basepath, section)
 }
 
 function processSectionDescriptionNode(basepath, section) {
   var templateName = section.templateName
-  var templateFilename
+  var templateFilename,
+    dependencies = []
   switch (templateName) {
     case 'text':
       templateFilename = 'template/text.pug'
+      dependencies = [{
+        "css": "css/base.css"
+      }, {
+        "javascript": "js/base.js"
+      }]
       break;
     case 'audio-with-transcript':
       templateFilename = 'template/audio-with-transcript.pug'
+      dependencies = [{
+        "css": "css/base.css"
+      }, {
+        "css": "css/voice.css"
+      }, {
+        "javascript": "js/audio-transcript.js"
+      }]
       break;
     case 'picture-with-text':
       templateFilename = 'template/picture-with-text.pug'
+      dependencies = [{
+        "css": "css/base.css"
+      }, {
+        "css": "css/picture-with-text.css"
+      }, {
+        "javascript": "js/jquery.loupe.min.js"
+      }, {
+        "javascript": "js/picture-with-text.js"
+      }]
       break;
   }
   var html = pug.renderFile(templateFilename, section)
@@ -93,9 +119,12 @@ function processSectionDescriptionNode(basepath, section) {
 
   fs.writeFile(outputFilename, html, function(err) {
     if (err) {
-      return console.log(err);
+      console.log(err);
     }
   });
 
-  var dependencies = section.dependencies
+  return {
+    "filename": outputFilename,
+    "dependencies": dependencies.concat(section.dependencies || [])
+  }
 }
