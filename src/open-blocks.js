@@ -25,10 +25,10 @@ module.exports = function() {
     //should be bundled with the lesson
     var includes = [{
       type: "text/css",
-      name: "template/css/main.css"
+      location: "template/css/main.css"
     }, {
       type: "text/javascript",
-      name: "template/js/main.js"
+      location: "template/js/main.js"
     }]
 
     //required elements
@@ -63,30 +63,21 @@ module.exports = function() {
 
   function processSectionDescriptionFromFile(sourceDirectoryName, outputDirectoryName, sectionFilename) {
     var section = JSON.parse(jsmin(fs.readFileSync(path.join(sourceDirectoryName, sectionFilename), "utf8")));
-    var ret = processSectionDescriptionNode(sourceDirectoryName, outputDirectoryName, section)
-      //console.log(ret.dependencies)
-    return ret
+    return processSectionDescriptionNode(sourceDirectoryName, outputDirectoryName, section)
   }
 
-  function processSectionDescriptionNode(sourceDirectoryName, outputDirectoryName, section) {
-    var templateName = section.templateName
-    var templateFilename,
-      templateDependencies = []
-    var locals = {}
+  function resolveTemplateDependencies(templateName) {
     switch (templateName) {
       case 'text':
-        templateFilename = 'template/text.pug'
-        templateDependencies = [{
+        return [{
           type: "css",
           location: "css/base.css"
         }, {
           type: "javascript",
           location: "js/base.js"
         }]
-        break;
       case 'audio-with-transcript':
-        templateFilename = 'template/audio-with-transcript.pug'
-        templateDependencies = [{
+        return [{
           type: "css",
           location: "css/base.css"
         }, {
@@ -96,10 +87,8 @@ module.exports = function() {
           type: "javascript",
           location: "js/audio-transcript.js"
         }]
-        break;
       case 'picture-with-text':
-        templateFilename = 'template/picture-with-text.pug'
-        templateDependencies = [{
+        return [{
           type: "css",
           location: "css/base.css"
         }, {
@@ -112,23 +101,38 @@ module.exports = function() {
           type: "javascript",
           location: "js/picture-with-text.js"
         }]
-        break;
     }
+  }
 
-    var variables = merge(section, locals)
-    var blockDependencies = templateDependencies.concat(
-      (section.dependencies || []).map(function(dep) {
-        return merge(dep, {
-          "blockDependency": true
-        })
+  function resolveTemplateFilename(templateName) {
+    switch (templateName) {
+      case 'text':
+         return 'template/text.pug'
+      case 'audio-with-transcript':
+        return 'template/audio-with-transcript.pug'
+      case 'picture-with-text':
+        return 'template/picture-with-text.pug'
+    }
+  }
+
+  function processSectionDescriptionNode(sourceDirectoryName, outputDirectoryName, section) {
+    var templateName = section.templateName
+    var templateFilename = resolveTemplateFilename(templateName)
+    var templateDependencies = resolveTemplateDependencies(templateName) || []
+
+    var sectionDependencies = (section.dependencies || []).map(function(dep) {
+      return merge(dep, {
+        "blockDependency": true
       })
-    )
+    })
+
+    var blockDependencies = templateDependencies.concat(sectionDependencies)
 
     var body = pug.renderFile(templateFilename, merge(section, {
       pretty: true
     }));
 
-    var html = pug.renderFile("template/header.pug", merge(variables, {
+    var html = pug.renderFile("template/header.pug", merge(section, {
       pretty: true,
       blockDependencies: blockDependencies,
       body: body
@@ -153,14 +157,7 @@ module.exports = function() {
   }
 
   return {
-    processLessonDescriptor: processLessonDescriptor
+    processLessonDescriptor: processLessonDescriptor,
+    processSectionDescriptionNode: processSectionDescriptionNode
   }
 }
-
-//use as script
-var args = process.argv.slice(2);
-
-args.forEach(function(filename, index, array) {
-  console.log(index + ': ' + filename);
-  module.exports().processLessonDescriptor(filename)
-});

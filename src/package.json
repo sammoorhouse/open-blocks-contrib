@@ -4,7 +4,7 @@
   "description": "Node compiler for the openblocks lesson format",
   "main": "index.js",
   "scripts": {
-    "build-examples": "node open-blocks.js examples/*/*.json",
+    "build-examples": "node open-blocks-cmd.js examples/*/*.json",
     "test": "mocha test"
   },
   "dependencies": {
