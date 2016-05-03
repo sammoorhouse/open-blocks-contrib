@@ -4,11 +4,12 @@
   "description": "Node compiler for the openblocks lesson format",
   "main": "index.js",
   "scripts": {
-    "build-all": "node openblocks.js"
+    "build-examples": "node open-blocks.js examples/*/*.json",
+    "test": "mocha test"
   },
   "dependencies": {
     "njsmin": "^1.0.3",
-      "deepmerge": "^0.2.10",
+    "deepmerge": "^0.2.10",
     "pug": "^2.0.0-alpha6"
   },
   "repository": {
@@ -16,5 +17,9 @@
     "url": "https://github.com/sammoorhouse/open-blocks-contrib"
   },
   "author": "Sam Moorhouse",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "mocha": "^2.4.5",
+    "unit.js": ">= 1.0.0 < 2.0.0"
+  }
 }

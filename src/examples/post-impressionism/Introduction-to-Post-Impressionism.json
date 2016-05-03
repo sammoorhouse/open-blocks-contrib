@@ -26,13 +26,13 @@ the lesson, or may be referenced by filename.
     "A desk and chair per student"
   ],
   "sections": [{
-      "section-ref": "Intro-To-Post-Impressionism-Intro.json"
+      "section-ref": "sections/Intro-To-Post-Impressionism-Intro.json"
     }, {
-      "section-ref": "Cezanne.json"
+      "section-ref": "sections/Cezanne.json"
     } ,{
-      "section-ref": "Van-Gogh.json"
+      "section-ref": "sections/Van-Gogh.json"
     }, {
-      "section-ref": "Gauguin.json"
+      "section-ref": "sections/Gauguin.json"
     }
 
   ]
