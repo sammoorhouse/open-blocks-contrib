@@ -6,9 +6,24 @@ var fs = require('fs'),
 
 //expose as module
 module.exports = function() {
+
+  var readFile = function(filename) {
+    return fs.readFileSync(filename, "utf8")
+  }
+
+  var writeFile = function(outputFilename, content) {
+    fs.writeFile(outputFilename, content)
+  }
+
+  var ensureDirectory = function(directoryName) {
+    if (!fs.existsSync(directoryName)) {
+      fs.mkdirSync(directoryName);
+    }
+  }
+
   function processLessonDescriptorFile(filename) {
     console.log("Parsing input file: " + filename)
-    var lesson = JSON.parse(jsmin(fs.readFileSync(filename, "utf8")));
+    var lesson = JSON.parse(jsmin(readFile(filename)));
 
     //create or open an output directory for the lesson
     var filenamePathElements = path.parse(filename)
@@ -16,15 +31,9 @@ module.exports = function() {
     var sourceDirectoryName = filenamePathElements.dir
     var outputDirectoryName = path.join(filenamePathElements.dir, filenamePathElements.name)
 
-    ensureOutputDirectory(outputDirectoryName)
+    ensureDirectory(outputDirectoryName)
 
     processLessonDescriptorElement(lesson, sourceDirectoryName, outputDirectoryName)
-  }
-
-  function ensureOutputDirectory(outputDirectoryName) {
-    if (!fs.existsSync(outputDirectoryName)) {
-      fs.mkdirSync(outputDirectoryName);
-    }
   }
 
   function processLessonDescriptorElement(lessonElement, sourceDirectoryName, outputDirectoryName) {
@@ -56,18 +65,22 @@ module.exports = function() {
         return processSectionDescriptor(sourceDirectoryName, outputDirectoryName, section)
       }) //curry?
 
-      //generate main page
+    //generate main page
 
   }
 
   function processSectionDescriptor(sourceDirectoryName, outputDirectoryName, section) {
     var descriptor
     if (typeof section["section-ref"] !== 'undefined') {
-      descriptor = processSectionDescriptionFromFile(sourceDirectoryName, outputDirectoryName, section["section-ref"])
+      descriptor = processSectionDescriptionFromFile(sourceDirectoryName, section["section-ref"])
     } else {
-      descriptor = processSectionDescriptionNode(section, outputDirectoryName)
+      descriptor = processSectionDescriptionElement(section)
     }
 
+    //write out html
+    var fullOutputFilename = generateOutputFilename(outputDirectoryName, descriptor.filename, ".html")
+
+    writeFile(fullOutputFilename, descriptor.html)
     resolveDependencies(descriptor)
     return descriptor
   }
@@ -77,9 +90,9 @@ module.exports = function() {
 
   }
 
-  function processSectionDescriptionFromFile(sourceDirectoryName, outputDirectoryName, sectionFilename) {
-    var section = JSON.parse(jsmin(fs.readFileSync(path.join(sourceDirectoryName, sectionFilename), "utf8")));
-    return processSectionDescriptionElement(sourceDirectoryName, outputDirectoryName, section)
+  function processSectionDescriptionFromFile(sourceDirectoryName, sectionFilename) {
+    var section = JSON.parse(jsmin(readFile(path.join(sourceDirectoryName, sectionFilename), "utf8")));
+    return processSectionDescriptionElement(section)
   }
 
   function resolveTemplateDependencies(templateName) {
@@ -131,8 +144,8 @@ module.exports = function() {
     }
   }
 
-  function processSectionDescriptionElement(sourceDirectoryName, outputDirectoryName, sectionElement) {
-    var sectionName = sectionElement["page-title"]
+  function processSectionDescriptionElement(sectionElement) {
+    var sectionName = sectionElement.pageTitle
     var outputFilename = sectionElement.name
     var sectionDependencies = sectionElement.dependencies || []
 
@@ -152,14 +165,11 @@ module.exports = function() {
       body: body
     }))
 
-    //write out html
-    var fullOutputFilename = generateOutputFilename(outputDirectoryName, outputFilename, ".html")
-    writeFile(fs.writeFile, outputFilename, html)
-
     return {
-      "filename": fullOutputFilename,
+      "filename": outputFilename,
       "dependencies": blockDependencies,
-      "sectionName" : sectionName
+      "sectionName": sectionName,
+      "html": html
     }
   }
 
@@ -174,13 +184,13 @@ module.exports = function() {
     return generator(templateFilename, options);
   }
 
-  function writeFile(generator, outputFilename, content) {
-    generator(outputFilename, content)
-  }
-
   return {
     processLessonDescriptorFile: processLessonDescriptorFile,
     processLessonDescriptorElement: processLessonDescriptorElement,
-    processSectionDescriptionElement: processSectionDescriptionElement
+    processSectionDescriptionElement: processSectionDescriptionElement,
+    readFile: readFile,
+    writeFile: writeFile,
+    resolveTemplateFilename: resolveTemplateFilename,
+    ensureDirectory: ensureDirectory
   }
 }();

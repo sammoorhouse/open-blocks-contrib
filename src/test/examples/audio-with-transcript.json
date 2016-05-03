@@ -1,0 +1,147 @@
+{
+  "pageTitle": "Discovering Hamlet",
+  "templateName": "audio-with-transcript",
+  "audioTitle": "Hamlet",
+  "audioSubtitle": "Act III, Scene 1",
+  "audiofile": {
+    "name": "audio/Hamlet_Tobeornottobe_64kb.mp3",
+    "type": "audio/mpeg"
+  },
+  "verses": [{
+    "start": 0.00,
+    "end": 8.609,
+    "text": "To be or not to be-that is the question:"
+  }, {
+    "start": 8.609,
+    "end": 15.00,
+    "text": "Whether 'tis nobler in the mind to suffer"
+  }, {
+    "start": 15.00,
+    "end": 18.06,
+    "text": "The slings and arrows of outrageous fortune,"
+  }, {
+    "start": 18.06,
+    "end": 22.96,
+    "text": "Or to take arms against a sea of troubles,"
+  }, {
+    "start": 22.96,
+    "end": 34,
+    "text": "And, by opposing, end them. To die, to sleep-"
+  }, {
+    "start": 34,
+    "end": 39,
+    "text": "No more-and by a sleep to say we end"
+  }, {
+    "start": 39,
+    "end": 41,
+    "text": "The heartache and the thousand natural shocks"
+  }, {
+    "start": 41,
+    "end": 48,
+    "text": "That flesh is heir to-'tis a consummation"
+  }, {
+    "start": 48,
+    "end": 55,
+    "text": "Devoutly to be wished. To die, to sleep-"
+  }, {
+    "start": 55,
+    "end": 62,
+    "text": "To sleep, perchance to dream. Aye, there's the rub,"
+  }, {
+    "start": 62,
+    "end": 66,
+    "text": "For in that sleep of death what dreams may come,"
+  }, {
+    "start": 66,
+    "end": 67,
+    "text": "When we have shuffled off this mortal coil,"
+  }, {
+    "start": 67,
+    "end": 72,
+    "text": "Must give us pause. There's the respect"
+  }, {
+    "start": 72,
+    "end": 74,
+    "text": "That makes calamity of so long life."
+  }, {
+    "start": 74,
+    "end": 77,
+    "text": "For who would bear the whips and scorns of time,"
+  }, {
+    "start": 77,
+    "end": 80,
+    "text": "Th' oppressor's wrong, the proud man's contumely, "
+  }, {
+    "start": 80,
+    "end": 82,
+    "text": "The pangs of despised love, the law's delay,"
+  }, {
+    "start": 82,
+    "end": 84,
+    "text": "The insolence of office, and the spurns"
+  }, {
+    "start": 84,
+    "end": 86,
+    "text": "That patient merit of the unworthy takes,"
+  }, {
+    "start": 86,
+    "end": 88,
+    "text": "When he himself might his quietus make"
+  }, {
+    "start": 88,
+    "end": 92,
+    "text": "With a bare bodkin? Who would fardels bear,"
+  }, {
+    "start": 92,
+    "end": 94,
+    "text": "To grunt and sweat under a weary life,"
+  }, {
+    "start": 94,
+    "end": 96,
+    "text": "But that the dread of something after death,"
+  }, {
+    "start": 96,
+    "end": 101,
+    "text": "The undiscovered country from whose bourn"
+  }, {
+    "start": 101,
+    "end": 104,
+    "text": "No traveler returns, puzzles the will"
+  }, {
+    "start": 104,
+    "end": 107,
+    "text": "And makes us rather bear those ills we have"
+  }, {
+    "start": 107,
+    "end": 110,
+    "text": "Than fly to others that we know not of?"
+  }, {
+    "start": 110,
+    "end": 116,
+    "text": "Thus conscience does make cowards of us all,"
+  }, {
+    "start": 116,
+    "end": 121,
+    "text": "And thus the native hue of resolution"
+  }, {
+    "start": 121,
+    "end": 124,
+    "text": "Is sicklied o'er with the pale cast of thought,"
+  }, {
+    "start": 124,
+    "end": 129,
+    "text": "And enterprises of great pitch and moment,"
+  }, {
+    "start": 129,
+    "end": 134,
+    "text": "With this regard their currents turn awry,"
+  }, {
+    "start": 134,
+    "end": 145,
+    "text": "And lose the name of action."
+  }],
+  "credit": {
+    "uri": "https://archive.org/details/ElfmansReadings_Hamlet",
+    "text": "archive.org/Elfman101"
+  }
+}
