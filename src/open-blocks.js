@@ -6,7 +6,7 @@ var fs = require('fs'),
 
 //expose as module
 module.exports = function() {
-  function processLessonDescriptor(filename) {
+  function processLessonDescriptorFile(filename) {
     console.log("Parsing input file: " + filename)
     var lesson = JSON.parse(jsmin(fs.readFileSync(filename, "utf8")));
 
@@ -16,11 +16,18 @@ module.exports = function() {
     var sourceDirectoryName = filenamePathElements.dir
     var outputDirectoryName = path.join(filenamePathElements.dir, filenamePathElements.name)
 
-    console.log("dir name: " + outputDirectoryName)
+    ensureOutputDirectory(outputDirectoryName)
+
+    processLessonDescriptorElement(lesson, sourceDirectoryName, outputDirectoryName)
+  }
+
+  function ensureOutputDirectory(outputDirectoryName) {
     if (!fs.existsSync(outputDirectoryName)) {
       fs.mkdirSync(outputDirectoryName);
     }
+  }
 
+  function processLessonDescriptorElement(lessonElement, sourceDirectoryName, outputDirectoryName) {
     //keep a running log of which include files (css, js, media elements)
     //should be bundled with the lesson
     var includes = [{
@@ -32,22 +39,25 @@ module.exports = function() {
     }]
 
     //required elements
-    var title = lesson.title,
-      culture = lesson.culture,
-      name = lesson.name,
-      timespan = lesson.timespan,
-      sections = lesson.sections
+    var title = lessonElement["title"],
+      culture = lessonElement["culture"],
+      name = lessonElement["name"],
+      timespan = lessonElement["timespan"],
+      sections = lessonElement["sections"]
 
     //optional elements
-    var description = lesson.description || "",
-      teachingNotes = lesson["teaching-notes"] || "",
-      instructorLed = lesson["instructor-led"] || false,
-      lessonDependencies = lesson["lesson-dependencies"] || [],
-      physicalDependencies = lesson["physical-dependencies"] || []
+    var description = lessonElement["description"] || "",
+      teachingNotes = lessonElement["teaching-notes"] || "",
+      instructorLed = lessonElement["instructor-led"] || false,
+      lessonDependencies = lessonElement["lesson-dependencies"] || [],
+      physicalDependencies = lessonElement["physical-dependencies"] || []
 
     var descriptors = sections.map(function(section) {
         return processSectionDescriptor(sourceDirectoryName, outputDirectoryName, section)
       }) //curry?
+
+      //generate main page
+
   }
 
   function processSectionDescriptor(sourceDirectoryName, outputDirectoryName, section) {
@@ -58,12 +68,18 @@ module.exports = function() {
       descriptor = processSectionDescriptionNode(section, outputDirectoryName)
     }
 
-    var dependencies = descriptor.dependencies
+    resolveDependencies(descriptor)
+    return descriptor
+  }
+
+  function resolveDependencies(dependencies, outputDirectoryName) {
+    //move css,js, and media files to the correct place
+
   }
 
   function processSectionDescriptionFromFile(sourceDirectoryName, outputDirectoryName, sectionFilename) {
     var section = JSON.parse(jsmin(fs.readFileSync(path.join(sourceDirectoryName, sectionFilename), "utf8")));
-    return processSectionDescriptionNode(sourceDirectoryName, outputDirectoryName, section)
+    return processSectionDescriptionElement(sourceDirectoryName, outputDirectoryName, section)
   }
 
   function resolveTemplateDependencies(templateName) {
@@ -107,7 +123,7 @@ module.exports = function() {
   function resolveTemplateFilename(templateName) {
     switch (templateName) {
       case 'text':
-         return 'template/text.pug'
+        return 'template/text.pug'
       case 'audio-with-transcript':
         return 'template/audio-with-transcript.pug'
       case 'picture-with-text':
@@ -115,49 +131,56 @@ module.exports = function() {
     }
   }
 
-  function processSectionDescriptionNode(sourceDirectoryName, outputDirectoryName, section) {
-    var templateName = section.templateName
+  function processSectionDescriptionElement(sourceDirectoryName, outputDirectoryName, sectionElement) {
+    var sectionName = sectionElement["page-title"]
+    var outputFilename = sectionElement.name
+    var sectionDependencies = sectionElement.dependencies || []
+
+    var templateName = sectionElement.templateName
     var templateFilename = resolveTemplateFilename(templateName)
     var templateDependencies = resolveTemplateDependencies(templateName) || []
 
-    var sectionDependencies = (section.dependencies || []).map(function(dep) {
-      return merge(dep, {
-        "blockDependency": true
-      })
-    })
-
     var blockDependencies = templateDependencies.concat(sectionDependencies)
 
-    var body = pug.renderFile(templateFilename, merge(section, {
+    var body = generatePageElement(pug.renderFile, templateFilename, merge(sectionElement, {
       pretty: true
-    }));
+    }))
 
-    var html = pug.renderFile("template/header.pug", merge(section, {
+    var html = generatePageElement(pug.renderFile, "template/header.pug", merge(sectionElement, {
       pretty: true,
       blockDependencies: blockDependencies,
       body: body
-    }));
+    }))
 
     //write out html
-    var outputFilename = path.format({
-      dir: outputDirectoryName,
-      base: section.name + ".html"
-    })
-
-    fs.writeFile(outputFilename, html, function(err) {
-      if (err) {
-        console.log(err);
-      }
-    });
+    var fullOutputFilename = generateOutputFilename(outputDirectoryName, outputFilename, ".html")
+    writeFile(fs.writeFile, outputFilename, html)
 
     return {
-      "filename": outputFilename,
-      "dependencies": blockDependencies
+      "filename": fullOutputFilename,
+      "dependencies": blockDependencies,
+      "sectionName" : sectionName
     }
   }
 
-  return {
-    processLessonDescriptor: processLessonDescriptor,
-    processSectionDescriptionNode: processSectionDescriptionNode
+  function generateOutputFilename(outputDirectoryName, filename, extension) {
+    return path.format({
+      dir: outputDirectoryName,
+      base: filename + extension
+    })
   }
-}
+
+  function generatePageElement(generator, templateFilename, options) {
+    return generator(templateFilename, options);
+  }
+
+  function writeFile(generator, outputFilename, content) {
+    generator(outputFilename, content)
+  }
+
+  return {
+    processLessonDescriptorFile: processLessonDescriptorFile,
+    processLessonDescriptorElement: processLessonDescriptorElement,
+    processSectionDescriptionElement: processSectionDescriptionElement
+  }
+}();

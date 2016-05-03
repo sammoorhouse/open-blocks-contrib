@@ -4,5 +4,5 @@ var args = process.argv.slice(2);
 
 args.forEach(function(filename, index, array) {
   console.log(index + ': ' + filename);
-  openBlocks().processLessonDescriptor(filename)
+  openBlocks().processLessonDescriptorFile(filename)
 });
