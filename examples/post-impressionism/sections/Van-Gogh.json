@@ -3,7 +3,7 @@
   	"pageTitle": "Discovering Van Gogh",
     "name": "Discovering-Van-Gogh",
      "dependencies": [
-        {"type": "img", "location": "img/VanGogh-starry_night.jpg"}
+        {"type": "img", "location": "../img/VanGogh-starry_night.jpg"}
       ],
   	"imageTitle": "The Starry Night",
   	"imageSubtitle": "Vincent Van Gogh",

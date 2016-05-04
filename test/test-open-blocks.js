@@ -1,11 +1,12 @@
 var test = require("unit.js"),
-  openBlocks = require("../open-blocks.js"),
+  fs = require("fs-extra")
+openBlocks = require("../open-blocks.js"),
   expect = require("chai").expect;
 
 var audioWithTranscriptExample = require("./examples/audio-with-transcript.json")
 var pictureWithTextExample = require("./examples/picture-with-text.json")
 var textExample = require("./examples/text.json")
-var sectionSourceDirectoryName = "fake-testing-src-directort"
+var sectionSourceDirectoryName = "fake-testing-src-directory"
 
 describe("openblocks", function() {
   describe("lesson construction", function() {
@@ -27,23 +28,28 @@ describe("openblocks", function() {
         .and.to.contain({
           "type": "css",
           "location": "resources/css/base.css",
-          "resolvedDestination": "/Users/samm/Documents/dev/open-blocks-contrib/css/base",
+          "resolvedDestination": "/Users/samm/Documents/dev/open-blocks-contrib/css/base.css",
           "resolvedSource": "/Users/samm/Documents/dev/open-blocks-contrib/resources/css/base.css"
         })
         .and.to.contain({
           "type": "img",
           "location": "img/VanGogh-starry_night.jpg",
-          "resolvedDestination": "/Users/samm/Documents/dev/open-blocks-contrib/img/VanGogh-starry_night",
-          "resolvedSource": "/Users/samm/Documents/dev/open-blocks-contrib/fake-testing-src-directort/img/VanGogh-starry_night.jpg"
+          "resolvedDestination": "/Users/samm/Documents/dev/open-blocks-contrib/img/VanGogh-starry_night.jpg",
+          "resolvedSource": "/Users/samm/Documents/dev/open-blocks-contrib/fake-testing-src-directory/img/VanGogh-starry_night.jpg"
         })
         .and.to.contain({
           "type": "javascript",
           "location": "resources/js/jquery.loupe.min.js",
-          "resolvedDestination": "/Users/samm/Documents/dev/open-blocks-contrib/javascript/jquery.loupe.min",
+          "resolvedDestination": "/Users/samm/Documents/dev/open-blocks-contrib/javascript/jquery.loupe.min.js",
           "resolvedSource": "/Users/samm/Documents/dev/open-blocks-contrib/resources/js/jquery.loupe.min.js"
         })
     })
-    it("successfully writes to the output directory")
+    it("successfully creates the output directory", function() {
+      expect(fs.existsSync(directoryName)).to.be.true
+    })
+    it("successfully outputs to the output directory", function() {
+      expect(fs.existsSync(directoryName)).to.be.true
+    })
   })
 
   describe("template resolution", function() {

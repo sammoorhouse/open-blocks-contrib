@@ -68,8 +68,7 @@ module.exports = function() {
         writeFile(fullOutputFilename, descriptor.html)
 
         descriptor.dependencies.forEach(function(dependency) {
-          console.log(dependency)
-            //fs.copySync(dependency.location, dependency.destination);
+            fs.copySync(dependency.resolvedSource, dependency.resolvedDestination);
         })
       })
 
@@ -89,8 +88,9 @@ module.exports = function() {
   }
 
   function processSectionDescriptionFromFile(sourceDirectoryName, sectionFilename) {
+    var sectionSourceDirectoryName = path.parse(path.join(sourceDirectoryName, sectionFilename)).dir
     var section = JSON.parse(jsmin(readFile(path.join(sourceDirectoryName, sectionFilename), "utf8")));
-    return processSectionDescriptionElement(section, sourceDirectoryName)
+    return processSectionDescriptionElement(section, sectionSourceDirectoryName)
   }
 
   function resolveTemplateDependencies(templateName) {
@@ -99,9 +99,6 @@ module.exports = function() {
         return [{
           type: "css",
           location: "resources/css/base.css"
-        }, {
-          type: "javascript",
-          location: "resources/js/base.js"
         }]
       case 'audio-with-transcript':
         return [{
@@ -146,7 +143,7 @@ module.exports = function() {
     //move css,js, and media files to the correct place
     return dependencies.map(function(dep) {
       var type = dep.type
-      var filename = path.parse(dep.location).name
+      var filename = path.parse(dep.location).base
       var resolvedDestination = path.resolve(path.join(type, filename))
       var resolvedSource = path.resolve(path.join(sourceDirectoryName, dep.location))
       return merge(dep, {
