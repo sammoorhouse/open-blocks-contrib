@@ -6,9 +6,9 @@
     "passes": 8,
     "pending": 9,
     "failures": 0,
-    "start": "2016-05-04T18:23:14.427Z",
-    "end": "2016-05-04T18:23:14.750Z",
-    "duration": 323,
+    "start": "2016-05-04T20:44:05.021Z",
+    "end": "2016-05-04T20:44:05.280Z",
+    "duration": 259,
     "testsRegistered": 17,
     "passPercent": 100,
     "pendingPercent": 52.9,
@@ -39,8 +39,8 @@
                 "pending": true,
                 "code": "",
                 "isRoot": false,
-                "uuid": "d0d9bf8f-029b-4dbb-b033-08add8f0305b",
-                "parentUUID": "8ce86479-e1ea-45ad-b528-b63bce4bd747",
+                "uuid": "4ac8b667-47a4-41e1-b3b3-7b4ca8057b22",
+                "parentUUID": "77a80a25-ce95-4f12-94f3-e47ff0244f31",
                 "skipped": false
               },
               {
@@ -53,8 +53,8 @@
                 "pending": true,
                 "code": "",
                 "isRoot": false,
-                "uuid": "affa43ef-0316-441f-8199-afe133450fa3",
-                "parentUUID": "8ce86479-e1ea-45ad-b528-b63bce4bd747",
+                "uuid": "8e52ef8c-b594-455d-b1a6-23272534f5f4",
+                "parentUUID": "77a80a25-ce95-4f12-94f3-e47ff0244f31",
                 "skipped": false
               },
               {
@@ -67,8 +67,8 @@
                 "pending": true,
                 "code": "",
                 "isRoot": false,
-                "uuid": "571d3bc2-1789-4a2c-b8c5-b3e54a01f634",
-                "parentUUID": "8ce86479-e1ea-45ad-b528-b63bce4bd747",
+                "uuid": "822485aa-95d7-4b8c-83df-17a1afb0981e",
+                "parentUUID": "77a80a25-ce95-4f12-94f3-e47ff0244f31",
                 "skipped": false
               },
               {
@@ -81,8 +81,8 @@
                 "pending": true,
                 "code": "",
                 "isRoot": false,
-                "uuid": "0058208e-5b7f-4596-8f2a-4b0b05b71bed",
-                "parentUUID": "8ce86479-e1ea-45ad-b528-b63bce4bd747",
+                "uuid": "696ab345-69a5-4c14-9f1c-26cfb8574bd6",
+                "parentUUID": "77a80a25-ce95-4f12-94f3-e47ff0244f31",
                 "skipped": false
               },
               {
@@ -95,8 +95,8 @@
                 "pending": true,
                 "code": "",
                 "isRoot": false,
-                "uuid": "25c7342e-11ac-490b-ba14-d178a053ab55",
-                "parentUUID": "8ce86479-e1ea-45ad-b528-b63bce4bd747",
+                "uuid": "b187334e-5059-4a3d-b1c5-f2b5a37b2ed3",
+                "parentUUID": "77a80a25-ce95-4f12-94f3-e47ff0244f31",
                 "skipped": false
               },
               {
@@ -109,8 +109,8 @@
                 "pending": true,
                 "code": "",
                 "isRoot": false,
-                "uuid": "99fb9abf-a9c3-4c8f-a4c6-581ce5789f47",
-                "parentUUID": "8ce86479-e1ea-45ad-b528-b63bce4bd747",
+                "uuid": "f0c2a9fc-f3ca-43b2-b4d0-a36a8d00246f",
+                "parentUUID": "77a80a25-ce95-4f12-94f3-e47ff0244f31",
                 "skipped": false
               }
             ],
@@ -125,8 +125,8 @@
                 "pending": true,
                 "code": "",
                 "isRoot": false,
-                "uuid": "d0d9bf8f-029b-4dbb-b033-08add8f0305b",
-                "parentUUID": "8ce86479-e1ea-45ad-b528-b63bce4bd747",
+                "uuid": "4ac8b667-47a4-41e1-b3b3-7b4ca8057b22",
+                "parentUUID": "77a80a25-ce95-4f12-94f3-e47ff0244f31",
                 "skipped": false
               },
               {
@@ -139,8 +139,8 @@
                 "pending": true,
                 "code": "",
                 "isRoot": false,
-                "uuid": "affa43ef-0316-441f-8199-afe133450fa3",
-                "parentUUID": "8ce86479-e1ea-45ad-b528-b63bce4bd747",
+                "uuid": "8e52ef8c-b594-455d-b1a6-23272534f5f4",
+                "parentUUID": "77a80a25-ce95-4f12-94f3-e47ff0244f31",
                 "skipped": false
               },
               {
@@ -153,8 +153,8 @@
                 "pending": true,
                 "code": "",
                 "isRoot": false,
-                "uuid": "571d3bc2-1789-4a2c-b8c5-b3e54a01f634",
-                "parentUUID": "8ce86479-e1ea-45ad-b528-b63bce4bd747",
+                "uuid": "822485aa-95d7-4b8c-83df-17a1afb0981e",
+                "parentUUID": "77a80a25-ce95-4f12-94f3-e47ff0244f31",
                 "skipped": false
               },
               {
@@ -167,8 +167,8 @@
                 "pending": true,
                 "code": "",
                 "isRoot": false,
-                "uuid": "0058208e-5b7f-4596-8f2a-4b0b05b71bed",
-                "parentUUID": "8ce86479-e1ea-45ad-b528-b63bce4bd747",
+                "uuid": "696ab345-69a5-4c14-9f1c-26cfb8574bd6",
+                "parentUUID": "77a80a25-ce95-4f12-94f3-e47ff0244f31",
                 "skipped": false
               },
               {
@@ -181,8 +181,8 @@
                 "pending": true,
                 "code": "",
                 "isRoot": false,
-                "uuid": "25c7342e-11ac-490b-ba14-d178a053ab55",
-                "parentUUID": "8ce86479-e1ea-45ad-b528-b63bce4bd747",
+                "uuid": "b187334e-5059-4a3d-b1c5-f2b5a37b2ed3",
+                "parentUUID": "77a80a25-ce95-4f12-94f3-e47ff0244f31",
                 "skipped": false
               },
               {
@@ -195,15 +195,15 @@
                 "pending": true,
                 "code": "",
                 "isRoot": false,
-                "uuid": "99fb9abf-a9c3-4c8f-a4c6-581ce5789f47",
-                "parentUUID": "8ce86479-e1ea-45ad-b528-b63bce4bd747",
+                "uuid": "f0c2a9fc-f3ca-43b2-b4d0-a36a8d00246f",
+                "parentUUID": "77a80a25-ce95-4f12-94f3-e47ff0244f31",
                 "skipped": false
               }
             ],
             "root": false,
             "_timeout": 2000,
             "file": "/test/test-open-blocks.js",
-            "uuid": "8ce86479-e1ea-45ad-b528-b63bce4bd747",
+            "uuid": "77a80a25-ce95-4f12-94f3-e47ff0244f31",
             "fullFile": "/Users/samm/Documents/dev/open-blocks-contrib/test/test-open-blocks.js",
             "passes": [],
             "failures": [],
@@ -229,7 +229,7 @@
                 "title": "resolves the name of the section",
                 "fullTitle": "openblocks section construction resolves the name of the section",
                 "timedOut": false,
-                "duration": 2,
+                "duration": 1,
                 "state": "passed",
                 "speed": "fast",
                 "pass": true,
@@ -237,24 +237,24 @@
                 "pending": false,
                 "code": "expect(descriptor.sectionName).to.equal(<span class=\"hljs-string\">\"Discovering Van Gogh\"</span>);",
                 "isRoot": false,
-                "uuid": "6195fae1-3dcb-4a39-aebc-dc44cb3ac837",
-                "parentUUID": "f23d492d-405e-4b28-8bed-53bec45398d2",
+                "uuid": "4ba95054-e9c8-4700-a6e8-c8b745ea8767",
+                "parentUUID": "a924569c-506c-4d40-93fd-61d88eb354e8",
                 "skipped": false
               },
               {
                 "title": "resolves the dependencies of the section",
                 "fullTitle": "openblocks section construction resolves the dependencies of the section",
                 "timedOut": false,
-                "duration": 11,
+                "duration": 8,
                 "state": "passed",
                 "speed": "fast",
                 "pass": true,
                 "fail": false,
                 "pending": false,
-                "code": "expect(descriptor.dependencies).to.be.an(<span class=\"hljs-string\">\"array\"</span>)<br>expect(descriptor.dependencies).to.have.lengthOf(<span class=\"hljs-number\">5</span>)<br>  .and.to.contain({<br>    <span class=\"hljs-string\">\"type\"</span>: <span class=\"hljs-string\">\"css\"</span>,<br>    <span class=\"hljs-string\">\"location\"</span>: <span class=\"hljs-string\">\"css/base.css\"</span>,<br>    <span class=\"hljs-string\">\"destination\"</span>: <span class=\"hljs-string\">\"css/base\"</span><br>  })<br>  .and.to.contain({<br>    <span class=\"hljs-string\">\"type\"</span>: <span class=\"hljs-string\">\"img\"</span>,<br>    <span class=\"hljs-string\">\"location\"</span>: <span class=\"hljs-string\">\"img/VanGogh-starry_night.jpg\"</span>,<br>    <span class=\"hljs-string\">\"destination\"</span>: <span class=\"hljs-string\">\"img/VanGogh-starry_night\"</span><br>  })<br>  .and.to.contain({<br>    <span class=\"hljs-string\">\"type\"</span>: <span class=\"hljs-string\">\"javascript\"</span>,<br>    <span class=\"hljs-string\">\"location\"</span>: <span class=\"hljs-string\">\"js/jquery.loupe.min.js\"</span>,<br>    <span class=\"hljs-string\">\"destination\"</span>: <span class=\"hljs-string\">\"javascript/jquery.loupe.min\"</span><br>  })",
+                "code": "expect(descriptor.dependencies).to.be.an(<span class=\"hljs-string\">\"array\"</span>)<br>expect(descriptor.dependencies).to.have.lengthOf(<span class=\"hljs-number\">5</span>)<br>  .and.to.contain({<br>    <span class=\"hljs-string\">\"type\"</span>: <span class=\"hljs-string\">\"css\"</span>,<br>    <span class=\"hljs-string\">\"location\"</span>: <span class=\"hljs-string\">\"resources/css/base.css\"</span>,<br>    <span class=\"hljs-string\">\"resolvedDestination\"</span>: <span class=\"hljs-string\">\"/Users/samm/Documents/dev/open-blocks-contrib/css/base\"</span>,<br>    <span class=\"hljs-string\">\"resolvedSource\"</span>: <span class=\"hljs-string\">\"/Users/samm/Documents/dev/open-blocks-contrib/resources/css/base.css\"</span><br>  })<br>  .and.to.contain({<br>    <span class=\"hljs-string\">\"type\"</span>: <span class=\"hljs-string\">\"img\"</span>,<br>    <span class=\"hljs-string\">\"location\"</span>: <span class=\"hljs-string\">\"img/VanGogh-starry_night.jpg\"</span>,<br>    <span class=\"hljs-string\">\"resolvedDestination\"</span>: <span class=\"hljs-string\">\"/Users/samm/Documents/dev/open-blocks-contrib/img/VanGogh-starry_night\"</span>,<br>    <span class=\"hljs-string\">\"resolvedSource\"</span>: <span class=\"hljs-string\">\"/Users/samm/Documents/dev/open-blocks-contrib/fake-testing-src-directort/img/VanGogh-starry_night.jpg\"</span><br>  })<br>  .and.to.contain({<br>    <span class=\"hljs-string\">\"type\"</span>: <span class=\"hljs-string\">\"javascript\"</span>,<br>    <span class=\"hljs-string\">\"location\"</span>: <span class=\"hljs-string\">\"resources/js/jquery.loupe.min.js\"</span>,<br>    <span class=\"hljs-string\">\"resolvedDestination\"</span>: <span class=\"hljs-string\">\"/Users/samm/Documents/dev/open-blocks-contrib/javascript/jquery.loupe.min\"</span>,<br>    <span class=\"hljs-string\">\"resolvedSource\"</span>: <span class=\"hljs-string\">\"/Users/samm/Documents/dev/open-blocks-contrib/resources/js/jquery.loupe.min.js\"</span><br>  })",
                 "isRoot": false,
-                "uuid": "3dcb486e-7979-4498-8ae5-44585840768c",
-                "parentUUID": "f23d492d-405e-4b28-8bed-53bec45398d2",
+                "uuid": "979115cf-3169-4b6c-b514-967cf7226650",
+                "parentUUID": "a924569c-506c-4d40-93fd-61d88eb354e8",
                 "skipped": false
               },
               {
@@ -267,8 +267,8 @@
                 "pending": true,
                 "code": "",
                 "isRoot": false,
-                "uuid": "0c345abc-8f57-4265-8d9c-9ef99df94016",
-                "parentUUID": "f23d492d-405e-4b28-8bed-53bec45398d2",
+                "uuid": "2c05cae5-1dd4-46e5-812e-56adefc591af",
+                "parentUUID": "a924569c-506c-4d40-93fd-61d88eb354e8",
                 "skipped": false
               }
             ],
@@ -283,22 +283,22 @@
                 "pending": true,
                 "code": "",
                 "isRoot": false,
-                "uuid": "0c345abc-8f57-4265-8d9c-9ef99df94016",
-                "parentUUID": "f23d492d-405e-4b28-8bed-53bec45398d2",
+                "uuid": "2c05cae5-1dd4-46e5-812e-56adefc591af",
+                "parentUUID": "a924569c-506c-4d40-93fd-61d88eb354e8",
                 "skipped": false
               }
             ],
             "root": false,
             "_timeout": 2000,
             "file": "/test/test-open-blocks.js",
-            "uuid": "f23d492d-405e-4b28-8bed-53bec45398d2",
+            "uuid": "a924569c-506c-4d40-93fd-61d88eb354e8",
             "fullFile": "/Users/samm/Documents/dev/open-blocks-contrib/test/test-open-blocks.js",
             "passes": [
               {
                 "title": "resolves the name of the section",
                 "fullTitle": "openblocks section construction resolves the name of the section",
                 "timedOut": false,
-                "duration": 2,
+                "duration": 1,
                 "state": "passed",
                 "speed": "fast",
                 "pass": true,
@@ -306,24 +306,24 @@
                 "pending": false,
                 "code": "expect(descriptor.sectionName).to.equal(<span class=\"hljs-string\">\"Discovering Van Gogh\"</span>);",
                 "isRoot": false,
-                "uuid": "6195fae1-3dcb-4a39-aebc-dc44cb3ac837",
-                "parentUUID": "f23d492d-405e-4b28-8bed-53bec45398d2",
+                "uuid": "4ba95054-e9c8-4700-a6e8-c8b745ea8767",
+                "parentUUID": "a924569c-506c-4d40-93fd-61d88eb354e8",
                 "skipped": false
               },
               {
                 "title": "resolves the dependencies of the section",
                 "fullTitle": "openblocks section construction resolves the dependencies of the section",
                 "timedOut": false,
-                "duration": 11,
+                "duration": 8,
                 "state": "passed",
                 "speed": "fast",
                 "pass": true,
                 "fail": false,
                 "pending": false,
-                "code": "expect(descriptor.dependencies).to.be.an(<span class=\"hljs-string\">\"array\"</span>)<br>expect(descriptor.dependencies).to.have.lengthOf(<span class=\"hljs-number\">5</span>)<br>  .and.to.contain({<br>    <span class=\"hljs-string\">\"type\"</span>: <span class=\"hljs-string\">\"css\"</span>,<br>    <span class=\"hljs-string\">\"location\"</span>: <span class=\"hljs-string\">\"css/base.css\"</span>,<br>    <span class=\"hljs-string\">\"destination\"</span>: <span class=\"hljs-string\">\"css/base\"</span><br>  })<br>  .and.to.contain({<br>    <span class=\"hljs-string\">\"type\"</span>: <span class=\"hljs-string\">\"img\"</span>,<br>    <span class=\"hljs-string\">\"location\"</span>: <span class=\"hljs-string\">\"img/VanGogh-starry_night.jpg\"</span>,<br>    <span class=\"hljs-string\">\"destination\"</span>: <span class=\"hljs-string\">\"img/VanGogh-starry_night\"</span><br>  })<br>  .and.to.contain({<br>    <span class=\"hljs-string\">\"type\"</span>: <span class=\"hljs-string\">\"javascript\"</span>,<br>    <span class=\"hljs-string\">\"location\"</span>: <span class=\"hljs-string\">\"js/jquery.loupe.min.js\"</span>,<br>    <span class=\"hljs-string\">\"destination\"</span>: <span class=\"hljs-string\">\"javascript/jquery.loupe.min\"</span><br>  })",
+                "code": "expect(descriptor.dependencies).to.be.an(<span class=\"hljs-string\">\"array\"</span>)<br>expect(descriptor.dependencies).to.have.lengthOf(<span class=\"hljs-number\">5</span>)<br>  .and.to.contain({<br>    <span class=\"hljs-string\">\"type\"</span>: <span class=\"hljs-string\">\"css\"</span>,<br>    <span class=\"hljs-string\">\"location\"</span>: <span class=\"hljs-string\">\"resources/css/base.css\"</span>,<br>    <span class=\"hljs-string\">\"resolvedDestination\"</span>: <span class=\"hljs-string\">\"/Users/samm/Documents/dev/open-blocks-contrib/css/base\"</span>,<br>    <span class=\"hljs-string\">\"resolvedSource\"</span>: <span class=\"hljs-string\">\"/Users/samm/Documents/dev/open-blocks-contrib/resources/css/base.css\"</span><br>  })<br>  .and.to.contain({<br>    <span class=\"hljs-string\">\"type\"</span>: <span class=\"hljs-string\">\"img\"</span>,<br>    <span class=\"hljs-string\">\"location\"</span>: <span class=\"hljs-string\">\"img/VanGogh-starry_night.jpg\"</span>,<br>    <span class=\"hljs-string\">\"resolvedDestination\"</span>: <span class=\"hljs-string\">\"/Users/samm/Documents/dev/open-blocks-contrib/img/VanGogh-starry_night\"</span>,<br>    <span class=\"hljs-string\">\"resolvedSource\"</span>: <span class=\"hljs-string\">\"/Users/samm/Documents/dev/open-blocks-contrib/fake-testing-src-directort/img/VanGogh-starry_night.jpg\"</span><br>  })<br>  .and.to.contain({<br>    <span class=\"hljs-string\">\"type\"</span>: <span class=\"hljs-string\">\"javascript\"</span>,<br>    <span class=\"hljs-string\">\"location\"</span>: <span class=\"hljs-string\">\"resources/js/jquery.loupe.min.js\"</span>,<br>    <span class=\"hljs-string\">\"resolvedDestination\"</span>: <span class=\"hljs-string\">\"/Users/samm/Documents/dev/open-blocks-contrib/javascript/jquery.loupe.min\"</span>,<br>    <span class=\"hljs-string\">\"resolvedSource\"</span>: <span class=\"hljs-string\">\"/Users/samm/Documents/dev/open-blocks-contrib/resources/js/jquery.loupe.min.js\"</span><br>  })",
                 "isRoot": false,
-                "uuid": "3dcb486e-7979-4498-8ae5-44585840768c",
-                "parentUUID": "f23d492d-405e-4b28-8bed-53bec45398d2",
+                "uuid": "979115cf-3169-4b6c-b514-967cf7226650",
+                "parentUUID": "a924569c-506c-4d40-93fd-61d88eb354e8",
                 "skipped": false
               }
             ],
@@ -340,7 +340,7 @@
             "hasFailures": false,
             "hasPending": true,
             "hasSkipped": false,
-            "duration": 13
+            "duration": 9
           },
           {
             "title": "template resolution",
@@ -361,24 +361,24 @@
                     "pending": false,
                     "code": "expect(openBlocks.resolveTemplateFilename(audioWithTranscriptExample.templateName))<br>  .to.equal(<span class=\"hljs-string\">\"template/audio-with-transcript.pug\"</span>)",
                     "isRoot": false,
-                    "uuid": "4f6c7915-5e63-4c92-a999-ecaeea2ae2b9",
-                    "parentUUID": "5b176e8b-92ff-46b1-9cf1-da80b6b8ab79",
+                    "uuid": "7fe7371f-67ef-477f-aecd-be9c241dc0e5",
+                    "parentUUID": "45dcabba-d4d1-4ca8-8245-24b8cec95816",
                     "skipped": false
                   },
                   {
                     "title": "creates the html",
                     "fullTitle": "template resolution audio-with-transcript built-in template creates the html",
                     "timedOut": false,
-                    "duration": 158,
+                    "duration": 125,
                     "state": "passed",
                     "speed": "slow",
                     "pass": true,
                     "fail": false,
                     "pending": false,
-                    "code": "expect(openBlocks.processSectionDescriptionElement(audioWithTranscriptExample))<br>  .to.have.property(<span class=\"hljs-string\">\"html\"</span>)<br>  .and.to.be.ok",
+                    "code": "expect(openBlocks.processSectionDescriptionElement(audioWithTranscriptExample, sectionSourceDirectoryName))<br>  .to.have.property(<span class=\"hljs-string\">\"html\"</span>)<br>  .and.to.be.ok",
                     "isRoot": false,
-                    "uuid": "5916b1f6-abf4-43d1-9a2f-8f9fc874c06f",
-                    "parentUUID": "5b176e8b-92ff-46b1-9cf1-da80b6b8ab79",
+                    "uuid": "fda8ee88-5584-473a-abcb-598953ee368e",
+                    "parentUUID": "45dcabba-d4d1-4ca8-8245-24b8cec95816",
                     "skipped": false
                   }
                 ],
@@ -386,7 +386,7 @@
                 "root": false,
                 "_timeout": 2000,
                 "file": "/test/test-open-blocks.js",
-                "uuid": "5b176e8b-92ff-46b1-9cf1-da80b6b8ab79",
+                "uuid": "45dcabba-d4d1-4ca8-8245-24b8cec95816",
                 "fullFile": "/Users/samm/Documents/dev/open-blocks-contrib/test/test-open-blocks.js",
                 "passes": [
                   {
@@ -401,24 +401,24 @@
                     "pending": false,
                     "code": "expect(openBlocks.resolveTemplateFilename(audioWithTranscriptExample.templateName))<br>  .to.equal(<span class=\"hljs-string\">\"template/audio-with-transcript.pug\"</span>)",
                     "isRoot": false,
-                    "uuid": "4f6c7915-5e63-4c92-a999-ecaeea2ae2b9",
-                    "parentUUID": "5b176e8b-92ff-46b1-9cf1-da80b6b8ab79",
+                    "uuid": "7fe7371f-67ef-477f-aecd-be9c241dc0e5",
+                    "parentUUID": "45dcabba-d4d1-4ca8-8245-24b8cec95816",
                     "skipped": false
                   },
                   {
                     "title": "creates the html",
                     "fullTitle": "template resolution audio-with-transcript built-in template creates the html",
                     "timedOut": false,
-                    "duration": 158,
+                    "duration": 125,
                     "state": "passed",
                     "speed": "slow",
                     "pass": true,
                     "fail": false,
                     "pending": false,
-                    "code": "expect(openBlocks.processSectionDescriptionElement(audioWithTranscriptExample))<br>  .to.have.property(<span class=\"hljs-string\">\"html\"</span>)<br>  .and.to.be.ok",
+                    "code": "expect(openBlocks.processSectionDescriptionElement(audioWithTranscriptExample, sectionSourceDirectoryName))<br>  .to.have.property(<span class=\"hljs-string\">\"html\"</span>)<br>  .and.to.be.ok",
                     "isRoot": false,
-                    "uuid": "5916b1f6-abf4-43d1-9a2f-8f9fc874c06f",
-                    "parentUUID": "5b176e8b-92ff-46b1-9cf1-da80b6b8ab79",
+                    "uuid": "fda8ee88-5584-473a-abcb-598953ee368e",
+                    "parentUUID": "45dcabba-d4d1-4ca8-8245-24b8cec95816",
                     "skipped": false
                   }
                 ],
@@ -435,7 +435,7 @@
                 "hasFailures": false,
                 "hasPending": false,
                 "hasSkipped": false,
-                "duration": 158
+                "duration": 125
               },
               {
                 "title": "picture-with-text built-in template",
@@ -445,32 +445,32 @@
                     "title": "determines the correct template for the section",
                     "fullTitle": "template resolution picture-with-text built-in template determines the correct template for the section",
                     "timedOut": false,
-                    "duration": 69,
-                    "state": "passed",
-                    "speed": "medium",
-                    "pass": true,
-                    "fail": false,
-                    "pending": false,
-                    "code": "expect(openBlocks.resolveTemplateFilename(pictureWithTextExample.templateName))<br>  .to.equal(<span class=\"hljs-string\">\"template/picture-with-text.pug\"</span>)<br>expect(openBlocks.processSectionDescriptionElement(pictureWithTextExample))<br>  .to.have.property(<span class=\"hljs-string\">\"html\"</span>)<br>  .and.to.be.ok",
-                    "isRoot": false,
-                    "uuid": "724fc620-3051-4232-b08b-44785182dae5",
-                    "parentUUID": "69ef752f-f53d-49db-b188-9b4442ce2ae0",
-                    "skipped": false
-                  },
-                  {
-                    "title": "creates the html",
-                    "fullTitle": "template resolution picture-with-text built-in template creates the html",
-                    "timedOut": false,
                     "duration": 0,
                     "state": "passed",
                     "speed": "fast",
                     "pass": true,
                     "fail": false,
                     "pending": false,
-                    "code": "}",
+                    "code": "<span class=\"hljs-keyword\">var</span> name = openBlocks.resolveTemplateFilename(pictureWithTextExample.templateName)<br>expect(name)<br>  .to.equal(<span class=\"hljs-string\">\"template/picture-with-text.pug\"</span>)",
                     "isRoot": false,
-                    "uuid": "08f53e91-b070-4f70-806e-7d2599f9690b",
-                    "parentUUID": "69ef752f-f53d-49db-b188-9b4442ce2ae0",
+                    "uuid": "c1e0e74f-87bc-4113-b91c-d14c8e59f8fe",
+                    "parentUUID": "4c81ed5b-8ef5-45ac-bf09-633f3b3ecb4a",
+                    "skipped": false
+                  },
+                  {
+                    "title": "creates the html",
+                    "fullTitle": "template resolution picture-with-text built-in template creates the html",
+                    "timedOut": false,
+                    "duration": 61,
+                    "state": "passed",
+                    "speed": "medium",
+                    "pass": true,
+                    "fail": false,
+                    "pending": false,
+                    "code": "expect(openBlocks.processSectionDescriptionElement(pictureWithTextExample, sectionSourceDirectoryName))<br>  .to.have.property(<span class=\"hljs-string\">\"html\"</span>)<br>  .and.to.be.ok",
+                    "isRoot": false,
+                    "uuid": "390c3c8c-1062-47df-aac3-0acc8001a360",
+                    "parentUUID": "4c81ed5b-8ef5-45ac-bf09-633f3b3ecb4a",
                     "skipped": false
                   }
                 ],
@@ -478,28 +478,12 @@
                 "root": false,
                 "_timeout": 2000,
                 "file": "/test/test-open-blocks.js",
-                "uuid": "69ef752f-f53d-49db-b188-9b4442ce2ae0",
+                "uuid": "4c81ed5b-8ef5-45ac-bf09-633f3b3ecb4a",
                 "fullFile": "/Users/samm/Documents/dev/open-blocks-contrib/test/test-open-blocks.js",
                 "passes": [
                   {
                     "title": "determines the correct template for the section",
                     "fullTitle": "template resolution picture-with-text built-in template determines the correct template for the section",
-                    "timedOut": false,
-                    "duration": 69,
-                    "state": "passed",
-                    "speed": "medium",
-                    "pass": true,
-                    "fail": false,
-                    "pending": false,
-                    "code": "expect(openBlocks.resolveTemplateFilename(pictureWithTextExample.templateName))<br>  .to.equal(<span class=\"hljs-string\">\"template/picture-with-text.pug\"</span>)<br>expect(openBlocks.processSectionDescriptionElement(pictureWithTextExample))<br>  .to.have.property(<span class=\"hljs-string\">\"html\"</span>)<br>  .and.to.be.ok",
-                    "isRoot": false,
-                    "uuid": "724fc620-3051-4232-b08b-44785182dae5",
-                    "parentUUID": "69ef752f-f53d-49db-b188-9b4442ce2ae0",
-                    "skipped": false
-                  },
-                  {
-                    "title": "creates the html",
-                    "fullTitle": "template resolution picture-with-text built-in template creates the html",
                     "timedOut": false,
                     "duration": 0,
                     "state": "passed",
@@ -507,10 +491,26 @@
                     "pass": true,
                     "fail": false,
                     "pending": false,
-                    "code": "}",
+                    "code": "<span class=\"hljs-keyword\">var</span> name = openBlocks.resolveTemplateFilename(pictureWithTextExample.templateName)<br>expect(name)<br>  .to.equal(<span class=\"hljs-string\">\"template/picture-with-text.pug\"</span>)",
                     "isRoot": false,
-                    "uuid": "08f53e91-b070-4f70-806e-7d2599f9690b",
-                    "parentUUID": "69ef752f-f53d-49db-b188-9b4442ce2ae0",
+                    "uuid": "c1e0e74f-87bc-4113-b91c-d14c8e59f8fe",
+                    "parentUUID": "4c81ed5b-8ef5-45ac-bf09-633f3b3ecb4a",
+                    "skipped": false
+                  },
+                  {
+                    "title": "creates the html",
+                    "fullTitle": "template resolution picture-with-text built-in template creates the html",
+                    "timedOut": false,
+                    "duration": 61,
+                    "state": "passed",
+                    "speed": "medium",
+                    "pass": true,
+                    "fail": false,
+                    "pending": false,
+                    "code": "expect(openBlocks.processSectionDescriptionElement(pictureWithTextExample, sectionSourceDirectoryName))<br>  .to.have.property(<span class=\"hljs-string\">\"html\"</span>)<br>  .and.to.be.ok",
+                    "isRoot": false,
+                    "uuid": "390c3c8c-1062-47df-aac3-0acc8001a360",
+                    "parentUUID": "4c81ed5b-8ef5-45ac-bf09-633f3b3ecb4a",
                     "skipped": false
                   }
                 ],
@@ -527,7 +527,7 @@
                 "hasFailures": false,
                 "hasPending": false,
                 "hasSkipped": false,
-                "duration": 69
+                "duration": 61
               },
               {
                 "title": "quiz built-in template",
@@ -543,8 +543,8 @@
                     "pending": true,
                     "code": "",
                     "isRoot": false,
-                    "uuid": "b16e6da2-63c7-47e6-9ea3-a72aadeb5211",
-                    "parentUUID": "cbdf5b2e-babd-4f7e-932f-05bd9d9c9ad1",
+                    "uuid": "10753f92-9acf-4475-83ce-15b639107421",
+                    "parentUUID": "9068ae1f-688a-4711-bc8e-df7280d39f7a",
                     "skipped": false
                   },
                   {
@@ -557,8 +557,8 @@
                     "pending": true,
                     "code": "",
                     "isRoot": false,
-                    "uuid": "c84d90eb-ee74-497d-a826-9302f0f887b3",
-                    "parentUUID": "cbdf5b2e-babd-4f7e-932f-05bd9d9c9ad1",
+                    "uuid": "16002722-c5f9-415d-b6c3-248c1ab6b032",
+                    "parentUUID": "9068ae1f-688a-4711-bc8e-df7280d39f7a",
                     "skipped": false
                   }
                 ],
@@ -573,8 +573,8 @@
                     "pending": true,
                     "code": "",
                     "isRoot": false,
-                    "uuid": "b16e6da2-63c7-47e6-9ea3-a72aadeb5211",
-                    "parentUUID": "cbdf5b2e-babd-4f7e-932f-05bd9d9c9ad1",
+                    "uuid": "10753f92-9acf-4475-83ce-15b639107421",
+                    "parentUUID": "9068ae1f-688a-4711-bc8e-df7280d39f7a",
                     "skipped": false
                   },
                   {
@@ -587,14 +587,14 @@
                     "pending": true,
                     "code": "",
                     "isRoot": false,
-                    "uuid": "c84d90eb-ee74-497d-a826-9302f0f887b3",
-                    "parentUUID": "cbdf5b2e-babd-4f7e-932f-05bd9d9c9ad1",
+                    "uuid": "16002722-c5f9-415d-b6c3-248c1ab6b032",
+                    "parentUUID": "9068ae1f-688a-4711-bc8e-df7280d39f7a",
                     "skipped": false
                   }
                 ],
                 "root": false,
                 "_timeout": 2000,
-                "uuid": "cbdf5b2e-babd-4f7e-932f-05bd9d9c9ad1",
+                "uuid": "9068ae1f-688a-4711-bc8e-df7280d39f7a",
                 "fullFile": "",
                 "file": "",
                 "passes": [],
@@ -621,16 +621,16 @@
                     "title": "determines the correct template for the section",
                     "fullTitle": "template resolution text built-in template determines the correct template for the section",
                     "timedOut": false,
-                    "duration": 31,
+                    "duration": 24,
                     "state": "passed",
                     "speed": "fast",
                     "pass": true,
                     "fail": false,
                     "pending": false,
-                    "code": "expect(openBlocks.resolveTemplateFilename(textExample.templateName))<br>  .to.equal(<span class=\"hljs-string\">\"template/text.pug\"</span>)<br>expect(openBlocks.processSectionDescriptionElement(textExample))<br>  .to.have.property(<span class=\"hljs-string\">\"html\"</span>)<br>  .and.to.be.ok",
+                    "code": "expect(openBlocks.resolveTemplateFilename(textExample.templateName))<br>  .to.equal(<span class=\"hljs-string\">\"template/text.pug\"</span>)<br>expect(openBlocks.processSectionDescriptionElement(textExample, sectionSourceDirectoryName))<br>  .to.have.property(<span class=\"hljs-string\">\"html\"</span>)<br>  .and.to.be.ok",
                     "isRoot": false,
-                    "uuid": "bd2502fe-4d92-4c61-8fdb-423c24084fd0",
-                    "parentUUID": "10a87ba1-e2d5-4be9-843d-e67c5ffe6269",
+                    "uuid": "1141d3e1-2a6e-43c9-9339-2e8bc79153d0",
+                    "parentUUID": "43d03ae6-e49a-4d6d-a20a-707b0c967959",
                     "skipped": false
                   },
                   {
@@ -645,8 +645,8 @@
                     "pending": false,
                     "code": "}",
                     "isRoot": false,
-                    "uuid": "0d17590e-19dd-4f06-8208-fcd6e493b7ba",
-                    "parentUUID": "10a87ba1-e2d5-4be9-843d-e67c5ffe6269",
+                    "uuid": "a509017d-d8e7-4a56-a395-8e2a21b584f1",
+                    "parentUUID": "43d03ae6-e49a-4d6d-a20a-707b0c967959",
                     "skipped": false
                   }
                 ],
@@ -654,23 +654,23 @@
                 "root": false,
                 "_timeout": 2000,
                 "file": "/test/test-open-blocks.js",
-                "uuid": "10a87ba1-e2d5-4be9-843d-e67c5ffe6269",
+                "uuid": "43d03ae6-e49a-4d6d-a20a-707b0c967959",
                 "fullFile": "/Users/samm/Documents/dev/open-blocks-contrib/test/test-open-blocks.js",
                 "passes": [
                   {
                     "title": "determines the correct template for the section",
                     "fullTitle": "template resolution text built-in template determines the correct template for the section",
                     "timedOut": false,
-                    "duration": 31,
+                    "duration": 24,
                     "state": "passed",
                     "speed": "fast",
                     "pass": true,
                     "fail": false,
                     "pending": false,
-                    "code": "expect(openBlocks.resolveTemplateFilename(textExample.templateName))<br>  .to.equal(<span class=\"hljs-string\">\"template/text.pug\"</span>)<br>expect(openBlocks.processSectionDescriptionElement(textExample))<br>  .to.have.property(<span class=\"hljs-string\">\"html\"</span>)<br>  .and.to.be.ok",
+                    "code": "expect(openBlocks.resolveTemplateFilename(textExample.templateName))<br>  .to.equal(<span class=\"hljs-string\">\"template/text.pug\"</span>)<br>expect(openBlocks.processSectionDescriptionElement(textExample, sectionSourceDirectoryName))<br>  .to.have.property(<span class=\"hljs-string\">\"html\"</span>)<br>  .and.to.be.ok",
                     "isRoot": false,
-                    "uuid": "bd2502fe-4d92-4c61-8fdb-423c24084fd0",
-                    "parentUUID": "10a87ba1-e2d5-4be9-843d-e67c5ffe6269",
+                    "uuid": "1141d3e1-2a6e-43c9-9339-2e8bc79153d0",
+                    "parentUUID": "43d03ae6-e49a-4d6d-a20a-707b0c967959",
                     "skipped": false
                   },
                   {
@@ -685,8 +685,8 @@
                     "pending": false,
                     "code": "}",
                     "isRoot": false,
-                    "uuid": "0d17590e-19dd-4f06-8208-fcd6e493b7ba",
-                    "parentUUID": "10a87ba1-e2d5-4be9-843d-e67c5ffe6269",
+                    "uuid": "a509017d-d8e7-4a56-a395-8e2a21b584f1",
+                    "parentUUID": "43d03ae6-e49a-4d6d-a20a-707b0c967959",
                     "skipped": false
                   }
                 ],
@@ -703,7 +703,7 @@
                 "hasFailures": false,
                 "hasPending": false,
                 "hasSkipped": false,
-                "duration": 31
+                "duration": 24
               }
             ],
             "tests": [],
@@ -711,7 +711,7 @@
             "root": false,
             "_timeout": 2000,
             "file": "/test/test-open-blocks.js",
-            "uuid": "52001c21-875f-46e9-9eba-0031fc5b8935",
+            "uuid": "2cd406a8-4db7-4988-8bce-aa82bfb2db5e",
             "fullFile": "/Users/samm/Documents/dev/open-blocks-contrib/test/test-open-blocks.js",
             "passes": [],
             "failures": [],
@@ -735,7 +735,7 @@
         "root": false,
         "_timeout": 2000,
         "file": "/test/test-open-blocks.js",
-        "uuid": "74a8172d-09c6-441a-91f0-14be1c4afc56",
+        "uuid": "ce20d2c7-0d41-47bd-9fc7-c5e4a85d51db",
         "fullFile": "/Users/samm/Documents/dev/open-blocks-contrib/test/test-open-blocks.js",
         "passes": [],
         "failures": [],
@@ -758,7 +758,7 @@
     "pending": [],
     "root": true,
     "_timeout": 2000,
-    "uuid": "5eabd379-c85a-4bf0-aff6-afe010ffc7c2",
+    "uuid": "a7e9a582-ee59-4c3f-83fb-f5d7e84956c8",
     "fullFile": "",
     "file": "",
     "passes": [],
@@ -789,8 +789,8 @@
       "pending": true,
       "code": "",
       "isRoot": false,
-      "uuid": "6075c822-cc5c-44bb-a58f-ab346687f708",
-      "parentUUID": "8ce86479-e1ea-45ad-b528-b63bce4bd747",
+      "uuid": "0e4fb989-30cd-4fb4-9753-2b32586c5726",
+      "parentUUID": "77a80a25-ce95-4f12-94f3-e47ff0244f31",
       "skipped": false
     },
     {
@@ -803,8 +803,8 @@
       "pending": true,
       "code": "",
       "isRoot": false,
-      "uuid": "a6793baa-a3fd-4c3d-bcf7-8ccb61191cca",
-      "parentUUID": "8ce86479-e1ea-45ad-b528-b63bce4bd747",
+      "uuid": "c0ee797b-07ae-40cd-a837-42fb271bfc0f",
+      "parentUUID": "77a80a25-ce95-4f12-94f3-e47ff0244f31",
       "skipped": false
     },
     {
@@ -817,8 +817,8 @@
       "pending": true,
       "code": "",
       "isRoot": false,
-      "uuid": "a9d7a857-2dad-45f2-bb9b-a8b071f109d2",
-      "parentUUID": "8ce86479-e1ea-45ad-b528-b63bce4bd747",
+      "uuid": "94131951-9a6e-4483-bcbc-88ffac18f358",
+      "parentUUID": "77a80a25-ce95-4f12-94f3-e47ff0244f31",
       "skipped": false
     },
     {
@@ -831,8 +831,8 @@
       "pending": true,
       "code": "",
       "isRoot": false,
-      "uuid": "2a9d3027-e851-4004-a405-c5247a5008c8",
-      "parentUUID": "8ce86479-e1ea-45ad-b528-b63bce4bd747",
+      "uuid": "ed1b1b65-f78c-4b27-94bf-e86e9e47a266",
+      "parentUUID": "77a80a25-ce95-4f12-94f3-e47ff0244f31",
       "skipped": false
     },
     {
@@ -845,8 +845,8 @@
       "pending": true,
       "code": "",
       "isRoot": false,
-      "uuid": "7ad4c86c-6901-45f1-a584-87083471485d",
-      "parentUUID": "8ce86479-e1ea-45ad-b528-b63bce4bd747",
+      "uuid": "75422bcc-75ce-4722-82d1-6ea9ed4b9338",
+      "parentUUID": "77a80a25-ce95-4f12-94f3-e47ff0244f31",
       "skipped": false
     },
     {
@@ -859,15 +859,15 @@
       "pending": true,
       "code": "",
       "isRoot": false,
-      "uuid": "99964c16-543d-47ea-bf56-e68ff52c5557",
-      "parentUUID": "8ce86479-e1ea-45ad-b528-b63bce4bd747",
+      "uuid": "d6220e80-92df-4f83-9138-d74cd45f2992",
+      "parentUUID": "77a80a25-ce95-4f12-94f3-e47ff0244f31",
       "skipped": false
     },
     {
       "title": "resolves the name of the section",
       "fullTitle": "section construction resolves the name of the section",
       "timedOut": false,
-      "duration": 2,
+      "duration": 1,
       "state": "passed",
       "speed": "fast",
       "pass": true,
@@ -875,24 +875,24 @@
       "pending": false,
       "code": "expect(descriptor.sectionName).to.equal(<span class=\"hljs-string\">\"Discovering Van Gogh\"</span>);",
       "isRoot": false,
-      "uuid": "1d4de837-c042-4c89-bffe-102afb4f6bc6",
-      "parentUUID": "f23d492d-405e-4b28-8bed-53bec45398d2",
+      "uuid": "0863671e-c657-4e29-99a4-1519209f000b",
+      "parentUUID": "a924569c-506c-4d40-93fd-61d88eb354e8",
       "skipped": false
     },
     {
       "title": "resolves the dependencies of the section",
       "fullTitle": "section construction resolves the dependencies of the section",
       "timedOut": false,
-      "duration": 11,
+      "duration": 8,
       "state": "passed",
       "speed": "fast",
       "pass": true,
       "fail": false,
       "pending": false,
-      "code": "expect(descriptor.dependencies).to.be.an(<span class=\"hljs-string\">\"array\"</span>)<br>expect(descriptor.dependencies).to.have.lengthOf(<span class=\"hljs-number\">5</span>)<br>  .and.to.contain({<br>    <span class=\"hljs-string\">\"type\"</span>: <span class=\"hljs-string\">\"css\"</span>,<br>    <span class=\"hljs-string\">\"location\"</span>: <span class=\"hljs-string\">\"css/base.css\"</span>,<br>    <span class=\"hljs-string\">\"destination\"</span>: <span class=\"hljs-string\">\"css/base\"</span><br>  })<br>  .and.to.contain({<br>    <span class=\"hljs-string\">\"type\"</span>: <span class=\"hljs-string\">\"img\"</span>,<br>    <span class=\"hljs-string\">\"location\"</span>: <span class=\"hljs-string\">\"img/VanGogh-starry_night.jpg\"</span>,<br>    <span class=\"hljs-string\">\"destination\"</span>: <span class=\"hljs-string\">\"img/VanGogh-starry_night\"</span><br>  })<br>  .and.to.contain({<br>    <span class=\"hljs-string\">\"type\"</span>: <span class=\"hljs-string\">\"javascript\"</span>,<br>    <span class=\"hljs-string\">\"location\"</span>: <span class=\"hljs-string\">\"js/jquery.loupe.min.js\"</span>,<br>    <span class=\"hljs-string\">\"destination\"</span>: <span class=\"hljs-string\">\"javascript/jquery.loupe.min\"</span><br>  })",
+      "code": "expect(descriptor.dependencies).to.be.an(<span class=\"hljs-string\">\"array\"</span>)<br>expect(descriptor.dependencies).to.have.lengthOf(<span class=\"hljs-number\">5</span>)<br>  .and.to.contain({<br>    <span class=\"hljs-string\">\"type\"</span>: <span class=\"hljs-string\">\"css\"</span>,<br>    <span class=\"hljs-string\">\"location\"</span>: <span class=\"hljs-string\">\"resources/css/base.css\"</span>,<br>    <span class=\"hljs-string\">\"resolvedDestination\"</span>: <span class=\"hljs-string\">\"/Users/samm/Documents/dev/open-blocks-contrib/css/base\"</span>,<br>    <span class=\"hljs-string\">\"resolvedSource\"</span>: <span class=\"hljs-string\">\"/Users/samm/Documents/dev/open-blocks-contrib/resources/css/base.css\"</span><br>  })<br>  .and.to.contain({<br>    <span class=\"hljs-string\">\"type\"</span>: <span class=\"hljs-string\">\"img\"</span>,<br>    <span class=\"hljs-string\">\"location\"</span>: <span class=\"hljs-string\">\"img/VanGogh-starry_night.jpg\"</span>,<br>    <span class=\"hljs-string\">\"resolvedDestination\"</span>: <span class=\"hljs-string\">\"/Users/samm/Documents/dev/open-blocks-contrib/img/VanGogh-starry_night\"</span>,<br>    <span class=\"hljs-string\">\"resolvedSource\"</span>: <span class=\"hljs-string\">\"/Users/samm/Documents/dev/open-blocks-contrib/fake-testing-src-directort/img/VanGogh-starry_night.jpg\"</span><br>  })<br>  .and.to.contain({<br>    <span class=\"hljs-string\">\"type\"</span>: <span class=\"hljs-string\">\"javascript\"</span>,<br>    <span class=\"hljs-string\">\"location\"</span>: <span class=\"hljs-string\">\"resources/js/jquery.loupe.min.js\"</span>,<br>    <span class=\"hljs-string\">\"resolvedDestination\"</span>: <span class=\"hljs-string\">\"/Users/samm/Documents/dev/open-blocks-contrib/javascript/jquery.loupe.min\"</span>,<br>    <span class=\"hljs-string\">\"resolvedSource\"</span>: <span class=\"hljs-string\">\"/Users/samm/Documents/dev/open-blocks-contrib/resources/js/jquery.loupe.min.js\"</span><br>  })",
       "isRoot": false,
-      "uuid": "98ac7c6f-9f67-4298-ac34-9667349385f2",
-      "parentUUID": "f23d492d-405e-4b28-8bed-53bec45398d2",
+      "uuid": "acdff85c-4ed4-4077-84a8-4a95c39997bc",
+      "parentUUID": "a924569c-506c-4d40-93fd-61d88eb354e8",
       "skipped": false
     },
     {
@@ -905,8 +905,8 @@
       "pending": true,
       "code": "",
       "isRoot": false,
-      "uuid": "16c11016-95b9-470b-8521-6c3a8652b9fd",
-      "parentUUID": "f23d492d-405e-4b28-8bed-53bec45398d2",
+      "uuid": "e85e625f-e0fa-4fb2-b7ae-974ab90e9b0d",
+      "parentUUID": "a924569c-506c-4d40-93fd-61d88eb354e8",
       "skipped": false
     },
     {
@@ -921,45 +921,29 @@
       "pending": false,
       "code": "expect(openBlocks.resolveTemplateFilename(audioWithTranscriptExample.templateName))<br>  .to.equal(<span class=\"hljs-string\">\"template/audio-with-transcript.pug\"</span>)",
       "isRoot": false,
-      "uuid": "a1fbc52a-cba2-4bcc-b36d-2f8309f7350c",
-      "parentUUID": "5b176e8b-92ff-46b1-9cf1-da80b6b8ab79",
+      "uuid": "f0b6a026-8178-4599-bb38-898cc9cfc13a",
+      "parentUUID": "45dcabba-d4d1-4ca8-8245-24b8cec95816",
       "skipped": false
     },
     {
       "title": "creates the html",
       "fullTitle": "audio-with-transcript built-in template creates the html",
       "timedOut": false,
-      "duration": 158,
+      "duration": 125,
       "state": "passed",
       "speed": "slow",
       "pass": true,
       "fail": false,
       "pending": false,
-      "code": "expect(openBlocks.processSectionDescriptionElement(audioWithTranscriptExample))<br>  .to.have.property(<span class=\"hljs-string\">\"html\"</span>)<br>  .and.to.be.ok",
+      "code": "expect(openBlocks.processSectionDescriptionElement(audioWithTranscriptExample, sectionSourceDirectoryName))<br>  .to.have.property(<span class=\"hljs-string\">\"html\"</span>)<br>  .and.to.be.ok",
       "isRoot": false,
-      "uuid": "197485ba-8c0c-4992-b45d-0ccefc0f651d",
-      "parentUUID": "5b176e8b-92ff-46b1-9cf1-da80b6b8ab79",
+      "uuid": "42500b2f-8f46-42a4-bdfc-14ac26fc6a9e",
+      "parentUUID": "45dcabba-d4d1-4ca8-8245-24b8cec95816",
       "skipped": false
     },
     {
       "title": "determines the correct template for the section",
       "fullTitle": "picture-with-text built-in template determines the correct template for the section",
-      "timedOut": false,
-      "duration": 69,
-      "state": "passed",
-      "speed": "medium",
-      "pass": true,
-      "fail": false,
-      "pending": false,
-      "code": "expect(openBlocks.resolveTemplateFilename(pictureWithTextExample.templateName))<br>  .to.equal(<span class=\"hljs-string\">\"template/picture-with-text.pug\"</span>)<br>expect(openBlocks.processSectionDescriptionElement(pictureWithTextExample))<br>  .to.have.property(<span class=\"hljs-string\">\"html\"</span>)<br>  .and.to.be.ok",
-      "isRoot": false,
-      "uuid": "685022bd-5c36-4ef7-8ab0-1687aeb97dfb",
-      "parentUUID": "69ef752f-f53d-49db-b188-9b4442ce2ae0",
-      "skipped": false
-    },
-    {
-      "title": "creates the html",
-      "fullTitle": "picture-with-text built-in template creates the html",
       "timedOut": false,
       "duration": 0,
       "state": "passed",
@@ -967,10 +951,26 @@
       "pass": true,
       "fail": false,
       "pending": false,
-      "code": "}",
+      "code": "<span class=\"hljs-keyword\">var</span> name = openBlocks.resolveTemplateFilename(pictureWithTextExample.templateName)<br>expect(name)<br>  .to.equal(<span class=\"hljs-string\">\"template/picture-with-text.pug\"</span>)",
       "isRoot": false,
-      "uuid": "4d87bc58-ca07-49ff-aaed-d21c37270391",
-      "parentUUID": "69ef752f-f53d-49db-b188-9b4442ce2ae0",
+      "uuid": "b435614b-bc70-4081-b626-63e5ca624357",
+      "parentUUID": "4c81ed5b-8ef5-45ac-bf09-633f3b3ecb4a",
+      "skipped": false
+    },
+    {
+      "title": "creates the html",
+      "fullTitle": "picture-with-text built-in template creates the html",
+      "timedOut": false,
+      "duration": 61,
+      "state": "passed",
+      "speed": "medium",
+      "pass": true,
+      "fail": false,
+      "pending": false,
+      "code": "expect(openBlocks.processSectionDescriptionElement(pictureWithTextExample, sectionSourceDirectoryName))<br>  .to.have.property(<span class=\"hljs-string\">\"html\"</span>)<br>  .and.to.be.ok",
+      "isRoot": false,
+      "uuid": "b7ca4e3c-fee4-4bb8-a71d-15d90b445bec",
+      "parentUUID": "4c81ed5b-8ef5-45ac-bf09-633f3b3ecb4a",
       "skipped": false
     },
     {
@@ -983,8 +983,8 @@
       "pending": true,
       "code": "",
       "isRoot": false,
-      "uuid": "9989d1cb-febf-49f2-a0b7-18d8e8968364",
-      "parentUUID": "cbdf5b2e-babd-4f7e-932f-05bd9d9c9ad1",
+      "uuid": "d92bbb87-7b35-43e1-b862-a91894cb2df1",
+      "parentUUID": "9068ae1f-688a-4711-bc8e-df7280d39f7a",
       "skipped": false
     },
     {
@@ -997,24 +997,24 @@
       "pending": true,
       "code": "",
       "isRoot": false,
-      "uuid": "0a85c2ad-7a39-494a-95de-abb039919c54",
-      "parentUUID": "cbdf5b2e-babd-4f7e-932f-05bd9d9c9ad1",
+      "uuid": "9b286c75-203e-4deb-a51b-4c94e11870bf",
+      "parentUUID": "9068ae1f-688a-4711-bc8e-df7280d39f7a",
       "skipped": false
     },
     {
       "title": "determines the correct template for the section",
       "fullTitle": "text built-in template determines the correct template for the section",
       "timedOut": false,
-      "duration": 31,
+      "duration": 24,
       "state": "passed",
       "speed": "fast",
       "pass": true,
       "fail": false,
       "pending": false,
-      "code": "expect(openBlocks.resolveTemplateFilename(textExample.templateName))<br>  .to.equal(<span class=\"hljs-string\">\"template/text.pug\"</span>)<br>expect(openBlocks.processSectionDescriptionElement(textExample))<br>  .to.have.property(<span class=\"hljs-string\">\"html\"</span>)<br>  .and.to.be.ok",
+      "code": "expect(openBlocks.resolveTemplateFilename(textExample.templateName))<br>  .to.equal(<span class=\"hljs-string\">\"template/text.pug\"</span>)<br>expect(openBlocks.processSectionDescriptionElement(textExample, sectionSourceDirectoryName))<br>  .to.have.property(<span class=\"hljs-string\">\"html\"</span>)<br>  .and.to.be.ok",
       "isRoot": false,
-      "uuid": "7cb10742-1b53-4637-9b33-572d512078dc",
-      "parentUUID": "10a87ba1-e2d5-4be9-843d-e67c5ffe6269",
+      "uuid": "77725089-333a-4bb9-afda-e8cfe005252c",
+      "parentUUID": "43d03ae6-e49a-4d6d-a20a-707b0c967959",
       "skipped": false
     },
     {
@@ -1029,8 +1029,8 @@
       "pending": false,
       "code": "}",
       "isRoot": false,
-      "uuid": "450d7638-c68a-46d1-bc3f-b2edd5cdfd85",
-      "parentUUID": "10a87ba1-e2d5-4be9-843d-e67c5ffe6269",
+      "uuid": "a4548614-d6d1-4e8b-bfca-f40bc40f72e5",
+      "parentUUID": "43d03ae6-e49a-4d6d-a20a-707b0c967959",
       "skipped": false
     }
   ],
@@ -1063,8 +1063,8 @@
             "pending": true,
             "code": "",
             "isRoot": false,
-            "uuid": "d0d9bf8f-029b-4dbb-b033-08add8f0305b",
-            "parentUUID": "8ce86479-e1ea-45ad-b528-b63bce4bd747",
+            "uuid": "4ac8b667-47a4-41e1-b3b3-7b4ca8057b22",
+            "parentUUID": "77a80a25-ce95-4f12-94f3-e47ff0244f31",
             "skipped": false
           },
           {
@@ -1077,8 +1077,8 @@
             "pending": true,
             "code": "",
             "isRoot": false,
-            "uuid": "affa43ef-0316-441f-8199-afe133450fa3",
-            "parentUUID": "8ce86479-e1ea-45ad-b528-b63bce4bd747",
+            "uuid": "8e52ef8c-b594-455d-b1a6-23272534f5f4",
+            "parentUUID": "77a80a25-ce95-4f12-94f3-e47ff0244f31",
             "skipped": false
           },
           {
@@ -1091,8 +1091,8 @@
             "pending": true,
             "code": "",
             "isRoot": false,
-            "uuid": "571d3bc2-1789-4a2c-b8c5-b3e54a01f634",
-            "parentUUID": "8ce86479-e1ea-45ad-b528-b63bce4bd747",
+            "uuid": "822485aa-95d7-4b8c-83df-17a1afb0981e",
+            "parentUUID": "77a80a25-ce95-4f12-94f3-e47ff0244f31",
             "skipped": false
           },
           {
@@ -1105,8 +1105,8 @@
             "pending": true,
             "code": "",
             "isRoot": false,
-            "uuid": "0058208e-5b7f-4596-8f2a-4b0b05b71bed",
-            "parentUUID": "8ce86479-e1ea-45ad-b528-b63bce4bd747",
+            "uuid": "696ab345-69a5-4c14-9f1c-26cfb8574bd6",
+            "parentUUID": "77a80a25-ce95-4f12-94f3-e47ff0244f31",
             "skipped": false
           },
           {
@@ -1119,8 +1119,8 @@
             "pending": true,
             "code": "",
             "isRoot": false,
-            "uuid": "25c7342e-11ac-490b-ba14-d178a053ab55",
-            "parentUUID": "8ce86479-e1ea-45ad-b528-b63bce4bd747",
+            "uuid": "b187334e-5059-4a3d-b1c5-f2b5a37b2ed3",
+            "parentUUID": "77a80a25-ce95-4f12-94f3-e47ff0244f31",
             "skipped": false
           },
           {
@@ -1133,8 +1133,8 @@
             "pending": true,
             "code": "",
             "isRoot": false,
-            "uuid": "99fb9abf-a9c3-4c8f-a4c6-581ce5789f47",
-            "parentUUID": "8ce86479-e1ea-45ad-b528-b63bce4bd747",
+            "uuid": "f0c2a9fc-f3ca-43b2-b4d0-a36a8d00246f",
+            "parentUUID": "77a80a25-ce95-4f12-94f3-e47ff0244f31",
             "skipped": false
           }
         ],
@@ -1149,8 +1149,8 @@
             "pending": true,
             "code": "",
             "isRoot": false,
-            "uuid": "d0d9bf8f-029b-4dbb-b033-08add8f0305b",
-            "parentUUID": "8ce86479-e1ea-45ad-b528-b63bce4bd747",
+            "uuid": "4ac8b667-47a4-41e1-b3b3-7b4ca8057b22",
+            "parentUUID": "77a80a25-ce95-4f12-94f3-e47ff0244f31",
             "skipped": false
           },
           {
@@ -1163,8 +1163,8 @@
             "pending": true,
             "code": "",
             "isRoot": false,
-            "uuid": "affa43ef-0316-441f-8199-afe133450fa3",
-            "parentUUID": "8ce86479-e1ea-45ad-b528-b63bce4bd747",
+            "uuid": "8e52ef8c-b594-455d-b1a6-23272534f5f4",
+            "parentUUID": "77a80a25-ce95-4f12-94f3-e47ff0244f31",
             "skipped": false
           },
           {
@@ -1177,8 +1177,8 @@
             "pending": true,
             "code": "",
             "isRoot": false,
-            "uuid": "571d3bc2-1789-4a2c-b8c5-b3e54a01f634",
-            "parentUUID": "8ce86479-e1ea-45ad-b528-b63bce4bd747",
+            "uuid": "822485aa-95d7-4b8c-83df-17a1afb0981e",
+            "parentUUID": "77a80a25-ce95-4f12-94f3-e47ff0244f31",
             "skipped": false
           },
           {
@@ -1191,8 +1191,8 @@
             "pending": true,
             "code": "",
             "isRoot": false,
-            "uuid": "0058208e-5b7f-4596-8f2a-4b0b05b71bed",
-            "parentUUID": "8ce86479-e1ea-45ad-b528-b63bce4bd747",
+            "uuid": "696ab345-69a5-4c14-9f1c-26cfb8574bd6",
+            "parentUUID": "77a80a25-ce95-4f12-94f3-e47ff0244f31",
             "skipped": false
           },
           {
@@ -1205,8 +1205,8 @@
             "pending": true,
             "code": "",
             "isRoot": false,
-            "uuid": "25c7342e-11ac-490b-ba14-d178a053ab55",
-            "parentUUID": "8ce86479-e1ea-45ad-b528-b63bce4bd747",
+            "uuid": "b187334e-5059-4a3d-b1c5-f2b5a37b2ed3",
+            "parentUUID": "77a80a25-ce95-4f12-94f3-e47ff0244f31",
             "skipped": false
           },
           {
@@ -1219,15 +1219,15 @@
             "pending": true,
             "code": "",
             "isRoot": false,
-            "uuid": "99fb9abf-a9c3-4c8f-a4c6-581ce5789f47",
-            "parentUUID": "8ce86479-e1ea-45ad-b528-b63bce4bd747",
+            "uuid": "f0c2a9fc-f3ca-43b2-b4d0-a36a8d00246f",
+            "parentUUID": "77a80a25-ce95-4f12-94f3-e47ff0244f31",
             "skipped": false
           }
         ],
         "root": false,
         "_timeout": 2000,
         "file": "/test/test-open-blocks.js",
-        "uuid": "8ce86479-e1ea-45ad-b528-b63bce4bd747",
+        "uuid": "77a80a25-ce95-4f12-94f3-e47ff0244f31",
         "fullFile": "/Users/samm/Documents/dev/open-blocks-contrib/test/test-open-blocks.js",
         "passes": [],
         "failures": [],
@@ -1275,8 +1275,8 @@
             "pending": true,
             "code": "",
             "isRoot": false,
-            "uuid": "d0d9bf8f-029b-4dbb-b033-08add8f0305b",
-            "parentUUID": "8ce86479-e1ea-45ad-b528-b63bce4bd747",
+            "uuid": "4ac8b667-47a4-41e1-b3b3-7b4ca8057b22",
+            "parentUUID": "77a80a25-ce95-4f12-94f3-e47ff0244f31",
             "skipped": false
           },
           {
@@ -1289,8 +1289,8 @@
             "pending": true,
             "code": "",
             "isRoot": false,
-            "uuid": "affa43ef-0316-441f-8199-afe133450fa3",
-            "parentUUID": "8ce86479-e1ea-45ad-b528-b63bce4bd747",
+            "uuid": "8e52ef8c-b594-455d-b1a6-23272534f5f4",
+            "parentUUID": "77a80a25-ce95-4f12-94f3-e47ff0244f31",
             "skipped": false
           },
           {
@@ -1303,8 +1303,8 @@
             "pending": true,
             "code": "",
             "isRoot": false,
-            "uuid": "571d3bc2-1789-4a2c-b8c5-b3e54a01f634",
-            "parentUUID": "8ce86479-e1ea-45ad-b528-b63bce4bd747",
+            "uuid": "822485aa-95d7-4b8c-83df-17a1afb0981e",
+            "parentUUID": "77a80a25-ce95-4f12-94f3-e47ff0244f31",
             "skipped": false
           },
           {
@@ -1317,8 +1317,8 @@
             "pending": true,
             "code": "",
             "isRoot": false,
-            "uuid": "0058208e-5b7f-4596-8f2a-4b0b05b71bed",
-            "parentUUID": "8ce86479-e1ea-45ad-b528-b63bce4bd747",
+            "uuid": "696ab345-69a5-4c14-9f1c-26cfb8574bd6",
+            "parentUUID": "77a80a25-ce95-4f12-94f3-e47ff0244f31",
             "skipped": false
           },
           {
@@ -1331,8 +1331,8 @@
             "pending": true,
             "code": "",
             "isRoot": false,
-            "uuid": "25c7342e-11ac-490b-ba14-d178a053ab55",
-            "parentUUID": "8ce86479-e1ea-45ad-b528-b63bce4bd747",
+            "uuid": "b187334e-5059-4a3d-b1c5-f2b5a37b2ed3",
+            "parentUUID": "77a80a25-ce95-4f12-94f3-e47ff0244f31",
             "skipped": false
           },
           {
@@ -1345,8 +1345,8 @@
             "pending": true,
             "code": "",
             "isRoot": false,
-            "uuid": "99fb9abf-a9c3-4c8f-a4c6-581ce5789f47",
-            "parentUUID": "8ce86479-e1ea-45ad-b528-b63bce4bd747",
+            "uuid": "f0c2a9fc-f3ca-43b2-b4d0-a36a8d00246f",
+            "parentUUID": "77a80a25-ce95-4f12-94f3-e47ff0244f31",
             "skipped": false
           }
         ],
@@ -1361,8 +1361,8 @@
             "pending": true,
             "code": "",
             "isRoot": false,
-            "uuid": "d0d9bf8f-029b-4dbb-b033-08add8f0305b",
-            "parentUUID": "8ce86479-e1ea-45ad-b528-b63bce4bd747",
+            "uuid": "4ac8b667-47a4-41e1-b3b3-7b4ca8057b22",
+            "parentUUID": "77a80a25-ce95-4f12-94f3-e47ff0244f31",
             "skipped": false
           },
           {
@@ -1375,8 +1375,8 @@
             "pending": true,
             "code": "",
             "isRoot": false,
-            "uuid": "affa43ef-0316-441f-8199-afe133450fa3",
-            "parentUUID": "8ce86479-e1ea-45ad-b528-b63bce4bd747",
+            "uuid": "8e52ef8c-b594-455d-b1a6-23272534f5f4",
+            "parentUUID": "77a80a25-ce95-4f12-94f3-e47ff0244f31",
             "skipped": false
           },
           {
@@ -1389,8 +1389,8 @@
             "pending": true,
             "code": "",
             "isRoot": false,
-            "uuid": "571d3bc2-1789-4a2c-b8c5-b3e54a01f634",
-            "parentUUID": "8ce86479-e1ea-45ad-b528-b63bce4bd747",
+            "uuid": "822485aa-95d7-4b8c-83df-17a1afb0981e",
+            "parentUUID": "77a80a25-ce95-4f12-94f3-e47ff0244f31",
             "skipped": false
           },
           {
@@ -1403,8 +1403,8 @@
             "pending": true,
             "code": "",
             "isRoot": false,
-            "uuid": "0058208e-5b7f-4596-8f2a-4b0b05b71bed",
-            "parentUUID": "8ce86479-e1ea-45ad-b528-b63bce4bd747",
+            "uuid": "696ab345-69a5-4c14-9f1c-26cfb8574bd6",
+            "parentUUID": "77a80a25-ce95-4f12-94f3-e47ff0244f31",
             "skipped": false
           },
           {
@@ -1417,8 +1417,8 @@
             "pending": true,
             "code": "",
             "isRoot": false,
-            "uuid": "25c7342e-11ac-490b-ba14-d178a053ab55",
-            "parentUUID": "8ce86479-e1ea-45ad-b528-b63bce4bd747",
+            "uuid": "b187334e-5059-4a3d-b1c5-f2b5a37b2ed3",
+            "parentUUID": "77a80a25-ce95-4f12-94f3-e47ff0244f31",
             "skipped": false
           },
           {
@@ -1431,15 +1431,15 @@
             "pending": true,
             "code": "",
             "isRoot": false,
-            "uuid": "99fb9abf-a9c3-4c8f-a4c6-581ce5789f47",
-            "parentUUID": "8ce86479-e1ea-45ad-b528-b63bce4bd747",
+            "uuid": "f0c2a9fc-f3ca-43b2-b4d0-a36a8d00246f",
+            "parentUUID": "77a80a25-ce95-4f12-94f3-e47ff0244f31",
             "skipped": false
           }
         ],
         "root": false,
         "_timeout": 2000,
         "file": "/test/test-open-blocks.js",
-        "uuid": "8ce86479-e1ea-45ad-b528-b63bce4bd747",
+        "uuid": "77a80a25-ce95-4f12-94f3-e47ff0244f31",
         "fullFile": "/Users/samm/Documents/dev/open-blocks-contrib/test/test-open-blocks.js",
         "passes": [],
         "failures": [],
@@ -1487,8 +1487,8 @@
             "pending": true,
             "code": "",
             "isRoot": false,
-            "uuid": "d0d9bf8f-029b-4dbb-b033-08add8f0305b",
-            "parentUUID": "8ce86479-e1ea-45ad-b528-b63bce4bd747",
+            "uuid": "4ac8b667-47a4-41e1-b3b3-7b4ca8057b22",
+            "parentUUID": "77a80a25-ce95-4f12-94f3-e47ff0244f31",
             "skipped": false
           },
           {
@@ -1501,8 +1501,8 @@
             "pending": true,
             "code": "",
             "isRoot": false,
-            "uuid": "affa43ef-0316-441f-8199-afe133450fa3",
-            "parentUUID": "8ce86479-e1ea-45ad-b528-b63bce4bd747",
+            "uuid": "8e52ef8c-b594-455d-b1a6-23272534f5f4",
+            "parentUUID": "77a80a25-ce95-4f12-94f3-e47ff0244f31",
             "skipped": false
           },
           {
@@ -1515,8 +1515,8 @@
             "pending": true,
             "code": "",
             "isRoot": false,
-            "uuid": "571d3bc2-1789-4a2c-b8c5-b3e54a01f634",
-            "parentUUID": "8ce86479-e1ea-45ad-b528-b63bce4bd747",
+            "uuid": "822485aa-95d7-4b8c-83df-17a1afb0981e",
+            "parentUUID": "77a80a25-ce95-4f12-94f3-e47ff0244f31",
             "skipped": false
           },
           {
@@ -1529,8 +1529,8 @@
             "pending": true,
             "code": "",
             "isRoot": false,
-            "uuid": "0058208e-5b7f-4596-8f2a-4b0b05b71bed",
-            "parentUUID": "8ce86479-e1ea-45ad-b528-b63bce4bd747",
+            "uuid": "696ab345-69a5-4c14-9f1c-26cfb8574bd6",
+            "parentUUID": "77a80a25-ce95-4f12-94f3-e47ff0244f31",
             "skipped": false
           },
           {
@@ -1543,8 +1543,8 @@
             "pending": true,
             "code": "",
             "isRoot": false,
-            "uuid": "25c7342e-11ac-490b-ba14-d178a053ab55",
-            "parentUUID": "8ce86479-e1ea-45ad-b528-b63bce4bd747",
+            "uuid": "b187334e-5059-4a3d-b1c5-f2b5a37b2ed3",
+            "parentUUID": "77a80a25-ce95-4f12-94f3-e47ff0244f31",
             "skipped": false
           },
           {
@@ -1557,8 +1557,8 @@
             "pending": true,
             "code": "",
             "isRoot": false,
-            "uuid": "99fb9abf-a9c3-4c8f-a4c6-581ce5789f47",
-            "parentUUID": "8ce86479-e1ea-45ad-b528-b63bce4bd747",
+            "uuid": "f0c2a9fc-f3ca-43b2-b4d0-a36a8d00246f",
+            "parentUUID": "77a80a25-ce95-4f12-94f3-e47ff0244f31",
             "skipped": false
           }
         ],
@@ -1573,8 +1573,8 @@
             "pending": true,
             "code": "",
             "isRoot": false,
-            "uuid": "d0d9bf8f-029b-4dbb-b033-08add8f0305b",
-            "parentUUID": "8ce86479-e1ea-45ad-b528-b63bce4bd747",
+            "uuid": "4ac8b667-47a4-41e1-b3b3-7b4ca8057b22",
+            "parentUUID": "77a80a25-ce95-4f12-94f3-e47ff0244f31",
             "skipped": false
           },
           {
@@ -1587,8 +1587,8 @@
             "pending": true,
             "code": "",
             "isRoot": false,
-            "uuid": "affa43ef-0316-441f-8199-afe133450fa3",
-            "parentUUID": "8ce86479-e1ea-45ad-b528-b63bce4bd747",
+            "uuid": "8e52ef8c-b594-455d-b1a6-23272534f5f4",
+            "parentUUID": "77a80a25-ce95-4f12-94f3-e47ff0244f31",
             "skipped": false
           },
           {
@@ -1601,8 +1601,8 @@
             "pending": true,
             "code": "",
             "isRoot": false,
-            "uuid": "571d3bc2-1789-4a2c-b8c5-b3e54a01f634",
-            "parentUUID": "8ce86479-e1ea-45ad-b528-b63bce4bd747",
+            "uuid": "822485aa-95d7-4b8c-83df-17a1afb0981e",
+            "parentUUID": "77a80a25-ce95-4f12-94f3-e47ff0244f31",
             "skipped": false
           },
           {
@@ -1615,8 +1615,8 @@
             "pending": true,
             "code": "",
             "isRoot": false,
-            "uuid": "0058208e-5b7f-4596-8f2a-4b0b05b71bed",
-            "parentUUID": "8ce86479-e1ea-45ad-b528-b63bce4bd747",
+            "uuid": "696ab345-69a5-4c14-9f1c-26cfb8574bd6",
+            "parentUUID": "77a80a25-ce95-4f12-94f3-e47ff0244f31",
             "skipped": false
           },
           {
@@ -1629,8 +1629,8 @@
             "pending": true,
             "code": "",
             "isRoot": false,
-            "uuid": "25c7342e-11ac-490b-ba14-d178a053ab55",
-            "parentUUID": "8ce86479-e1ea-45ad-b528-b63bce4bd747",
+            "uuid": "b187334e-5059-4a3d-b1c5-f2b5a37b2ed3",
+            "parentUUID": "77a80a25-ce95-4f12-94f3-e47ff0244f31",
             "skipped": false
           },
           {
@@ -1643,15 +1643,15 @@
             "pending": true,
             "code": "",
             "isRoot": false,
-            "uuid": "99fb9abf-a9c3-4c8f-a4c6-581ce5789f47",
-            "parentUUID": "8ce86479-e1ea-45ad-b528-b63bce4bd747",
+            "uuid": "f0c2a9fc-f3ca-43b2-b4d0-a36a8d00246f",
+            "parentUUID": "77a80a25-ce95-4f12-94f3-e47ff0244f31",
             "skipped": false
           }
         ],
         "root": false,
         "_timeout": 2000,
         "file": "/test/test-open-blocks.js",
-        "uuid": "8ce86479-e1ea-45ad-b528-b63bce4bd747",
+        "uuid": "77a80a25-ce95-4f12-94f3-e47ff0244f31",
         "fullFile": "/Users/samm/Documents/dev/open-blocks-contrib/test/test-open-blocks.js",
         "passes": [],
         "failures": [],
@@ -1699,8 +1699,8 @@
             "pending": true,
             "code": "",
             "isRoot": false,
-            "uuid": "d0d9bf8f-029b-4dbb-b033-08add8f0305b",
-            "parentUUID": "8ce86479-e1ea-45ad-b528-b63bce4bd747",
+            "uuid": "4ac8b667-47a4-41e1-b3b3-7b4ca8057b22",
+            "parentUUID": "77a80a25-ce95-4f12-94f3-e47ff0244f31",
             "skipped": false
           },
           {
@@ -1713,8 +1713,8 @@
             "pending": true,
             "code": "",
             "isRoot": false,
-            "uuid": "affa43ef-0316-441f-8199-afe133450fa3",
-            "parentUUID": "8ce86479-e1ea-45ad-b528-b63bce4bd747",
+            "uuid": "8e52ef8c-b594-455d-b1a6-23272534f5f4",
+            "parentUUID": "77a80a25-ce95-4f12-94f3-e47ff0244f31",
             "skipped": false
           },
           {
@@ -1727,8 +1727,8 @@
             "pending": true,
             "code": "",
             "isRoot": false,
-            "uuid": "571d3bc2-1789-4a2c-b8c5-b3e54a01f634",
-            "parentUUID": "8ce86479-e1ea-45ad-b528-b63bce4bd747",
+            "uuid": "822485aa-95d7-4b8c-83df-17a1afb0981e",
+            "parentUUID": "77a80a25-ce95-4f12-94f3-e47ff0244f31",
             "skipped": false
           },
           {
@@ -1741,8 +1741,8 @@
             "pending": true,
             "code": "",
             "isRoot": false,
-            "uuid": "0058208e-5b7f-4596-8f2a-4b0b05b71bed",
-            "parentUUID": "8ce86479-e1ea-45ad-b528-b63bce4bd747",
+            "uuid": "696ab345-69a5-4c14-9f1c-26cfb8574bd6",
+            "parentUUID": "77a80a25-ce95-4f12-94f3-e47ff0244f31",
             "skipped": false
           },
           {
@@ -1755,8 +1755,8 @@
             "pending": true,
             "code": "",
             "isRoot": false,
-            "uuid": "25c7342e-11ac-490b-ba14-d178a053ab55",
-            "parentUUID": "8ce86479-e1ea-45ad-b528-b63bce4bd747",
+            "uuid": "b187334e-5059-4a3d-b1c5-f2b5a37b2ed3",
+            "parentUUID": "77a80a25-ce95-4f12-94f3-e47ff0244f31",
             "skipped": false
           },
           {
@@ -1769,8 +1769,8 @@
             "pending": true,
             "code": "",
             "isRoot": false,
-            "uuid": "99fb9abf-a9c3-4c8f-a4c6-581ce5789f47",
-            "parentUUID": "8ce86479-e1ea-45ad-b528-b63bce4bd747",
+            "uuid": "f0c2a9fc-f3ca-43b2-b4d0-a36a8d00246f",
+            "parentUUID": "77a80a25-ce95-4f12-94f3-e47ff0244f31",
             "skipped": false
           }
         ],
@@ -1785,8 +1785,8 @@
             "pending": true,
             "code": "",
             "isRoot": false,
-            "uuid": "d0d9bf8f-029b-4dbb-b033-08add8f0305b",
-            "parentUUID": "8ce86479-e1ea-45ad-b528-b63bce4bd747",
+            "uuid": "4ac8b667-47a4-41e1-b3b3-7b4ca8057b22",
+            "parentUUID": "77a80a25-ce95-4f12-94f3-e47ff0244f31",
             "skipped": false
           },
           {
@@ -1799,8 +1799,8 @@
             "pending": true,
             "code": "",
             "isRoot": false,
-            "uuid": "affa43ef-0316-441f-8199-afe133450fa3",
-            "parentUUID": "8ce86479-e1ea-45ad-b528-b63bce4bd747",
+            "uuid": "8e52ef8c-b594-455d-b1a6-23272534f5f4",
+            "parentUUID": "77a80a25-ce95-4f12-94f3-e47ff0244f31",
             "skipped": false
           },
           {
@@ -1813,8 +1813,8 @@
             "pending": true,
             "code": "",
             "isRoot": false,
-            "uuid": "571d3bc2-1789-4a2c-b8c5-b3e54a01f634",
-            "parentUUID": "8ce86479-e1ea-45ad-b528-b63bce4bd747",
+            "uuid": "822485aa-95d7-4b8c-83df-17a1afb0981e",
+            "parentUUID": "77a80a25-ce95-4f12-94f3-e47ff0244f31",
             "skipped": false
           },
           {
@@ -1827,8 +1827,8 @@
             "pending": true,
             "code": "",
             "isRoot": false,
-            "uuid": "0058208e-5b7f-4596-8f2a-4b0b05b71bed",
-            "parentUUID": "8ce86479-e1ea-45ad-b528-b63bce4bd747",
+            "uuid": "696ab345-69a5-4c14-9f1c-26cfb8574bd6",
+            "parentUUID": "77a80a25-ce95-4f12-94f3-e47ff0244f31",
             "skipped": false
           },
           {
@@ -1841,8 +1841,8 @@
             "pending": true,
             "code": "",
             "isRoot": false,
-            "uuid": "25c7342e-11ac-490b-ba14-d178a053ab55",
-            "parentUUID": "8ce86479-e1ea-45ad-b528-b63bce4bd747",
+            "uuid": "b187334e-5059-4a3d-b1c5-f2b5a37b2ed3",
+            "parentUUID": "77a80a25-ce95-4f12-94f3-e47ff0244f31",
             "skipped": false
           },
           {
@@ -1855,15 +1855,15 @@
             "pending": true,
             "code": "",
             "isRoot": false,
-            "uuid": "99fb9abf-a9c3-4c8f-a4c6-581ce5789f47",
-            "parentUUID": "8ce86479-e1ea-45ad-b528-b63bce4bd747",
+            "uuid": "f0c2a9fc-f3ca-43b2-b4d0-a36a8d00246f",
+            "parentUUID": "77a80a25-ce95-4f12-94f3-e47ff0244f31",
             "skipped": false
           }
         ],
         "root": false,
         "_timeout": 2000,
         "file": "/test/test-open-blocks.js",
-        "uuid": "8ce86479-e1ea-45ad-b528-b63bce4bd747",
+        "uuid": "77a80a25-ce95-4f12-94f3-e47ff0244f31",
         "fullFile": "/Users/samm/Documents/dev/open-blocks-contrib/test/test-open-blocks.js",
         "passes": [],
         "failures": [],
@@ -1911,8 +1911,8 @@
             "pending": true,
             "code": "",
             "isRoot": false,
-            "uuid": "d0d9bf8f-029b-4dbb-b033-08add8f0305b",
-            "parentUUID": "8ce86479-e1ea-45ad-b528-b63bce4bd747",
+            "uuid": "4ac8b667-47a4-41e1-b3b3-7b4ca8057b22",
+            "parentUUID": "77a80a25-ce95-4f12-94f3-e47ff0244f31",
             "skipped": false
           },
           {
@@ -1925,8 +1925,8 @@
             "pending": true,
             "code": "",
             "isRoot": false,
-            "uuid": "affa43ef-0316-441f-8199-afe133450fa3",
-            "parentUUID": "8ce86479-e1ea-45ad-b528-b63bce4bd747",
+            "uuid": "8e52ef8c-b594-455d-b1a6-23272534f5f4",
+            "parentUUID": "77a80a25-ce95-4f12-94f3-e47ff0244f31",
             "skipped": false
           },
           {
@@ -1939,8 +1939,8 @@
             "pending": true,
             "code": "",
             "isRoot": false,
-            "uuid": "571d3bc2-1789-4a2c-b8c5-b3e54a01f634",
-            "parentUUID": "8ce86479-e1ea-45ad-b528-b63bce4bd747",
+            "uuid": "822485aa-95d7-4b8c-83df-17a1afb0981e",
+            "parentUUID": "77a80a25-ce95-4f12-94f3-e47ff0244f31",
             "skipped": false
           },
           {
@@ -1953,8 +1953,8 @@
             "pending": true,
             "code": "",
             "isRoot": false,
-            "uuid": "0058208e-5b7f-4596-8f2a-4b0b05b71bed",
-            "parentUUID": "8ce86479-e1ea-45ad-b528-b63bce4bd747",
+            "uuid": "696ab345-69a5-4c14-9f1c-26cfb8574bd6",
+            "parentUUID": "77a80a25-ce95-4f12-94f3-e47ff0244f31",
             "skipped": false
           },
           {
@@ -1967,8 +1967,8 @@
             "pending": true,
             "code": "",
             "isRoot": false,
-            "uuid": "25c7342e-11ac-490b-ba14-d178a053ab55",
-            "parentUUID": "8ce86479-e1ea-45ad-b528-b63bce4bd747",
+            "uuid": "b187334e-5059-4a3d-b1c5-f2b5a37b2ed3",
+            "parentUUID": "77a80a25-ce95-4f12-94f3-e47ff0244f31",
             "skipped": false
           },
           {
@@ -1981,8 +1981,8 @@
             "pending": true,
             "code": "",
             "isRoot": false,
-            "uuid": "99fb9abf-a9c3-4c8f-a4c6-581ce5789f47",
-            "parentUUID": "8ce86479-e1ea-45ad-b528-b63bce4bd747",
+            "uuid": "f0c2a9fc-f3ca-43b2-b4d0-a36a8d00246f",
+            "parentUUID": "77a80a25-ce95-4f12-94f3-e47ff0244f31",
             "skipped": false
           }
         ],
@@ -1997,8 +1997,8 @@
             "pending": true,
             "code": "",
             "isRoot": false,
-            "uuid": "d0d9bf8f-029b-4dbb-b033-08add8f0305b",
-            "parentUUID": "8ce86479-e1ea-45ad-b528-b63bce4bd747",
+            "uuid": "4ac8b667-47a4-41e1-b3b3-7b4ca8057b22",
+            "parentUUID": "77a80a25-ce95-4f12-94f3-e47ff0244f31",
             "skipped": false
           },
           {
@@ -2011,8 +2011,8 @@
             "pending": true,
             "code": "",
             "isRoot": false,
-            "uuid": "affa43ef-0316-441f-8199-afe133450fa3",
-            "parentUUID": "8ce86479-e1ea-45ad-b528-b63bce4bd747",
+            "uuid": "8e52ef8c-b594-455d-b1a6-23272534f5f4",
+            "parentUUID": "77a80a25-ce95-4f12-94f3-e47ff0244f31",
             "skipped": false
           },
           {
@@ -2025,8 +2025,8 @@
             "pending": true,
             "code": "",
             "isRoot": false,
-            "uuid": "571d3bc2-1789-4a2c-b8c5-b3e54a01f634",
-            "parentUUID": "8ce86479-e1ea-45ad-b528-b63bce4bd747",
+            "uuid": "822485aa-95d7-4b8c-83df-17a1afb0981e",
+            "parentUUID": "77a80a25-ce95-4f12-94f3-e47ff0244f31",
             "skipped": false
           },
           {
@@ -2039,8 +2039,8 @@
             "pending": true,
             "code": "",
             "isRoot": false,
-            "uuid": "0058208e-5b7f-4596-8f2a-4b0b05b71bed",
-            "parentUUID": "8ce86479-e1ea-45ad-b528-b63bce4bd747",
+            "uuid": "696ab345-69a5-4c14-9f1c-26cfb8574bd6",
+            "parentUUID": "77a80a25-ce95-4f12-94f3-e47ff0244f31",
             "skipped": false
           },
           {
@@ -2053,8 +2053,8 @@
             "pending": true,
             "code": "",
             "isRoot": false,
-            "uuid": "25c7342e-11ac-490b-ba14-d178a053ab55",
-            "parentUUID": "8ce86479-e1ea-45ad-b528-b63bce4bd747",
+            "uuid": "b187334e-5059-4a3d-b1c5-f2b5a37b2ed3",
+            "parentUUID": "77a80a25-ce95-4f12-94f3-e47ff0244f31",
             "skipped": false
           },
           {
@@ -2067,15 +2067,15 @@
             "pending": true,
             "code": "",
             "isRoot": false,
-            "uuid": "99fb9abf-a9c3-4c8f-a4c6-581ce5789f47",
-            "parentUUID": "8ce86479-e1ea-45ad-b528-b63bce4bd747",
+            "uuid": "f0c2a9fc-f3ca-43b2-b4d0-a36a8d00246f",
+            "parentUUID": "77a80a25-ce95-4f12-94f3-e47ff0244f31",
             "skipped": false
           }
         ],
         "root": false,
         "_timeout": 2000,
         "file": "/test/test-open-blocks.js",
-        "uuid": "8ce86479-e1ea-45ad-b528-b63bce4bd747",
+        "uuid": "77a80a25-ce95-4f12-94f3-e47ff0244f31",
         "fullFile": "/Users/samm/Documents/dev/open-blocks-contrib/test/test-open-blocks.js",
         "passes": [],
         "failures": [],
@@ -2123,8 +2123,8 @@
             "pending": true,
             "code": "",
             "isRoot": false,
-            "uuid": "d0d9bf8f-029b-4dbb-b033-08add8f0305b",
-            "parentUUID": "8ce86479-e1ea-45ad-b528-b63bce4bd747",
+            "uuid": "4ac8b667-47a4-41e1-b3b3-7b4ca8057b22",
+            "parentUUID": "77a80a25-ce95-4f12-94f3-e47ff0244f31",
             "skipped": false
           },
           {
@@ -2137,8 +2137,8 @@
             "pending": true,
             "code": "",
             "isRoot": false,
-            "uuid": "affa43ef-0316-441f-8199-afe133450fa3",
-            "parentUUID": "8ce86479-e1ea-45ad-b528-b63bce4bd747",
+            "uuid": "8e52ef8c-b594-455d-b1a6-23272534f5f4",
+            "parentUUID": "77a80a25-ce95-4f12-94f3-e47ff0244f31",
             "skipped": false
           },
           {
@@ -2151,8 +2151,8 @@
             "pending": true,
             "code": "",
             "isRoot": false,
-            "uuid": "571d3bc2-1789-4a2c-b8c5-b3e54a01f634",
-            "parentUUID": "8ce86479-e1ea-45ad-b528-b63bce4bd747",
+            "uuid": "822485aa-95d7-4b8c-83df-17a1afb0981e",
+            "parentUUID": "77a80a25-ce95-4f12-94f3-e47ff0244f31",
             "skipped": false
           },
           {
@@ -2165,8 +2165,8 @@
             "pending": true,
             "code": "",
             "isRoot": false,
-            "uuid": "0058208e-5b7f-4596-8f2a-4b0b05b71bed",
-            "parentUUID": "8ce86479-e1ea-45ad-b528-b63bce4bd747",
+            "uuid": "696ab345-69a5-4c14-9f1c-26cfb8574bd6",
+            "parentUUID": "77a80a25-ce95-4f12-94f3-e47ff0244f31",
             "skipped": false
           },
           {
@@ -2179,8 +2179,8 @@
             "pending": true,
             "code": "",
             "isRoot": false,
-            "uuid": "25c7342e-11ac-490b-ba14-d178a053ab55",
-            "parentUUID": "8ce86479-e1ea-45ad-b528-b63bce4bd747",
+            "uuid": "b187334e-5059-4a3d-b1c5-f2b5a37b2ed3",
+            "parentUUID": "77a80a25-ce95-4f12-94f3-e47ff0244f31",
             "skipped": false
           },
           {
@@ -2193,8 +2193,8 @@
             "pending": true,
             "code": "",
             "isRoot": false,
-            "uuid": "99fb9abf-a9c3-4c8f-a4c6-581ce5789f47",
-            "parentUUID": "8ce86479-e1ea-45ad-b528-b63bce4bd747",
+            "uuid": "f0c2a9fc-f3ca-43b2-b4d0-a36a8d00246f",
+            "parentUUID": "77a80a25-ce95-4f12-94f3-e47ff0244f31",
             "skipped": false
           }
         ],
@@ -2209,8 +2209,8 @@
             "pending": true,
             "code": "",
             "isRoot": false,
-            "uuid": "d0d9bf8f-029b-4dbb-b033-08add8f0305b",
-            "parentUUID": "8ce86479-e1ea-45ad-b528-b63bce4bd747",
+            "uuid": "4ac8b667-47a4-41e1-b3b3-7b4ca8057b22",
+            "parentUUID": "77a80a25-ce95-4f12-94f3-e47ff0244f31",
             "skipped": false
           },
           {
@@ -2223,8 +2223,8 @@
             "pending": true,
             "code": "",
             "isRoot": false,
-            "uuid": "affa43ef-0316-441f-8199-afe133450fa3",
-            "parentUUID": "8ce86479-e1ea-45ad-b528-b63bce4bd747",
+            "uuid": "8e52ef8c-b594-455d-b1a6-23272534f5f4",
+            "parentUUID": "77a80a25-ce95-4f12-94f3-e47ff0244f31",
             "skipped": false
           },
           {
@@ -2237,8 +2237,8 @@
             "pending": true,
             "code": "",
             "isRoot": false,
-            "uuid": "571d3bc2-1789-4a2c-b8c5-b3e54a01f634",
-            "parentUUID": "8ce86479-e1ea-45ad-b528-b63bce4bd747",
+            "uuid": "822485aa-95d7-4b8c-83df-17a1afb0981e",
+            "parentUUID": "77a80a25-ce95-4f12-94f3-e47ff0244f31",
             "skipped": false
           },
           {
@@ -2251,8 +2251,8 @@
             "pending": true,
             "code": "",
             "isRoot": false,
-            "uuid": "0058208e-5b7f-4596-8f2a-4b0b05b71bed",
-            "parentUUID": "8ce86479-e1ea-45ad-b528-b63bce4bd747",
+            "uuid": "696ab345-69a5-4c14-9f1c-26cfb8574bd6",
+            "parentUUID": "77a80a25-ce95-4f12-94f3-e47ff0244f31",
             "skipped": false
           },
           {
@@ -2265,8 +2265,8 @@
             "pending": true,
             "code": "",
             "isRoot": false,
-            "uuid": "25c7342e-11ac-490b-ba14-d178a053ab55",
-            "parentUUID": "8ce86479-e1ea-45ad-b528-b63bce4bd747",
+            "uuid": "b187334e-5059-4a3d-b1c5-f2b5a37b2ed3",
+            "parentUUID": "77a80a25-ce95-4f12-94f3-e47ff0244f31",
             "skipped": false
           },
           {
@@ -2279,15 +2279,15 @@
             "pending": true,
             "code": "",
             "isRoot": false,
-            "uuid": "99fb9abf-a9c3-4c8f-a4c6-581ce5789f47",
-            "parentUUID": "8ce86479-e1ea-45ad-b528-b63bce4bd747",
+            "uuid": "f0c2a9fc-f3ca-43b2-b4d0-a36a8d00246f",
+            "parentUUID": "77a80a25-ce95-4f12-94f3-e47ff0244f31",
             "skipped": false
           }
         ],
         "root": false,
         "_timeout": 2000,
         "file": "/test/test-open-blocks.js",
-        "uuid": "8ce86479-e1ea-45ad-b528-b63bce4bd747",
+        "uuid": "77a80a25-ce95-4f12-94f3-e47ff0244f31",
         "fullFile": "/Users/samm/Documents/dev/open-blocks-contrib/test/test-open-blocks.js",
         "passes": [],
         "failures": [],
@@ -2329,7 +2329,7 @@
             "title": "resolves the name of the section",
             "fullTitle": "openblocks section construction resolves the name of the section",
             "timedOut": false,
-            "duration": 2,
+            "duration": 1,
             "state": "passed",
             "speed": "fast",
             "pass": true,
@@ -2337,24 +2337,24 @@
             "pending": false,
             "code": "expect(descriptor.sectionName).to.equal(<span class=\"hljs-string\">\"Discovering Van Gogh\"</span>);",
             "isRoot": false,
-            "uuid": "6195fae1-3dcb-4a39-aebc-dc44cb3ac837",
-            "parentUUID": "f23d492d-405e-4b28-8bed-53bec45398d2",
+            "uuid": "4ba95054-e9c8-4700-a6e8-c8b745ea8767",
+            "parentUUID": "a924569c-506c-4d40-93fd-61d88eb354e8",
             "skipped": false
           },
           {
             "title": "resolves the dependencies of the section",
             "fullTitle": "openblocks section construction resolves the dependencies of the section",
             "timedOut": false,
-            "duration": 11,
+            "duration": 8,
             "state": "passed",
             "speed": "fast",
             "pass": true,
             "fail": false,
             "pending": false,
-            "code": "expect(descriptor.dependencies).to.be.an(<span class=\"hljs-string\">\"array\"</span>)<br>expect(descriptor.dependencies).to.have.lengthOf(<span class=\"hljs-number\">5</span>)<br>  .and.to.contain({<br>    <span class=\"hljs-string\">\"type\"</span>: <span class=\"hljs-string\">\"css\"</span>,<br>    <span class=\"hljs-string\">\"location\"</span>: <span class=\"hljs-string\">\"css/base.css\"</span>,<br>    <span class=\"hljs-string\">\"destination\"</span>: <span class=\"hljs-string\">\"css/base\"</span><br>  })<br>  .and.to.contain({<br>    <span class=\"hljs-string\">\"type\"</span>: <span class=\"hljs-string\">\"img\"</span>,<br>    <span class=\"hljs-string\">\"location\"</span>: <span class=\"hljs-string\">\"img/VanGogh-starry_night.jpg\"</span>,<br>    <span class=\"hljs-string\">\"destination\"</span>: <span class=\"hljs-string\">\"img/VanGogh-starry_night\"</span><br>  })<br>  .and.to.contain({<br>    <span class=\"hljs-string\">\"type\"</span>: <span class=\"hljs-string\">\"javascript\"</span>,<br>    <span class=\"hljs-string\">\"location\"</span>: <span class=\"hljs-string\">\"js/jquery.loupe.min.js\"</span>,<br>    <span class=\"hljs-string\">\"destination\"</span>: <span class=\"hljs-string\">\"javascript/jquery.loupe.min\"</span><br>  })",
+            "code": "expect(descriptor.dependencies).to.be.an(<span class=\"hljs-string\">\"array\"</span>)<br>expect(descriptor.dependencies).to.have.lengthOf(<span class=\"hljs-number\">5</span>)<br>  .and.to.contain({<br>    <span class=\"hljs-string\">\"type\"</span>: <span class=\"hljs-string\">\"css\"</span>,<br>    <span class=\"hljs-string\">\"location\"</span>: <span class=\"hljs-string\">\"resources/css/base.css\"</span>,<br>    <span class=\"hljs-string\">\"resolvedDestination\"</span>: <span class=\"hljs-string\">\"/Users/samm/Documents/dev/open-blocks-contrib/css/base\"</span>,<br>    <span class=\"hljs-string\">\"resolvedSource\"</span>: <span class=\"hljs-string\">\"/Users/samm/Documents/dev/open-blocks-contrib/resources/css/base.css\"</span><br>  })<br>  .and.to.contain({<br>    <span class=\"hljs-string\">\"type\"</span>: <span class=\"hljs-string\">\"img\"</span>,<br>    <span class=\"hljs-string\">\"location\"</span>: <span class=\"hljs-string\">\"img/VanGogh-starry_night.jpg\"</span>,<br>    <span class=\"hljs-string\">\"resolvedDestination\"</span>: <span class=\"hljs-string\">\"/Users/samm/Documents/dev/open-blocks-contrib/img/VanGogh-starry_night\"</span>,<br>    <span class=\"hljs-string\">\"resolvedSource\"</span>: <span class=\"hljs-string\">\"/Users/samm/Documents/dev/open-blocks-contrib/fake-testing-src-directort/img/VanGogh-starry_night.jpg\"</span><br>  })<br>  .and.to.contain({<br>    <span class=\"hljs-string\">\"type\"</span>: <span class=\"hljs-string\">\"javascript\"</span>,<br>    <span class=\"hljs-string\">\"location\"</span>: <span class=\"hljs-string\">\"resources/js/jquery.loupe.min.js\"</span>,<br>    <span class=\"hljs-string\">\"resolvedDestination\"</span>: <span class=\"hljs-string\">\"/Users/samm/Documents/dev/open-blocks-contrib/javascript/jquery.loupe.min\"</span>,<br>    <span class=\"hljs-string\">\"resolvedSource\"</span>: <span class=\"hljs-string\">\"/Users/samm/Documents/dev/open-blocks-contrib/resources/js/jquery.loupe.min.js\"</span><br>  })",
             "isRoot": false,
-            "uuid": "3dcb486e-7979-4498-8ae5-44585840768c",
-            "parentUUID": "f23d492d-405e-4b28-8bed-53bec45398d2",
+            "uuid": "979115cf-3169-4b6c-b514-967cf7226650",
+            "parentUUID": "a924569c-506c-4d40-93fd-61d88eb354e8",
             "skipped": false
           },
           {
@@ -2367,8 +2367,8 @@
             "pending": true,
             "code": "",
             "isRoot": false,
-            "uuid": "0c345abc-8f57-4265-8d9c-9ef99df94016",
-            "parentUUID": "f23d492d-405e-4b28-8bed-53bec45398d2",
+            "uuid": "2c05cae5-1dd4-46e5-812e-56adefc591af",
+            "parentUUID": "a924569c-506c-4d40-93fd-61d88eb354e8",
             "skipped": false
           }
         ],
@@ -2383,22 +2383,22 @@
             "pending": true,
             "code": "",
             "isRoot": false,
-            "uuid": "0c345abc-8f57-4265-8d9c-9ef99df94016",
-            "parentUUID": "f23d492d-405e-4b28-8bed-53bec45398d2",
+            "uuid": "2c05cae5-1dd4-46e5-812e-56adefc591af",
+            "parentUUID": "a924569c-506c-4d40-93fd-61d88eb354e8",
             "skipped": false
           }
         ],
         "root": false,
         "_timeout": 2000,
         "file": "/test/test-open-blocks.js",
-        "uuid": "f23d492d-405e-4b28-8bed-53bec45398d2",
+        "uuid": "a924569c-506c-4d40-93fd-61d88eb354e8",
         "fullFile": "/Users/samm/Documents/dev/open-blocks-contrib/test/test-open-blocks.js",
         "passes": [
           {
             "title": "resolves the name of the section",
             "fullTitle": "openblocks section construction resolves the name of the section",
             "timedOut": false,
-            "duration": 2,
+            "duration": 1,
             "state": "passed",
             "speed": "fast",
             "pass": true,
@@ -2406,24 +2406,24 @@
             "pending": false,
             "code": "expect(descriptor.sectionName).to.equal(<span class=\"hljs-string\">\"Discovering Van Gogh\"</span>);",
             "isRoot": false,
-            "uuid": "6195fae1-3dcb-4a39-aebc-dc44cb3ac837",
-            "parentUUID": "f23d492d-405e-4b28-8bed-53bec45398d2",
+            "uuid": "4ba95054-e9c8-4700-a6e8-c8b745ea8767",
+            "parentUUID": "a924569c-506c-4d40-93fd-61d88eb354e8",
             "skipped": false
           },
           {
             "title": "resolves the dependencies of the section",
             "fullTitle": "openblocks section construction resolves the dependencies of the section",
             "timedOut": false,
-            "duration": 11,
+            "duration": 8,
             "state": "passed",
             "speed": "fast",
             "pass": true,
             "fail": false,
             "pending": false,
-            "code": "expect(descriptor.dependencies).to.be.an(<span class=\"hljs-string\">\"array\"</span>)<br>expect(descriptor.dependencies).to.have.lengthOf(<span class=\"hljs-number\">5</span>)<br>  .and.to.contain({<br>    <span class=\"hljs-string\">\"type\"</span>: <span class=\"hljs-string\">\"css\"</span>,<br>    <span class=\"hljs-string\">\"location\"</span>: <span class=\"hljs-string\">\"css/base.css\"</span>,<br>    <span class=\"hljs-string\">\"destination\"</span>: <span class=\"hljs-string\">\"css/base\"</span><br>  })<br>  .and.to.contain({<br>    <span class=\"hljs-string\">\"type\"</span>: <span class=\"hljs-string\">\"img\"</span>,<br>    <span class=\"hljs-string\">\"location\"</span>: <span class=\"hljs-string\">\"img/VanGogh-starry_night.jpg\"</span>,<br>    <span class=\"hljs-string\">\"destination\"</span>: <span class=\"hljs-string\">\"img/VanGogh-starry_night\"</span><br>  })<br>  .and.to.contain({<br>    <span class=\"hljs-string\">\"type\"</span>: <span class=\"hljs-string\">\"javascript\"</span>,<br>    <span class=\"hljs-string\">\"location\"</span>: <span class=\"hljs-string\">\"js/jquery.loupe.min.js\"</span>,<br>    <span class=\"hljs-string\">\"destination\"</span>: <span class=\"hljs-string\">\"javascript/jquery.loupe.min\"</span><br>  })",
+            "code": "expect(descriptor.dependencies).to.be.an(<span class=\"hljs-string\">\"array\"</span>)<br>expect(descriptor.dependencies).to.have.lengthOf(<span class=\"hljs-number\">5</span>)<br>  .and.to.contain({<br>    <span class=\"hljs-string\">\"type\"</span>: <span class=\"hljs-string\">\"css\"</span>,<br>    <span class=\"hljs-string\">\"location\"</span>: <span class=\"hljs-string\">\"resources/css/base.css\"</span>,<br>    <span class=\"hljs-string\">\"resolvedDestination\"</span>: <span class=\"hljs-string\">\"/Users/samm/Documents/dev/open-blocks-contrib/css/base\"</span>,<br>    <span class=\"hljs-string\">\"resolvedSource\"</span>: <span class=\"hljs-string\">\"/Users/samm/Documents/dev/open-blocks-contrib/resources/css/base.css\"</span><br>  })<br>  .and.to.contain({<br>    <span class=\"hljs-string\">\"type\"</span>: <span class=\"hljs-string\">\"img\"</span>,<br>    <span class=\"hljs-string\">\"location\"</span>: <span class=\"hljs-string\">\"img/VanGogh-starry_night.jpg\"</span>,<br>    <span class=\"hljs-string\">\"resolvedDestination\"</span>: <span class=\"hljs-string\">\"/Users/samm/Documents/dev/open-blocks-contrib/img/VanGogh-starry_night\"</span>,<br>    <span class=\"hljs-string\">\"resolvedSource\"</span>: <span class=\"hljs-string\">\"/Users/samm/Documents/dev/open-blocks-contrib/fake-testing-src-directort/img/VanGogh-starry_night.jpg\"</span><br>  })<br>  .and.to.contain({<br>    <span class=\"hljs-string\">\"type\"</span>: <span class=\"hljs-string\">\"javascript\"</span>,<br>    <span class=\"hljs-string\">\"location\"</span>: <span class=\"hljs-string\">\"resources/js/jquery.loupe.min.js\"</span>,<br>    <span class=\"hljs-string\">\"resolvedDestination\"</span>: <span class=\"hljs-string\">\"/Users/samm/Documents/dev/open-blocks-contrib/javascript/jquery.loupe.min\"</span>,<br>    <span class=\"hljs-string\">\"resolvedSource\"</span>: <span class=\"hljs-string\">\"/Users/samm/Documents/dev/open-blocks-contrib/resources/js/jquery.loupe.min.js\"</span><br>  })",
             "isRoot": false,
-            "uuid": "3dcb486e-7979-4498-8ae5-44585840768c",
-            "parentUUID": "f23d492d-405e-4b28-8bed-53bec45398d2",
+            "uuid": "979115cf-3169-4b6c-b514-967cf7226650",
+            "parentUUID": "a924569c-506c-4d40-93fd-61d88eb354e8",
             "skipped": false
           }
         ],
@@ -2440,7 +2440,7 @@
         "hasFailures": false,
         "hasPending": true,
         "hasSkipped": false,
-        "duration": 13
+        "duration": 9
       },
       "ctx": {
         "_runnable": {
@@ -2456,7 +2456,7 @@
           "_currentRetry": 0,
           "pending": false,
           "type": "test",
-          "body": "function () {\n      expect(descriptor.dependencies).to.be.an(\"array\")\n      expect(descriptor.dependencies).to.have.lengthOf(5)\n        .and.to.contain({\n          \"type\": \"css\",\n          \"location\": \"css/base.css\",\n          \"destination\": \"css/base\"\n        })\n        .and.to.contain({\n          \"type\": \"img\",\n          \"location\": \"img/VanGogh-starry_night.jpg\",\n          \"destination\": \"img/VanGogh-starry_night\"\n        })\n        .and.to.contain({\n          \"type\": \"javascript\",\n          \"location\": \"js/jquery.loupe.min.js\",\n          \"destination\": \"javascript/jquery.loupe.min\"\n        })\n    }",
+          "body": "function () {\n      expect(descriptor.dependencies).to.be.an(\"array\")\n      expect(descriptor.dependencies).to.have.lengthOf(5)\n        .and.to.contain({\n          \"type\": \"css\",\n          \"location\": \"resources/css/base.css\",\n          \"resolvedDestination\": \"/Users/samm/Documents/dev/open-blocks-contrib/css/base\",\n          \"resolvedSource\": \"/Users/samm/Documents/dev/open-blocks-contrib/resources/css/base.css\"\n        })\n        .and.to.contain({\n          \"type\": \"img\",\n          \"location\": \"img/VanGogh-starry_night.jpg\",\n          \"resolvedDestination\": \"/Users/samm/Documents/dev/open-blocks-contrib/img/VanGogh-starry_night\",\n          \"resolvedSource\": \"/Users/samm/Documents/dev/open-blocks-contrib/fake-testing-src-directort/img/VanGogh-starry_night.jpg\"\n        })\n        .and.to.contain({\n          \"type\": \"javascript\",\n          \"location\": \"resources/js/jquery.loupe.min.js\",\n          \"resolvedDestination\": \"/Users/samm/Documents/dev/open-blocks-contrib/javascript/jquery.loupe.min\",\n          \"resolvedSource\": \"/Users/samm/Documents/dev/open-blocks-contrib/resources/js/jquery.loupe.min.js\"\n        })\n    }",
           "file": "/Users/samm/Documents/dev/open-blocks-contrib/test/test-open-blocks.js",
           "parent": {
             "title": "section construction",
@@ -2466,7 +2466,7 @@
                 "title": "resolves the name of the section",
                 "fullTitle": "openblocks section construction resolves the name of the section",
                 "timedOut": false,
-                "duration": 2,
+                "duration": 1,
                 "state": "passed",
                 "speed": "fast",
                 "pass": true,
@@ -2474,24 +2474,24 @@
                 "pending": false,
                 "code": "expect(descriptor.sectionName).to.equal(<span class=\"hljs-string\">\"Discovering Van Gogh\"</span>);",
                 "isRoot": false,
-                "uuid": "6195fae1-3dcb-4a39-aebc-dc44cb3ac837",
-                "parentUUID": "f23d492d-405e-4b28-8bed-53bec45398d2",
+                "uuid": "4ba95054-e9c8-4700-a6e8-c8b745ea8767",
+                "parentUUID": "a924569c-506c-4d40-93fd-61d88eb354e8",
                 "skipped": false
               },
               {
                 "title": "resolves the dependencies of the section",
                 "fullTitle": "openblocks section construction resolves the dependencies of the section",
                 "timedOut": false,
-                "duration": 11,
+                "duration": 8,
                 "state": "passed",
                 "speed": "fast",
                 "pass": true,
                 "fail": false,
                 "pending": false,
-                "code": "expect(descriptor.dependencies).to.be.an(<span class=\"hljs-string\">\"array\"</span>)<br>expect(descriptor.dependencies).to.have.lengthOf(<span class=\"hljs-number\">5</span>)<br>  .and.to.contain({<br>    <span class=\"hljs-string\">\"type\"</span>: <span class=\"hljs-string\">\"css\"</span>,<br>    <span class=\"hljs-string\">\"location\"</span>: <span class=\"hljs-string\">\"css/base.css\"</span>,<br>    <span class=\"hljs-string\">\"destination\"</span>: <span class=\"hljs-string\">\"css/base\"</span><br>  })<br>  .and.to.contain({<br>    <span class=\"hljs-string\">\"type\"</span>: <span class=\"hljs-string\">\"img\"</span>,<br>    <span class=\"hljs-string\">\"location\"</span>: <span class=\"hljs-string\">\"img/VanGogh-starry_night.jpg\"</span>,<br>    <span class=\"hljs-string\">\"destination\"</span>: <span class=\"hljs-string\">\"img/VanGogh-starry_night\"</span><br>  })<br>  .and.to.contain({<br>    <span class=\"hljs-string\">\"type\"</span>: <span class=\"hljs-string\">\"javascript\"</span>,<br>    <span class=\"hljs-string\">\"location\"</span>: <span class=\"hljs-string\">\"js/jquery.loupe.min.js\"</span>,<br>    <span class=\"hljs-string\">\"destination\"</span>: <span class=\"hljs-string\">\"javascript/jquery.loupe.min\"</span><br>  })",
+                "code": "expect(descriptor.dependencies).to.be.an(<span class=\"hljs-string\">\"array\"</span>)<br>expect(descriptor.dependencies).to.have.lengthOf(<span class=\"hljs-number\">5</span>)<br>  .and.to.contain({<br>    <span class=\"hljs-string\">\"type\"</span>: <span class=\"hljs-string\">\"css\"</span>,<br>    <span class=\"hljs-string\">\"location\"</span>: <span class=\"hljs-string\">\"resources/css/base.css\"</span>,<br>    <span class=\"hljs-string\">\"resolvedDestination\"</span>: <span class=\"hljs-string\">\"/Users/samm/Documents/dev/open-blocks-contrib/css/base\"</span>,<br>    <span class=\"hljs-string\">\"resolvedSource\"</span>: <span class=\"hljs-string\">\"/Users/samm/Documents/dev/open-blocks-contrib/resources/css/base.css\"</span><br>  })<br>  .and.to.contain({<br>    <span class=\"hljs-string\">\"type\"</span>: <span class=\"hljs-string\">\"img\"</span>,<br>    <span class=\"hljs-string\">\"location\"</span>: <span class=\"hljs-string\">\"img/VanGogh-starry_night.jpg\"</span>,<br>    <span class=\"hljs-string\">\"resolvedDestination\"</span>: <span class=\"hljs-string\">\"/Users/samm/Documents/dev/open-blocks-contrib/img/VanGogh-starry_night\"</span>,<br>    <span class=\"hljs-string\">\"resolvedSource\"</span>: <span class=\"hljs-string\">\"/Users/samm/Documents/dev/open-blocks-contrib/fake-testing-src-directort/img/VanGogh-starry_night.jpg\"</span><br>  })<br>  .and.to.contain({<br>    <span class=\"hljs-string\">\"type\"</span>: <span class=\"hljs-string\">\"javascript\"</span>,<br>    <span class=\"hljs-string\">\"location\"</span>: <span class=\"hljs-string\">\"resources/js/jquery.loupe.min.js\"</span>,<br>    <span class=\"hljs-string\">\"resolvedDestination\"</span>: <span class=\"hljs-string\">\"/Users/samm/Documents/dev/open-blocks-contrib/javascript/jquery.loupe.min\"</span>,<br>    <span class=\"hljs-string\">\"resolvedSource\"</span>: <span class=\"hljs-string\">\"/Users/samm/Documents/dev/open-blocks-contrib/resources/js/jquery.loupe.min.js\"</span><br>  })",
                 "isRoot": false,
-                "uuid": "3dcb486e-7979-4498-8ae5-44585840768c",
-                "parentUUID": "f23d492d-405e-4b28-8bed-53bec45398d2",
+                "uuid": "979115cf-3169-4b6c-b514-967cf7226650",
+                "parentUUID": "a924569c-506c-4d40-93fd-61d88eb354e8",
                 "skipped": false
               },
               {
@@ -2504,8 +2504,8 @@
                 "pending": true,
                 "code": "",
                 "isRoot": false,
-                "uuid": "0c345abc-8f57-4265-8d9c-9ef99df94016",
-                "parentUUID": "f23d492d-405e-4b28-8bed-53bec45398d2",
+                "uuid": "2c05cae5-1dd4-46e5-812e-56adefc591af",
+                "parentUUID": "a924569c-506c-4d40-93fd-61d88eb354e8",
                 "skipped": false
               }
             ],
@@ -2520,22 +2520,22 @@
                 "pending": true,
                 "code": "",
                 "isRoot": false,
-                "uuid": "0c345abc-8f57-4265-8d9c-9ef99df94016",
-                "parentUUID": "f23d492d-405e-4b28-8bed-53bec45398d2",
+                "uuid": "2c05cae5-1dd4-46e5-812e-56adefc591af",
+                "parentUUID": "a924569c-506c-4d40-93fd-61d88eb354e8",
                 "skipped": false
               }
             ],
             "root": false,
             "_timeout": 2000,
             "file": "/test/test-open-blocks.js",
-            "uuid": "f23d492d-405e-4b28-8bed-53bec45398d2",
+            "uuid": "a924569c-506c-4d40-93fd-61d88eb354e8",
             "fullFile": "/Users/samm/Documents/dev/open-blocks-contrib/test/test-open-blocks.js",
             "passes": [
               {
                 "title": "resolves the name of the section",
                 "fullTitle": "openblocks section construction resolves the name of the section",
                 "timedOut": false,
-                "duration": 2,
+                "duration": 1,
                 "state": "passed",
                 "speed": "fast",
                 "pass": true,
@@ -2543,24 +2543,24 @@
                 "pending": false,
                 "code": "expect(descriptor.sectionName).to.equal(<span class=\"hljs-string\">\"Discovering Van Gogh\"</span>);",
                 "isRoot": false,
-                "uuid": "6195fae1-3dcb-4a39-aebc-dc44cb3ac837",
-                "parentUUID": "f23d492d-405e-4b28-8bed-53bec45398d2",
+                "uuid": "4ba95054-e9c8-4700-a6e8-c8b745ea8767",
+                "parentUUID": "a924569c-506c-4d40-93fd-61d88eb354e8",
                 "skipped": false
               },
               {
                 "title": "resolves the dependencies of the section",
                 "fullTitle": "openblocks section construction resolves the dependencies of the section",
                 "timedOut": false,
-                "duration": 11,
+                "duration": 8,
                 "state": "passed",
                 "speed": "fast",
                 "pass": true,
                 "fail": false,
                 "pending": false,
-                "code": "expect(descriptor.dependencies).to.be.an(<span class=\"hljs-string\">\"array\"</span>)<br>expect(descriptor.dependencies).to.have.lengthOf(<span class=\"hljs-number\">5</span>)<br>  .and.to.contain({<br>    <span class=\"hljs-string\">\"type\"</span>: <span class=\"hljs-string\">\"css\"</span>,<br>    <span class=\"hljs-string\">\"location\"</span>: <span class=\"hljs-string\">\"css/base.css\"</span>,<br>    <span class=\"hljs-string\">\"destination\"</span>: <span class=\"hljs-string\">\"css/base\"</span><br>  })<br>  .and.to.contain({<br>    <span class=\"hljs-string\">\"type\"</span>: <span class=\"hljs-string\">\"img\"</span>,<br>    <span class=\"hljs-string\">\"location\"</span>: <span class=\"hljs-string\">\"img/VanGogh-starry_night.jpg\"</span>,<br>    <span class=\"hljs-string\">\"destination\"</span>: <span class=\"hljs-string\">\"img/VanGogh-starry_night\"</span><br>  })<br>  .and.to.contain({<br>    <span class=\"hljs-string\">\"type\"</span>: <span class=\"hljs-string\">\"javascript\"</span>,<br>    <span class=\"hljs-string\">\"location\"</span>: <span class=\"hljs-string\">\"js/jquery.loupe.min.js\"</span>,<br>    <span class=\"hljs-string\">\"destination\"</span>: <span class=\"hljs-string\">\"javascript/jquery.loupe.min\"</span><br>  })",
+                "code": "expect(descriptor.dependencies).to.be.an(<span class=\"hljs-string\">\"array\"</span>)<br>expect(descriptor.dependencies).to.have.lengthOf(<span class=\"hljs-number\">5</span>)<br>  .and.to.contain({<br>    <span class=\"hljs-string\">\"type\"</span>: <span class=\"hljs-string\">\"css\"</span>,<br>    <span class=\"hljs-string\">\"location\"</span>: <span class=\"hljs-string\">\"resources/css/base.css\"</span>,<br>    <span class=\"hljs-string\">\"resolvedDestination\"</span>: <span class=\"hljs-string\">\"/Users/samm/Documents/dev/open-blocks-contrib/css/base\"</span>,<br>    <span class=\"hljs-string\">\"resolvedSource\"</span>: <span class=\"hljs-string\">\"/Users/samm/Documents/dev/open-blocks-contrib/resources/css/base.css\"</span><br>  })<br>  .and.to.contain({<br>    <span class=\"hljs-string\">\"type\"</span>: <span class=\"hljs-string\">\"img\"</span>,<br>    <span class=\"hljs-string\">\"location\"</span>: <span class=\"hljs-string\">\"img/VanGogh-starry_night.jpg\"</span>,<br>    <span class=\"hljs-string\">\"resolvedDestination\"</span>: <span class=\"hljs-string\">\"/Users/samm/Documents/dev/open-blocks-contrib/img/VanGogh-starry_night\"</span>,<br>    <span class=\"hljs-string\">\"resolvedSource\"</span>: <span class=\"hljs-string\">\"/Users/samm/Documents/dev/open-blocks-contrib/fake-testing-src-directort/img/VanGogh-starry_night.jpg\"</span><br>  })<br>  .and.to.contain({<br>    <span class=\"hljs-string\">\"type\"</span>: <span class=\"hljs-string\">\"javascript\"</span>,<br>    <span class=\"hljs-string\">\"location\"</span>: <span class=\"hljs-string\">\"resources/js/jquery.loupe.min.js\"</span>,<br>    <span class=\"hljs-string\">\"resolvedDestination\"</span>: <span class=\"hljs-string\">\"/Users/samm/Documents/dev/open-blocks-contrib/javascript/jquery.loupe.min\"</span>,<br>    <span class=\"hljs-string\">\"resolvedSource\"</span>: <span class=\"hljs-string\">\"/Users/samm/Documents/dev/open-blocks-contrib/resources/js/jquery.loupe.min.js\"</span><br>  })",
                 "isRoot": false,
-                "uuid": "3dcb486e-7979-4498-8ae5-44585840768c",
-                "parentUUID": "f23d492d-405e-4b28-8bed-53bec45398d2",
+                "uuid": "979115cf-3169-4b6c-b514-967cf7226650",
+                "parentUUID": "a924569c-506c-4d40-93fd-61d88eb354e8",
                 "skipped": false
               }
             ],
@@ -2577,12 +2577,12 @@
             "hasFailures": false,
             "hasPending": true,
             "hasSkipped": false,
-            "duration": 13
+            "duration": 9
           },
           "ctx": "[Circular ~.allPending.6.ctx]",
           "_events": {},
           "_eventsCount": 1,
-          "duration": 11,
+          "duration": 8,
           "state": "passed",
           "speed": "fast"
         },
@@ -2599,7 +2599,7 @@
           "_currentRetry": 0,
           "pending": false,
           "type": "test",
-          "body": "function () {\n      expect(descriptor.dependencies).to.be.an(\"array\")\n      expect(descriptor.dependencies).to.have.lengthOf(5)\n        .and.to.contain({\n          \"type\": \"css\",\n          \"location\": \"css/base.css\",\n          \"destination\": \"css/base\"\n        })\n        .and.to.contain({\n          \"type\": \"img\",\n          \"location\": \"img/VanGogh-starry_night.jpg\",\n          \"destination\": \"img/VanGogh-starry_night\"\n        })\n        .and.to.contain({\n          \"type\": \"javascript\",\n          \"location\": \"js/jquery.loupe.min.js\",\n          \"destination\": \"javascript/jquery.loupe.min\"\n        })\n    }",
+          "body": "function () {\n      expect(descriptor.dependencies).to.be.an(\"array\")\n      expect(descriptor.dependencies).to.have.lengthOf(5)\n        .and.to.contain({\n          \"type\": \"css\",\n          \"location\": \"resources/css/base.css\",\n          \"resolvedDestination\": \"/Users/samm/Documents/dev/open-blocks-contrib/css/base\",\n          \"resolvedSource\": \"/Users/samm/Documents/dev/open-blocks-contrib/resources/css/base.css\"\n        })\n        .and.to.contain({\n          \"type\": \"img\",\n          \"location\": \"img/VanGogh-starry_night.jpg\",\n          \"resolvedDestination\": \"/Users/samm/Documents/dev/open-blocks-contrib/img/VanGogh-starry_night\",\n          \"resolvedSource\": \"/Users/samm/Documents/dev/open-blocks-contrib/fake-testing-src-directort/img/VanGogh-starry_night.jpg\"\n        })\n        .and.to.contain({\n          \"type\": \"javascript\",\n          \"location\": \"resources/js/jquery.loupe.min.js\",\n          \"resolvedDestination\": \"/Users/samm/Documents/dev/open-blocks-contrib/javascript/jquery.loupe.min\",\n          \"resolvedSource\": \"/Users/samm/Documents/dev/open-blocks-contrib/resources/js/jquery.loupe.min.js\"\n        })\n    }",
           "file": "/Users/samm/Documents/dev/open-blocks-contrib/test/test-open-blocks.js",
           "parent": {
             "title": "section construction",
@@ -2609,7 +2609,7 @@
                 "title": "resolves the name of the section",
                 "fullTitle": "openblocks section construction resolves the name of the section",
                 "timedOut": false,
-                "duration": 2,
+                "duration": 1,
                 "state": "passed",
                 "speed": "fast",
                 "pass": true,
@@ -2617,24 +2617,24 @@
                 "pending": false,
                 "code": "expect(descriptor.sectionName).to.equal(<span class=\"hljs-string\">\"Discovering Van Gogh\"</span>);",
                 "isRoot": false,
-                "uuid": "6195fae1-3dcb-4a39-aebc-dc44cb3ac837",
-                "parentUUID": "f23d492d-405e-4b28-8bed-53bec45398d2",
+                "uuid": "4ba95054-e9c8-4700-a6e8-c8b745ea8767",
+                "parentUUID": "a924569c-506c-4d40-93fd-61d88eb354e8",
                 "skipped": false
               },
               {
                 "title": "resolves the dependencies of the section",
                 "fullTitle": "openblocks section construction resolves the dependencies of the section",
                 "timedOut": false,
-                "duration": 11,
+                "duration": 8,
                 "state": "passed",
                 "speed": "fast",
                 "pass": true,
                 "fail": false,
                 "pending": false,
-                "code": "expect(descriptor.dependencies).to.be.an(<span class=\"hljs-string\">\"array\"</span>)<br>expect(descriptor.dependencies).to.have.lengthOf(<span class=\"hljs-number\">5</span>)<br>  .and.to.contain({<br>    <span class=\"hljs-string\">\"type\"</span>: <span class=\"hljs-string\">\"css\"</span>,<br>    <span class=\"hljs-string\">\"location\"</span>: <span class=\"hljs-string\">\"css/base.css\"</span>,<br>    <span class=\"hljs-string\">\"destination\"</span>: <span class=\"hljs-string\">\"css/base\"</span><br>  })<br>  .and.to.contain({<br>    <span class=\"hljs-string\">\"type\"</span>: <span class=\"hljs-string\">\"img\"</span>,<br>    <span class=\"hljs-string\">\"location\"</span>: <span class=\"hljs-string\">\"img/VanGogh-starry_night.jpg\"</span>,<br>    <span class=\"hljs-string\">\"destination\"</span>: <span class=\"hljs-string\">\"img/VanGogh-starry_night\"</span><br>  })<br>  .and.to.contain({<br>    <span class=\"hljs-string\">\"type\"</span>: <span class=\"hljs-string\">\"javascript\"</span>,<br>    <span class=\"hljs-string\">\"location\"</span>: <span class=\"hljs-string\">\"js/jquery.loupe.min.js\"</span>,<br>    <span class=\"hljs-string\">\"destination\"</span>: <span class=\"hljs-string\">\"javascript/jquery.loupe.min\"</span><br>  })",
+                "code": "expect(descriptor.dependencies).to.be.an(<span class=\"hljs-string\">\"array\"</span>)<br>expect(descriptor.dependencies).to.have.lengthOf(<span class=\"hljs-number\">5</span>)<br>  .and.to.contain({<br>    <span class=\"hljs-string\">\"type\"</span>: <span class=\"hljs-string\">\"css\"</span>,<br>    <span class=\"hljs-string\">\"location\"</span>: <span class=\"hljs-string\">\"resources/css/base.css\"</span>,<br>    <span class=\"hljs-string\">\"resolvedDestination\"</span>: <span class=\"hljs-string\">\"/Users/samm/Documents/dev/open-blocks-contrib/css/base\"</span>,<br>    <span class=\"hljs-string\">\"resolvedSource\"</span>: <span class=\"hljs-string\">\"/Users/samm/Documents/dev/open-blocks-contrib/resources/css/base.css\"</span><br>  })<br>  .and.to.contain({<br>    <span class=\"hljs-string\">\"type\"</span>: <span class=\"hljs-string\">\"img\"</span>,<br>    <span class=\"hljs-string\">\"location\"</span>: <span class=\"hljs-string\">\"img/VanGogh-starry_night.jpg\"</span>,<br>    <span class=\"hljs-string\">\"resolvedDestination\"</span>: <span class=\"hljs-string\">\"/Users/samm/Documents/dev/open-blocks-contrib/img/VanGogh-starry_night\"</span>,<br>    <span class=\"hljs-string\">\"resolvedSource\"</span>: <span class=\"hljs-string\">\"/Users/samm/Documents/dev/open-blocks-contrib/fake-testing-src-directort/img/VanGogh-starry_night.jpg\"</span><br>  })<br>  .and.to.contain({<br>    <span class=\"hljs-string\">\"type\"</span>: <span class=\"hljs-string\">\"javascript\"</span>,<br>    <span class=\"hljs-string\">\"location\"</span>: <span class=\"hljs-string\">\"resources/js/jquery.loupe.min.js\"</span>,<br>    <span class=\"hljs-string\">\"resolvedDestination\"</span>: <span class=\"hljs-string\">\"/Users/samm/Documents/dev/open-blocks-contrib/javascript/jquery.loupe.min\"</span>,<br>    <span class=\"hljs-string\">\"resolvedSource\"</span>: <span class=\"hljs-string\">\"/Users/samm/Documents/dev/open-blocks-contrib/resources/js/jquery.loupe.min.js\"</span><br>  })",
                 "isRoot": false,
-                "uuid": "3dcb486e-7979-4498-8ae5-44585840768c",
-                "parentUUID": "f23d492d-405e-4b28-8bed-53bec45398d2",
+                "uuid": "979115cf-3169-4b6c-b514-967cf7226650",
+                "parentUUID": "a924569c-506c-4d40-93fd-61d88eb354e8",
                 "skipped": false
               },
               {
@@ -2647,8 +2647,8 @@
                 "pending": true,
                 "code": "",
                 "isRoot": false,
-                "uuid": "0c345abc-8f57-4265-8d9c-9ef99df94016",
-                "parentUUID": "f23d492d-405e-4b28-8bed-53bec45398d2",
+                "uuid": "2c05cae5-1dd4-46e5-812e-56adefc591af",
+                "parentUUID": "a924569c-506c-4d40-93fd-61d88eb354e8",
                 "skipped": false
               }
             ],
@@ -2663,22 +2663,22 @@
                 "pending": true,
                 "code": "",
                 "isRoot": false,
-                "uuid": "0c345abc-8f57-4265-8d9c-9ef99df94016",
-                "parentUUID": "f23d492d-405e-4b28-8bed-53bec45398d2",
+                "uuid": "2c05cae5-1dd4-46e5-812e-56adefc591af",
+                "parentUUID": "a924569c-506c-4d40-93fd-61d88eb354e8",
                 "skipped": false
               }
             ],
             "root": false,
             "_timeout": 2000,
             "file": "/test/test-open-blocks.js",
-            "uuid": "f23d492d-405e-4b28-8bed-53bec45398d2",
+            "uuid": "a924569c-506c-4d40-93fd-61d88eb354e8",
             "fullFile": "/Users/samm/Documents/dev/open-blocks-contrib/test/test-open-blocks.js",
             "passes": [
               {
                 "title": "resolves the name of the section",
                 "fullTitle": "openblocks section construction resolves the name of the section",
                 "timedOut": false,
-                "duration": 2,
+                "duration": 1,
                 "state": "passed",
                 "speed": "fast",
                 "pass": true,
@@ -2686,24 +2686,24 @@
                 "pending": false,
                 "code": "expect(descriptor.sectionName).to.equal(<span class=\"hljs-string\">\"Discovering Van Gogh\"</span>);",
                 "isRoot": false,
-                "uuid": "6195fae1-3dcb-4a39-aebc-dc44cb3ac837",
-                "parentUUID": "f23d492d-405e-4b28-8bed-53bec45398d2",
+                "uuid": "4ba95054-e9c8-4700-a6e8-c8b745ea8767",
+                "parentUUID": "a924569c-506c-4d40-93fd-61d88eb354e8",
                 "skipped": false
               },
               {
                 "title": "resolves the dependencies of the section",
                 "fullTitle": "openblocks section construction resolves the dependencies of the section",
                 "timedOut": false,
-                "duration": 11,
+                "duration": 8,
                 "state": "passed",
                 "speed": "fast",
                 "pass": true,
                 "fail": false,
                 "pending": false,
-                "code": "expect(descriptor.dependencies).to.be.an(<span class=\"hljs-string\">\"array\"</span>)<br>expect(descriptor.dependencies).to.have.lengthOf(<span class=\"hljs-number\">5</span>)<br>  .and.to.contain({<br>    <span class=\"hljs-string\">\"type\"</span>: <span class=\"hljs-string\">\"css\"</span>,<br>    <span class=\"hljs-string\">\"location\"</span>: <span class=\"hljs-string\">\"css/base.css\"</span>,<br>    <span class=\"hljs-string\">\"destination\"</span>: <span class=\"hljs-string\">\"css/base\"</span><br>  })<br>  .and.to.contain({<br>    <span class=\"hljs-string\">\"type\"</span>: <span class=\"hljs-string\">\"img\"</span>,<br>    <span class=\"hljs-string\">\"location\"</span>: <span class=\"hljs-string\">\"img/VanGogh-starry_night.jpg\"</span>,<br>    <span class=\"hljs-string\">\"destination\"</span>: <span class=\"hljs-string\">\"img/VanGogh-starry_night\"</span><br>  })<br>  .and.to.contain({<br>    <span class=\"hljs-string\">\"type\"</span>: <span class=\"hljs-string\">\"javascript\"</span>,<br>    <span class=\"hljs-string\">\"location\"</span>: <span class=\"hljs-string\">\"js/jquery.loupe.min.js\"</span>,<br>    <span class=\"hljs-string\">\"destination\"</span>: <span class=\"hljs-string\">\"javascript/jquery.loupe.min\"</span><br>  })",
+                "code": "expect(descriptor.dependencies).to.be.an(<span class=\"hljs-string\">\"array\"</span>)<br>expect(descriptor.dependencies).to.have.lengthOf(<span class=\"hljs-number\">5</span>)<br>  .and.to.contain({<br>    <span class=\"hljs-string\">\"type\"</span>: <span class=\"hljs-string\">\"css\"</span>,<br>    <span class=\"hljs-string\">\"location\"</span>: <span class=\"hljs-string\">\"resources/css/base.css\"</span>,<br>    <span class=\"hljs-string\">\"resolvedDestination\"</span>: <span class=\"hljs-string\">\"/Users/samm/Documents/dev/open-blocks-contrib/css/base\"</span>,<br>    <span class=\"hljs-string\">\"resolvedSource\"</span>: <span class=\"hljs-string\">\"/Users/samm/Documents/dev/open-blocks-contrib/resources/css/base.css\"</span><br>  })<br>  .and.to.contain({<br>    <span class=\"hljs-string\">\"type\"</span>: <span class=\"hljs-string\">\"img\"</span>,<br>    <span class=\"hljs-string\">\"location\"</span>: <span class=\"hljs-string\">\"img/VanGogh-starry_night.jpg\"</span>,<br>    <span class=\"hljs-string\">\"resolvedDestination\"</span>: <span class=\"hljs-string\">\"/Users/samm/Documents/dev/open-blocks-contrib/img/VanGogh-starry_night\"</span>,<br>    <span class=\"hljs-string\">\"resolvedSource\"</span>: <span class=\"hljs-string\">\"/Users/samm/Documents/dev/open-blocks-contrib/fake-testing-src-directort/img/VanGogh-starry_night.jpg\"</span><br>  })<br>  .and.to.contain({<br>    <span class=\"hljs-string\">\"type\"</span>: <span class=\"hljs-string\">\"javascript\"</span>,<br>    <span class=\"hljs-string\">\"location\"</span>: <span class=\"hljs-string\">\"resources/js/jquery.loupe.min.js\"</span>,<br>    <span class=\"hljs-string\">\"resolvedDestination\"</span>: <span class=\"hljs-string\">\"/Users/samm/Documents/dev/open-blocks-contrib/javascript/jquery.loupe.min\"</span>,<br>    <span class=\"hljs-string\">\"resolvedSource\"</span>: <span class=\"hljs-string\">\"/Users/samm/Documents/dev/open-blocks-contrib/resources/js/jquery.loupe.min.js\"</span><br>  })",
                 "isRoot": false,
-                "uuid": "3dcb486e-7979-4498-8ae5-44585840768c",
-                "parentUUID": "f23d492d-405e-4b28-8bed-53bec45398d2",
+                "uuid": "979115cf-3169-4b6c-b514-967cf7226650",
+                "parentUUID": "a924569c-506c-4d40-93fd-61d88eb354e8",
                 "skipped": false
               }
             ],
@@ -2720,12 +2720,12 @@
             "hasFailures": false,
             "hasPending": true,
             "hasSkipped": false,
-            "duration": 13
+            "duration": 9
           },
           "ctx": "[Circular ~.allPending.6.ctx]",
           "_events": {},
           "_eventsCount": 1,
-          "duration": 11,
+          "duration": 8,
           "state": "passed",
           "speed": "fast"
         }
@@ -2760,8 +2760,8 @@
             "pending": true,
             "code": "",
             "isRoot": false,
-            "uuid": "b16e6da2-63c7-47e6-9ea3-a72aadeb5211",
-            "parentUUID": "cbdf5b2e-babd-4f7e-932f-05bd9d9c9ad1",
+            "uuid": "10753f92-9acf-4475-83ce-15b639107421",
+            "parentUUID": "9068ae1f-688a-4711-bc8e-df7280d39f7a",
             "skipped": false
           },
           {
@@ -2774,8 +2774,8 @@
             "pending": true,
             "code": "",
             "isRoot": false,
-            "uuid": "c84d90eb-ee74-497d-a826-9302f0f887b3",
-            "parentUUID": "cbdf5b2e-babd-4f7e-932f-05bd9d9c9ad1",
+            "uuid": "16002722-c5f9-415d-b6c3-248c1ab6b032",
+            "parentUUID": "9068ae1f-688a-4711-bc8e-df7280d39f7a",
             "skipped": false
           }
         ],
@@ -2790,8 +2790,8 @@
             "pending": true,
             "code": "",
             "isRoot": false,
-            "uuid": "b16e6da2-63c7-47e6-9ea3-a72aadeb5211",
-            "parentUUID": "cbdf5b2e-babd-4f7e-932f-05bd9d9c9ad1",
+            "uuid": "10753f92-9acf-4475-83ce-15b639107421",
+            "parentUUID": "9068ae1f-688a-4711-bc8e-df7280d39f7a",
             "skipped": false
           },
           {
@@ -2804,14 +2804,14 @@
             "pending": true,
             "code": "",
             "isRoot": false,
-            "uuid": "c84d90eb-ee74-497d-a826-9302f0f887b3",
-            "parentUUID": "cbdf5b2e-babd-4f7e-932f-05bd9d9c9ad1",
+            "uuid": "16002722-c5f9-415d-b6c3-248c1ab6b032",
+            "parentUUID": "9068ae1f-688a-4711-bc8e-df7280d39f7a",
             "skipped": false
           }
         ],
         "root": false,
         "_timeout": 2000,
-        "uuid": "cbdf5b2e-babd-4f7e-932f-05bd9d9c9ad1",
+        "uuid": "9068ae1f-688a-4711-bc8e-df7280d39f7a",
         "fullFile": "",
         "file": "",
         "passes": [],
@@ -2861,8 +2861,8 @@
             "pending": true,
             "code": "",
             "isRoot": false,
-            "uuid": "b16e6da2-63c7-47e6-9ea3-a72aadeb5211",
-            "parentUUID": "cbdf5b2e-babd-4f7e-932f-05bd9d9c9ad1",
+            "uuid": "10753f92-9acf-4475-83ce-15b639107421",
+            "parentUUID": "9068ae1f-688a-4711-bc8e-df7280d39f7a",
             "skipped": false
           },
           {
@@ -2875,8 +2875,8 @@
             "pending": true,
             "code": "",
             "isRoot": false,
-            "uuid": "c84d90eb-ee74-497d-a826-9302f0f887b3",
-            "parentUUID": "cbdf5b2e-babd-4f7e-932f-05bd9d9c9ad1",
+            "uuid": "16002722-c5f9-415d-b6c3-248c1ab6b032",
+            "parentUUID": "9068ae1f-688a-4711-bc8e-df7280d39f7a",
             "skipped": false
           }
         ],
@@ -2891,8 +2891,8 @@
             "pending": true,
             "code": "",
             "isRoot": false,
-            "uuid": "b16e6da2-63c7-47e6-9ea3-a72aadeb5211",
-            "parentUUID": "cbdf5b2e-babd-4f7e-932f-05bd9d9c9ad1",
+            "uuid": "10753f92-9acf-4475-83ce-15b639107421",
+            "parentUUID": "9068ae1f-688a-4711-bc8e-df7280d39f7a",
             "skipped": false
           },
           {
@@ -2905,14 +2905,14 @@
             "pending": true,
             "code": "",
             "isRoot": false,
-            "uuid": "c84d90eb-ee74-497d-a826-9302f0f887b3",
-            "parentUUID": "cbdf5b2e-babd-4f7e-932f-05bd9d9c9ad1",
+            "uuid": "16002722-c5f9-415d-b6c3-248c1ab6b032",
+            "parentUUID": "9068ae1f-688a-4711-bc8e-df7280d39f7a",
             "skipped": false
           }
         ],
         "root": false,
         "_timeout": 2000,
-        "uuid": "cbdf5b2e-babd-4f7e-932f-05bd9d9c9ad1",
+        "uuid": "9068ae1f-688a-4711-bc8e-df7280d39f7a",
         "fullFile": "",
         "file": "",
         "passes": [],
@@ -2939,7 +2939,7 @@
       "title": "resolves the name of the section",
       "fullTitle": "section construction resolves the name of the section",
       "timedOut": false,
-      "duration": 2,
+      "duration": 1,
       "state": "passed",
       "speed": "fast",
       "pass": true,
@@ -2947,24 +2947,24 @@
       "pending": false,
       "code": "expect(descriptor.sectionName).to.equal(<span class=\"hljs-string\">\"Discovering Van Gogh\"</span>);",
       "isRoot": false,
-      "uuid": "2b251e5d-51a8-4ba7-bab9-3a8bbf57a138",
-      "parentUUID": "f23d492d-405e-4b28-8bed-53bec45398d2",
+      "uuid": "a45794e4-7846-49fc-aec2-cd6649b10983",
+      "parentUUID": "a924569c-506c-4d40-93fd-61d88eb354e8",
       "skipped": false
     },
     {
       "title": "resolves the dependencies of the section",
       "fullTitle": "section construction resolves the dependencies of the section",
       "timedOut": false,
-      "duration": 11,
+      "duration": 8,
       "state": "passed",
       "speed": "fast",
       "pass": true,
       "fail": false,
       "pending": false,
-      "code": "expect(descriptor.dependencies).to.be.an(<span class=\"hljs-string\">\"array\"</span>)<br>expect(descriptor.dependencies).to.have.lengthOf(<span class=\"hljs-number\">5</span>)<br>  .and.to.contain({<br>    <span class=\"hljs-string\">\"type\"</span>: <span class=\"hljs-string\">\"css\"</span>,<br>    <span class=\"hljs-string\">\"location\"</span>: <span class=\"hljs-string\">\"css/base.css\"</span>,<br>    <span class=\"hljs-string\">\"destination\"</span>: <span class=\"hljs-string\">\"css/base\"</span><br>  })<br>  .and.to.contain({<br>    <span class=\"hljs-string\">\"type\"</span>: <span class=\"hljs-string\">\"img\"</span>,<br>    <span class=\"hljs-string\">\"location\"</span>: <span class=\"hljs-string\">\"img/VanGogh-starry_night.jpg\"</span>,<br>    <span class=\"hljs-string\">\"destination\"</span>: <span class=\"hljs-string\">\"img/VanGogh-starry_night\"</span><br>  })<br>  .and.to.contain({<br>    <span class=\"hljs-string\">\"type\"</span>: <span class=\"hljs-string\">\"javascript\"</span>,<br>    <span class=\"hljs-string\">\"location\"</span>: <span class=\"hljs-string\">\"js/jquery.loupe.min.js\"</span>,<br>    <span class=\"hljs-string\">\"destination\"</span>: <span class=\"hljs-string\">\"javascript/jquery.loupe.min\"</span><br>  })",
+      "code": "expect(descriptor.dependencies).to.be.an(<span class=\"hljs-string\">\"array\"</span>)<br>expect(descriptor.dependencies).to.have.lengthOf(<span class=\"hljs-number\">5</span>)<br>  .and.to.contain({<br>    <span class=\"hljs-string\">\"type\"</span>: <span class=\"hljs-string\">\"css\"</span>,<br>    <span class=\"hljs-string\">\"location\"</span>: <span class=\"hljs-string\">\"resources/css/base.css\"</span>,<br>    <span class=\"hljs-string\">\"resolvedDestination\"</span>: <span class=\"hljs-string\">\"/Users/samm/Documents/dev/open-blocks-contrib/css/base\"</span>,<br>    <span class=\"hljs-string\">\"resolvedSource\"</span>: <span class=\"hljs-string\">\"/Users/samm/Documents/dev/open-blocks-contrib/resources/css/base.css\"</span><br>  })<br>  .and.to.contain({<br>    <span class=\"hljs-string\">\"type\"</span>: <span class=\"hljs-string\">\"img\"</span>,<br>    <span class=\"hljs-string\">\"location\"</span>: <span class=\"hljs-string\">\"img/VanGogh-starry_night.jpg\"</span>,<br>    <span class=\"hljs-string\">\"resolvedDestination\"</span>: <span class=\"hljs-string\">\"/Users/samm/Documents/dev/open-blocks-contrib/img/VanGogh-starry_night\"</span>,<br>    <span class=\"hljs-string\">\"resolvedSource\"</span>: <span class=\"hljs-string\">\"/Users/samm/Documents/dev/open-blocks-contrib/fake-testing-src-directort/img/VanGogh-starry_night.jpg\"</span><br>  })<br>  .and.to.contain({<br>    <span class=\"hljs-string\">\"type\"</span>: <span class=\"hljs-string\">\"javascript\"</span>,<br>    <span class=\"hljs-string\">\"location\"</span>: <span class=\"hljs-string\">\"resources/js/jquery.loupe.min.js\"</span>,<br>    <span class=\"hljs-string\">\"resolvedDestination\"</span>: <span class=\"hljs-string\">\"/Users/samm/Documents/dev/open-blocks-contrib/javascript/jquery.loupe.min\"</span>,<br>    <span class=\"hljs-string\">\"resolvedSource\"</span>: <span class=\"hljs-string\">\"/Users/samm/Documents/dev/open-blocks-contrib/resources/js/jquery.loupe.min.js\"</span><br>  })",
       "isRoot": false,
-      "uuid": "c6379970-f111-45f5-b59b-dc5452fa6d06",
-      "parentUUID": "f23d492d-405e-4b28-8bed-53bec45398d2",
+      "uuid": "87d49628-f8a7-44b3-83a9-e6493f854553",
+      "parentUUID": "a924569c-506c-4d40-93fd-61d88eb354e8",
       "skipped": false
     },
     {
@@ -2979,45 +2979,29 @@
       "pending": false,
       "code": "expect(openBlocks.resolveTemplateFilename(audioWithTranscriptExample.templateName))<br>  .to.equal(<span class=\"hljs-string\">\"template/audio-with-transcript.pug\"</span>)",
       "isRoot": false,
-      "uuid": "206b6533-853e-4718-ad94-0f45a35d21ef",
-      "parentUUID": "5b176e8b-92ff-46b1-9cf1-da80b6b8ab79",
+      "uuid": "62948f9f-c866-4057-bdbe-73d5065874f8",
+      "parentUUID": "45dcabba-d4d1-4ca8-8245-24b8cec95816",
       "skipped": false
     },
     {
       "title": "creates the html",
       "fullTitle": "audio-with-transcript built-in template creates the html",
       "timedOut": false,
-      "duration": 158,
+      "duration": 125,
       "state": "passed",
       "speed": "slow",
       "pass": true,
       "fail": false,
       "pending": false,
-      "code": "expect(openBlocks.processSectionDescriptionElement(audioWithTranscriptExample))<br>  .to.have.property(<span class=\"hljs-string\">\"html\"</span>)<br>  .and.to.be.ok",
+      "code": "expect(openBlocks.processSectionDescriptionElement(audioWithTranscriptExample, sectionSourceDirectoryName))<br>  .to.have.property(<span class=\"hljs-string\">\"html\"</span>)<br>  .and.to.be.ok",
       "isRoot": false,
-      "uuid": "21e81974-8bcd-46b4-8529-30c49cd12846",
-      "parentUUID": "5b176e8b-92ff-46b1-9cf1-da80b6b8ab79",
+      "uuid": "ff0d95a8-816a-4b3a-b188-e0f55a3a375c",
+      "parentUUID": "45dcabba-d4d1-4ca8-8245-24b8cec95816",
       "skipped": false
     },
     {
       "title": "determines the correct template for the section",
       "fullTitle": "picture-with-text built-in template determines the correct template for the section",
-      "timedOut": false,
-      "duration": 69,
-      "state": "passed",
-      "speed": "medium",
-      "pass": true,
-      "fail": false,
-      "pending": false,
-      "code": "expect(openBlocks.resolveTemplateFilename(pictureWithTextExample.templateName))<br>  .to.equal(<span class=\"hljs-string\">\"template/picture-with-text.pug\"</span>)<br>expect(openBlocks.processSectionDescriptionElement(pictureWithTextExample))<br>  .to.have.property(<span class=\"hljs-string\">\"html\"</span>)<br>  .and.to.be.ok",
-      "isRoot": false,
-      "uuid": "0d60d232-3956-4ade-a52b-b755eb9a8cfb",
-      "parentUUID": "69ef752f-f53d-49db-b188-9b4442ce2ae0",
-      "skipped": false
-    },
-    {
-      "title": "creates the html",
-      "fullTitle": "picture-with-text built-in template creates the html",
       "timedOut": false,
       "duration": 0,
       "state": "passed",
@@ -3025,26 +3009,42 @@
       "pass": true,
       "fail": false,
       "pending": false,
-      "code": "}",
+      "code": "<span class=\"hljs-keyword\">var</span> name = openBlocks.resolveTemplateFilename(pictureWithTextExample.templateName)<br>expect(name)<br>  .to.equal(<span class=\"hljs-string\">\"template/picture-with-text.pug\"</span>)",
       "isRoot": false,
-      "uuid": "7cc3a6a9-6791-4fb9-a359-1cdd7f9e86b0",
-      "parentUUID": "69ef752f-f53d-49db-b188-9b4442ce2ae0",
+      "uuid": "ee4806c1-9f50-45c7-8d9b-deeac6fc094a",
+      "parentUUID": "4c81ed5b-8ef5-45ac-bf09-633f3b3ecb4a",
+      "skipped": false
+    },
+    {
+      "title": "creates the html",
+      "fullTitle": "picture-with-text built-in template creates the html",
+      "timedOut": false,
+      "duration": 61,
+      "state": "passed",
+      "speed": "medium",
+      "pass": true,
+      "fail": false,
+      "pending": false,
+      "code": "expect(openBlocks.processSectionDescriptionElement(pictureWithTextExample, sectionSourceDirectoryName))<br>  .to.have.property(<span class=\"hljs-string\">\"html\"</span>)<br>  .and.to.be.ok",
+      "isRoot": false,
+      "uuid": "665384e7-6dfe-4437-9502-efaf9fc1230e",
+      "parentUUID": "4c81ed5b-8ef5-45ac-bf09-633f3b3ecb4a",
       "skipped": false
     },
     {
       "title": "determines the correct template for the section",
       "fullTitle": "text built-in template determines the correct template for the section",
       "timedOut": false,
-      "duration": 31,
+      "duration": 24,
       "state": "passed",
       "speed": "fast",
       "pass": true,
       "fail": false,
       "pending": false,
-      "code": "expect(openBlocks.resolveTemplateFilename(textExample.templateName))<br>  .to.equal(<span class=\"hljs-string\">\"template/text.pug\"</span>)<br>expect(openBlocks.processSectionDescriptionElement(textExample))<br>  .to.have.property(<span class=\"hljs-string\">\"html\"</span>)<br>  .and.to.be.ok",
+      "code": "expect(openBlocks.resolveTemplateFilename(textExample.templateName))<br>  .to.equal(<span class=\"hljs-string\">\"template/text.pug\"</span>)<br>expect(openBlocks.processSectionDescriptionElement(textExample, sectionSourceDirectoryName))<br>  .to.have.property(<span class=\"hljs-string\">\"html\"</span>)<br>  .and.to.be.ok",
       "isRoot": false,
-      "uuid": "589a394e-ba59-40dd-9201-2db75bb9301f",
-      "parentUUID": "10a87ba1-e2d5-4be9-843d-e67c5ffe6269",
+      "uuid": "b76fa33c-2eb3-4201-945d-5d0f28f27ee7",
+      "parentUUID": "43d03ae6-e49a-4d6d-a20a-707b0c967959",
       "skipped": false
     },
     {
@@ -3059,8 +3059,8 @@
       "pending": false,
       "code": "}",
       "isRoot": false,
-      "uuid": "825830b5-a604-44e1-88ea-1fb90d69c0ea",
-      "parentUUID": "10a87ba1-e2d5-4be9-843d-e67c5ffe6269",
+      "uuid": "9a53687e-8322-4479-b14a-5d9db1bac3c9",
+      "parentUUID": "43d03ae6-e49a-4d6d-a20a-707b0c967959",
       "skipped": false
     }
   ],

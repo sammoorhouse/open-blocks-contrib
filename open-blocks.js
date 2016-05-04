@@ -1,4 +1,4 @@
-var fs = require('fs'),
+var fs = require('fs-extra'),
   path = require('path'),
   jsmin = require('njsmin').jsmin,
   pug = require('pug'),
@@ -62,32 +62,35 @@ module.exports = function() {
       physicalDependencies = lessonElement["physical-dependencies"] || []
 
     var descriptors = sections.map(function(section) {
-        return processSectionDescriptor(sourceDirectoryName, outputDirectoryName, section)
-      }) //curry?
+        var descriptor = processSectionDescriptor(sourceDirectoryName, section)
+        var fullOutputFilename = generateOutputFilename(outputDirectoryName, descriptor.filename, ".html")
+
+        writeFile(fullOutputFilename, descriptor.html)
+
+        descriptor.dependencies.forEach(function(dependency) {
+          console.log(dependency)
+            //fs.copySync(dependency.location, dependency.destination);
+        })
+      })
 
     //generate main page
 
   }
 
-  function processSectionDescriptor(sourceDirectoryName, outputDirectoryName, section) {
+  function processSectionDescriptor(sourceDirectoryName, section) {
     var descriptor
     if (typeof section["section-ref"] !== 'undefined') {
       descriptor = processSectionDescriptionFromFile(sourceDirectoryName, section["section-ref"])
     } else {
-      descriptor = processSectionDescriptionElement(section)
+      descriptor = processSectionDescriptionElement(section, sourceDirectoryName)
     }
 
-    //write out html
-    var fullOutputFilename = generateOutputFilename(outputDirectoryName, descriptor.filename, ".html")
-
-    writeFile(fullOutputFilename, descriptor.html)
-    descriptor.dependencies = resolveDependencyDestinations(descriptor.dependencies, sourceDirectoryName, outputDirectoryName)
     return descriptor
   }
 
   function processSectionDescriptionFromFile(sourceDirectoryName, sectionFilename) {
     var section = JSON.parse(jsmin(readFile(path.join(sourceDirectoryName, sectionFilename), "utf8")));
-    return processSectionDescriptionElement(section)
+    return processSectionDescriptionElement(section, sourceDirectoryName)
   }
 
   function resolveTemplateDependencies(templateName) {
@@ -95,35 +98,35 @@ module.exports = function() {
       case 'text':
         return [{
           type: "css",
-          location: "css/base.css"
+          location: "resources/css/base.css"
         }, {
           type: "javascript",
-          location: "js/base.js"
+          location: "resources/js/base.js"
         }]
       case 'audio-with-transcript':
         return [{
           type: "css",
-          location: "css/base.css"
+          location: "resources/css/base.css"
         }, {
           type: "css",
-          location: "css/voice.css"
+          location: "resources/css/voice.css"
         }, {
           type: "javascript",
-          location: "js/audio-transcript.js"
+          location: "resources/js/audio-transcript.js"
         }]
       case 'picture-with-text':
         return [{
           type: "css",
-          location: "css/base.css"
+          location: "resources/css/base.css"
         }, {
           type: "css",
-          location: "css/picture-with-text.css"
+          location: "resources/css/picture-with-text.css"
         }, {
           type: "javascript",
-          location: "js/jquery.loupe.min.js"
+          location: "resources/js/jquery.loupe.min.js"
         }, {
           type: "javascript",
-          location: "js/picture-with-text.js"
+          location: "resources/js/picture-with-text.js"
         }]
     }
   }
@@ -139,36 +142,39 @@ module.exports = function() {
     }
   }
 
-  function resolveDependencyDestinations(dependencies, sourceDirectoryName, outputDirectoryName) {
+  function resolveDependencyPaths(dependencies, sourceDirectoryName) {
     //move css,js, and media files to the correct place
     return dependencies.map(function(dep) {
       var type = dep.type
       var filename = path.parse(dep.location).name
-      var destinationName = path.join(type, filename)
+      var resolvedDestination = path.resolve(path.join(type, filename))
+      var resolvedSource = path.resolve(path.join(sourceDirectoryName, dep.location))
       return merge(dep, {
-        "destination": destinationName
+        "resolvedDestination": resolvedDestination,
+        "resolvedSource": resolvedSource
       })
     })
   }
 
-  function processSectionDescriptionElement(sectionElement) {
+  function processSectionDescriptionElement(sectionElement, sectionSourceDirectoryName) {
     var sectionName = sectionElement.pageTitle
     var outputFilename = sectionElement.name
     var sectionDependencies = sectionElement.dependencies || []
+    var sectionDependenciesWithPathsResolved = resolveDependencyPaths(sectionDependencies, sectionSourceDirectoryName)
 
     var templateName = sectionElement.templateName
     var templateFilename = resolveTemplateFilename(templateName)
     var templateDependencies = resolveTemplateDependencies(templateName) || []
+    var templateDependenciesWithPathsResolved = resolveDependencyPaths(templateDependencies, __dirname)
 
     //we copy all dependencies to the appropriate output directory,
     //but only include js and css in the header
-    var blockDependencies = templateDependencies.concat(sectionDependencies)
+    var blockDependencies = templateDependenciesWithPathsResolved.concat(sectionDependenciesWithPathsResolved)
 
-    var blockDependenciesWithDestinations = resolveDependencyDestinations(blockDependencies)
-    var jsDependencies = blockDependenciesWithDestinations.filter(function(dep) {
+    var jsDependencies = blockDependencies.filter(function(dep) {
       return dep.type === "javascript"
     })
-    var cssDependencies = blockDependenciesWithDestinations.filter(function(dep) {
+    var cssDependencies = blockDependencies.filter(function(dep) {
       return dep.typ === "css"
     })
 
@@ -185,7 +191,7 @@ module.exports = function() {
 
     return {
       "filename": outputFilename,
-      "dependencies": blockDependenciesWithDestinations,
+      "dependencies": blockDependencies,
       "sectionName": sectionName,
       "html": html
     }
@@ -210,6 +216,6 @@ module.exports = function() {
     writeFile: writeFile,
     resolveTemplateFilename: resolveTemplateFilename,
     ensureDirectory: ensureDirectory,
-    resolveDependencyDestinations: resolveDependencyDestinations
+    resolveDependencyPaths: resolveDependencyPaths
   }
 }();

@@ -9,7 +9,7 @@
     "text": "Wikipedia"
   },
   "imageFile": {
-    "name": "img/VanGogh-starry_night.jpg",
+    "name": "../img/VanGogh-starry_night.jpg",
     "type": "image/jpeg"
   },
   "commentary": [{

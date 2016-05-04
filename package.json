@@ -8,8 +8,9 @@
     "test": "mocha test"
   },
   "dependencies": {
-    "njsmin": "^1.0.3",
     "deepmerge": "^0.2.10",
+    "fs-extra": "^0.30.0",
+    "njsmin": "^1.0.3",
     "pug": "^2.0.0-alpha6"
   },
   "repository": {

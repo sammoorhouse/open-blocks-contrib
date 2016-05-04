@@ -5,6 +5,7 @@ var test = require("unit.js"),
 var audioWithTranscriptExample = require("./examples/audio-with-transcript.json")
 var pictureWithTextExample = require("./examples/picture-with-text.json")
 var textExample = require("./examples/text.json")
+var sectionSourceDirectoryName = "fake-testing-src-directort"
 
 describe("openblocks", function() {
   describe("lesson construction", function() {
@@ -16,7 +17,7 @@ describe("openblocks", function() {
     it("resolves the description of the lesson")
   })
   describe("section construction", function() {
-    var descriptor = openBlocks.processSectionDescriptionElement(pictureWithTextExample)
+    var descriptor = openBlocks.processSectionDescriptionElement(pictureWithTextExample, sectionSourceDirectoryName)
     it("resolves the name of the section", function() {
       expect(descriptor.sectionName).to.equal("Discovering Van Gogh");
     })
@@ -25,18 +26,21 @@ describe("openblocks", function() {
       expect(descriptor.dependencies).to.have.lengthOf(5)
         .and.to.contain({
           "type": "css",
-          "location": "css/base.css",
-          "destination": "css/base"
+          "location": "resources/css/base.css",
+          "resolvedDestination": "/Users/samm/Documents/dev/open-blocks-contrib/css/base",
+          "resolvedSource": "/Users/samm/Documents/dev/open-blocks-contrib/resources/css/base.css"
         })
         .and.to.contain({
           "type": "img",
           "location": "img/VanGogh-starry_night.jpg",
-          "destination": "img/VanGogh-starry_night"
+          "resolvedDestination": "/Users/samm/Documents/dev/open-blocks-contrib/img/VanGogh-starry_night",
+          "resolvedSource": "/Users/samm/Documents/dev/open-blocks-contrib/fake-testing-src-directort/img/VanGogh-starry_night.jpg"
         })
         .and.to.contain({
           "type": "javascript",
-          "location": "js/jquery.loupe.min.js",
-          "destination": "javascript/jquery.loupe.min"
+          "location": "resources/js/jquery.loupe.min.js",
+          "resolvedDestination": "/Users/samm/Documents/dev/open-blocks-contrib/javascript/jquery.loupe.min",
+          "resolvedSource": "/Users/samm/Documents/dev/open-blocks-contrib/resources/js/jquery.loupe.min.js"
         })
     })
     it("successfully writes to the output directory")
@@ -49,36 +53,39 @@ describe("openblocks", function() {
           .to.equal("template/audio-with-transcript.pug")
       })
       it("creates the html", function() {
-        expect(openBlocks.processSectionDescriptionElement(audioWithTranscriptExample))
+        expect(openBlocks.processSectionDescriptionElement(audioWithTranscriptExample, sectionSourceDirectoryName))
           .to.have.property("html")
           .and.to.be.ok
       })
     })
     describe("picture-with-text built-in template", function() {
       it("determines the correct template for the section", function() {
-        expect(openBlocks.resolveTemplateFilename(pictureWithTextExample.templateName))
+        var name = openBlocks.resolveTemplateFilename(pictureWithTextExample.templateName)
+        expect(name)
           .to.equal("template/picture-with-text.pug")
-        expect(openBlocks.processSectionDescriptionElement(pictureWithTextExample))
+      })
+      it("creates the html", function() {
+        expect(openBlocks.processSectionDescriptionElement(pictureWithTextExample, sectionSourceDirectoryName))
           .to.have.property("html")
           .and.to.be.ok
       })
-      it("creates the html", function() {})
     })
     describe.skip("quiz built-in template", function() {
       it("determines the correct template for the section", function() {
         expect(openBlocks.resolveTemplateFilename(quizExample.templateName))
           .to.equal("template/quiz.pug")
-        expect(openBlocks.processSectionDescriptionElement(quizExample))
+      })
+      it("creates the html", function() {
+        expect(openBlocks.processSectionDescriptionElement(quizExample, sectionSourceDirectoryName))
           .to.have.property("html")
           .and.to.be.ok
       })
-      it("creates the html", function() {})
     })
     describe("text built-in template", function() {
       it("determines the correct template for the section", function() {
         expect(openBlocks.resolveTemplateFilename(textExample.templateName))
           .to.equal("template/text.pug")
-        expect(openBlocks.processSectionDescriptionElement(textExample))
+        expect(openBlocks.processSectionDescriptionElement(textExample, sectionSourceDirectoryName))
           .to.have.property("html")
           .and.to.be.ok
       })
