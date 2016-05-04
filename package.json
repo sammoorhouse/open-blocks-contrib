@@ -10,8 +10,10 @@
   "dependencies": {
     "deepmerge": "^0.2.10",
     "fs-extra": "^0.30.0",
+    "mochawesome": "^1.3.4",
     "njsmin": "^1.0.3",
-    "pug": "^2.0.0-alpha6"
+    "pug": "^2.0.0-alpha6",
+    "unit": "0.0.1-alpha"
   },
   "repository": {
     "type": "git",
