@@ -20,6 +20,7 @@
   "author": "Sam Moorhouse",
   "license": "MIT",
   "devDependencies": {
+    "chai": "^3.5.0",
     "mocha": "^2.4.5",
     "mochawesome": "^1.3.4",
     "unit.js": ">= 1.0.0 < 2.0.0"
