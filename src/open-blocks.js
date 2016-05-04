@@ -81,13 +81,8 @@ module.exports = function() {
     var fullOutputFilename = generateOutputFilename(outputDirectoryName, descriptor.filename, ".html")
 
     writeFile(fullOutputFilename, descriptor.html)
-    resolveDependencies(descriptor)
+    resolveDependencies(descriptor.dependencies, sourceDirectoryName, outputDirectoryName)
     return descriptor
-  }
-
-  function resolveDependencies(dependencies, outputDirectoryName) {
-    //move css,js, and media files to the correct place
-
   }
 
   function processSectionDescriptionFromFile(sourceDirectoryName, sectionFilename) {
@@ -144,6 +139,18 @@ module.exports = function() {
     }
   }
 
+  function resolveDependencyDestinations(dependencies, sourceDirectoryName, outputDirectoryName) {
+    //move css,js, and media files to the correct place
+    return dependencies.map(function(dep) {
+      var type = dep.type
+      var filename = path.parse(dep.location).name
+      var destinationName = path.join(type, filename)
+      return merge(dep, {
+        "destination": destinationName
+      })
+    })
+  }
+
   function processSectionDescriptionElement(sectionElement) {
     var sectionName = sectionElement.pageTitle
     var outputFilename = sectionElement.name
@@ -153,7 +160,17 @@ module.exports = function() {
     var templateFilename = resolveTemplateFilename(templateName)
     var templateDependencies = resolveTemplateDependencies(templateName) || []
 
+    //we copy all dependencies to the appropriate output directory,
+    //but only include js and css in the header
     var blockDependencies = templateDependencies.concat(sectionDependencies)
+
+    var blockDependenciesWithDestinations = resolveDependencyDestinations(blockDependencies)
+    var jsDependencies = blockDependenciesWithDestinations.filter(function(dep) {
+      return dep.type === "javascript"
+    })
+    var cssDependencies = blockDependenciesWithDestinations.filter(function(dep) {
+      return dep.typ === "css"
+    })
 
     var body = generatePageElement(pug.renderFile, templateFilename, merge(sectionElement, {
       pretty: true
@@ -161,13 +178,14 @@ module.exports = function() {
 
     var html = generatePageElement(pug.renderFile, "template/header.pug", merge(sectionElement, {
       pretty: true,
-      blockDependencies: blockDependencies,
+      js: jsDependencies,
+      css: cssDependencies,
       body: body
     }))
 
     return {
       "filename": outputFilename,
-      "dependencies": blockDependencies,
+      "dependencies": blockDependenciesWithDestinations,
       "sectionName": sectionName,
       "html": html
     }
@@ -191,6 +209,7 @@ module.exports = function() {
     readFile: readFile,
     writeFile: writeFile,
     resolveTemplateFilename: resolveTemplateFilename,
-    ensureDirectory: ensureDirectory
+    ensureDirectory: ensureDirectory,
+    resolveDependencyDestinations: resolveDependencyDestinations
   }
 }();

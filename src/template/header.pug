@@ -17,10 +17,9 @@ html
   head
     title=pageTitle
     script(src="js/jquery/2.2.2/jquery.min.js")
-    for dep in blockDependencies
-      if dep.type === "css"
-        link(href=dep.location, rel='stylesheet')
-      else if dep.type === "javascript"
-        script(src=dep.location)
+    for dep in css
+      link(href=dep.destination, rel='stylesheet')
+    for dep in js
+      script(src=dep.destination)
   body
     |!{ body }

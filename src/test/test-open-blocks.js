@@ -8,7 +8,7 @@ var textExample = require("./examples/text.json")
 
 describe("openblocks", function() {
   describe("lesson construction", function() {
-    it("resolves the correct dependencies")
+    it("resolves the correct lesson dependencies")
     it("fails if required dependencies don't exist")
     it("resolves the correct number and location of sections")
     it("resolves the correct output directory")
@@ -25,14 +25,23 @@ describe("openblocks", function() {
       expect(descriptor.dependencies).to.have.lengthOf(5)
         .and.to.contain({
           "type": "css",
-          "location": "css/base.css"
+          "location": "css/base.css",
+          "destination": "css/base"
         })
         .and.to.contain({
           "type": "img",
-          "location": "img/VanGogh-starry_night.jpg"
+          "location": "img/VanGogh-starry_night.jpg",
+          "destination": "img/VanGogh-starry_night"
+        })
+        .and.to.contain({
+          "type": "javascript",
+          "location": "js/jquery.loupe.min.js",
+          "destination": "javascript/jquery.loupe.min"
         })
     })
+    it("successfully writes to the output directory")
   })
+
   describe("template resolution", function() {
     describe("audio-with-transcript built-in template", function() {
       it("determines the correct template for the section", function() {
@@ -75,6 +84,6 @@ describe("openblocks", function() {
       })
       it("creates the html", function() {})
     })
-    it("successfully writes to the output directory")
   })
+
 });
