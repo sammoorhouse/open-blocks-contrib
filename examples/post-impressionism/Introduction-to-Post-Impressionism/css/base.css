@@ -1,0 +1,50 @@
+body {
+  background: #FFF;
+  color: #111;
+  font: 14px Baskerville, "Palatino Linotype", "Times New Roman", Times, serif;
+  text-align: center;
+}
+
+div,
+h1,
+h2,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2 {
+  font-weight: normal;
+  text-align: center;
+}
+
+h1 {
+  font-size: 34px;
+  line-height: 1.2;
+  margin-bottom: 10px;
+}
+
+h2 {
+  color: #666;
+  font-size: 18px;
+  font-style: italic;
+  margin-bottom: 30px;
+}
+
+audio {
+  margin-bottom: 30px;
+}
+
+p {
+  line-height: 1.5;
+  margin-bottom: 15px;
+}
+
+h2:before {
+  content: '- ';
+}
+
+h2:after {
+  content: ' -';
+}
