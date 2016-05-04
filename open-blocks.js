@@ -81,7 +81,7 @@ module.exports = function() {
     var fullOutputFilename = generateOutputFilename(outputDirectoryName, descriptor.filename, ".html")
 
     writeFile(fullOutputFilename, descriptor.html)
-    resolveDependencies(descriptor.dependencies, sourceDirectoryName, outputDirectoryName)
+    descriptor.dependencies = resolveDependencyDestinations(descriptor.dependencies, sourceDirectoryName, outputDirectoryName)
     return descriptor
   }
 
