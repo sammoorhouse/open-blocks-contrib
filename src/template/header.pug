@@ -1,0 +1,25 @@
+mixin flags24(selectedCountryCode, ...countryCodes)
+  ul.flags
+    li
+      img(src="/img/icons/flags-iso/24/" + selectedCountryCode + ".png")
+    each countryCode in countryCodes
+      li
+        img(src="/img/icons/flags-iso/24/" + countryCode + ".png")
+mixin flags64(selectedCountryCode, ...countryCodes)
+  ul.flags
+    li
+      img(src="/img/icons/flags-iso/24/" + selectedCountryCode + ".png")
+    each countryCode in countryCodes
+      li
+        img(src="/img/icons/flags-iso/24/" + countryCode + ".png")
+
+html
+  head
+    title=pageTitle
+    script(src="js/jquery/2.2.2/jquery.min.js")
+    for dep in css
+      link(href=dep.destination, rel='stylesheet')
+    for dep in js
+      script(src=dep.destination)
+  body
+    |!{ body }
