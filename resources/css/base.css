@@ -61,6 +61,9 @@ div.head ul {
 #crumbs li a:hover, #crumbs li a:focus {
   color: #dd2c0d;
 }
+#crumbs li.current {
+  font-weight: bold;
+}
 audio {
   margin-bottom: 30px;
 }
