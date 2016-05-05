@@ -21,6 +21,18 @@ module.exports = function() {
     }
   }
 
+  function resolveGlobalDependencies(outputDirectoryName) {
+    return [{
+      type: "css",
+      location: "resources/css/base.css"
+    }, {
+      type: "javascript",
+      location: "resources/js/jquery/2.2.2/jquery.min.js"
+    }].map(function(dependency) {
+      return resolveDependencyPaths(dependency, __dirname, outputDirectoryName)
+    })
+  }
+
   function processLessonDescriptorFile(lessonDescriptorFilename) {
     console.log("Parsing input file: " + lessonDescriptorFilename)
 
@@ -39,13 +51,6 @@ module.exports = function() {
   function processLessonDescriptorElement(lessonElement, sourceDirectoryName, outputDirectoryName) {
     //keep a running log of which include files (css, js, media elements)
     //should be bundled with the lesson
-    var includes = [{
-      type: "text/css",
-      location: "template/css/main.css"
-    }, {
-      type: "text/javascript",
-      location: "template/js/main.js"
-    }]
 
     //required elements
     var title = lessonElement["title"],
@@ -61,13 +66,13 @@ module.exports = function() {
       lessonDependencies = lessonElement["lesson-dependencies"] || [],
       physicalDependencies = lessonElement["physical-dependencies"] || []
 
-    var descriptors = sections.map(function(section) {
-      var descriptor = processSectionDescriptor(sourceDirectoryName, outputDirectoryName, section)
-      var fullOutputFilename = generateOutputFilename(outputDirectoryName, descriptor.filename, ".html")
+    var sectionDescriptors = sections.map(function(section) {
+      var sectionDescriptor = processSectionDescriptor(sourceDirectoryName, outputDirectoryName, section)
+      var fullOutputFilename = generateOutputFilename(outputDirectoryName, sectionDescriptor.filename, ".html")
 
-      writeFile(fullOutputFilename, descriptor.html)
+      writeFile(fullOutputFilename, sectionDescriptor.html)
 
-      descriptor.dependencies.forEach(function(dependency) {
+      sectionDescriptor.dependencies.forEach(function(dependency) {
         fs.copySync(dependency.resolvedSource, dependency.resolvedDestination);
       })
     })
@@ -96,15 +101,9 @@ module.exports = function() {
   function resolveTemplateDependencies(templateName) {
     switch (templateName) {
       case 'text':
-        return [{
-          type: "css",
-          location: "resources/css/base.css"
-        }]
+        return []
       case 'audio-with-transcript':
         return [{
-          type: "css",
-          location: "resources/css/base.css"
-        }, {
           type: "css",
           location: "resources/css/voice.css"
         }, {
@@ -113,9 +112,6 @@ module.exports = function() {
         }]
       case 'picture-with-text':
         return [{
-          type: "css",
-          location: "resources/css/base.css"
-        }, {
           type: "css",
           location: "resources/css/picture-with-text.css"
         }, {
@@ -139,17 +135,16 @@ module.exports = function() {
     }
   }
 
-  function resolveDependencyPaths(dependencies, sourceDirectoryName, outputDirectoryName) {
+  function resolveDependencyPaths(dependency, sourceDirectoryName, outputDirectoryName) {
     //move css,js, and media files to the correct place
-    return dependencies.map(function(dep) {
-      var type = dep.type
-      var filename = path.parse(dep.location).base
-      var resolvedDestination = path.resolve(path.join(outputDirectoryName, type, filename))
-      var resolvedSource = path.resolve(path.join(sourceDirectoryName, dep.location))
-      return merge(dep, {
-        "resolvedDestination": resolvedDestination,
-        "resolvedSource": resolvedSource
-      })
+    var type = dependency.type
+    var filename = path.parse(dependency.location).base
+    var resolvedDestination = path.resolve(path.join(outputDirectoryName, type, filename))
+    var resolvedSource = path.resolve(path.join(sourceDirectoryName, dependency.location))
+    return merge(dependency, {
+      "resolvedDestination": resolvedDestination,
+      "resolvedSource": resolvedSource,
+      "filename": filename
     })
   }
 
@@ -157,22 +152,30 @@ module.exports = function() {
     var sectionName = sectionElement.pageTitle
     var outputFilename = sectionElement.name
     var sectionDependencies = sectionElement.dependencies || []
-    var sectionDependenciesWithPathsResolved = resolveDependencyPaths(sectionDependencies, sectionSourceDirectoryName, outputDirectoryName)
+    var sectionDependenciesWithPathsResolved = sectionDependencies
+      .map(function(dependency) {
+        return resolveDependencyPaths(dependency, sectionSourceDirectoryName, outputDirectoryName)
+      })
 
     var templateName = sectionElement.templateName
     var templateFilename = resolveTemplateFilename(templateName)
     var templateDependencies = resolveTemplateDependencies(templateName) || []
-    var templateDependenciesWithPathsResolved = resolveDependencyPaths(templateDependencies, __dirname, outputDirectoryName)
+    var templateDependenciesWithPathsResolved = templateDependencies
+      .map(function(dependency) {
+        return resolveDependencyPaths(dependency, __dirname, outputDirectoryName)
+      })
 
     //we copy all dependencies to the appropriate output directory,
     //but only include js and css in the header
-    var blockDependencies = templateDependenciesWithPathsResolved.concat(sectionDependenciesWithPathsResolved)
+    var blockDependencies = resolveGlobalDependencies(outputDirectoryName)
+      .concat(templateDependenciesWithPathsResolved)
+      .concat(sectionDependenciesWithPathsResolved)
 
     var jsDependencies = blockDependencies.filter(function(dep) {
       return dep.type === "javascript"
     })
     var cssDependencies = blockDependencies.filter(function(dep) {
-      return dep.typ === "css"
+      return dep.type === "css"
     })
 
     var body = generatePageElement(pug.renderFile, templateFilename, merge(sectionElement, {

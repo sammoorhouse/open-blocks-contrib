@@ -16,10 +16,9 @@ mixin flags64(selectedCountryCode, ...countryCodes)
 html
   head
     title=pageTitle
-    script(src="js/jquery/2.2.2/jquery.min.js")
     for dep in css
-      link(href=dep.destination, rel='stylesheet')
+      link(href="css/"+dep.filename, rel='stylesheet')
     for dep in js
-      script(src=dep.destination)
+      script(src="javascript/"+dep.filename)
   body
     |!{ body }

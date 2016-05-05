@@ -27,24 +27,20 @@ describe("openblocks", function() {
     it("resolves the dependencies of the section", function() {
       expect(descriptor.dependencies).to.be.an("array")
       console.log(descriptor.dependencies)
-      expect(descriptor.dependencies).to.have.lengthOf(5)
-        .and.to.contain({
-          "type": "css",
-          "location": "resources/css/base.css",
-          "resolvedDestination": path.join(__dirname, "..", sectionOutputDirectoryName, "css/base.css"),
-          "resolvedSource": path.join(__dirname, "..", "resources/css/base.css")
-        })
+      expect(descriptor.dependencies).to.have.lengthOf(6)
         .and.to.contain({
           "type": "img",
           "location": "img/VanGogh-starry_night.jpg",
           "resolvedDestination": path.join(__dirname, "..", sectionOutputDirectoryName, "img/VanGogh-starry_night.jpg"),
-          "resolvedSource": path.join(__dirname, "..", sectionSourceDirectoryName, "img/VanGogh-starry_night.jpg")
+          "resolvedSource": path.join(__dirname, "..", sectionSourceDirectoryName, "img/VanGogh-starry_night.jpg"),
+          "filename": "VanGogh-starry_night.jpg"
         })
         .and.to.contain({
           "type": "javascript",
           "location": "resources/js/jquery.loupe.min.js",
           "resolvedDestination": path.join(__dirname, "..", sectionOutputDirectoryName, "javascript/jquery.loupe.min.js"),
-          "resolvedSource": path.join(__dirname, "..", "resources/js/jquery.loupe.min.js")
+          "resolvedSource": path.join(__dirname, "..", "resources/js/jquery.loupe.min.js"),
+          "filename": "jquery.loupe.min.js"
         })
     })
     it("successfully establishes the output directory name", function() {
