@@ -26,24 +26,25 @@ describe("openblocks", function() {
     })
     it("resolves the dependencies of the section", function() {
       expect(descriptor.dependencies).to.be.an("array")
+      console.log(descriptor.dependencies)
       expect(descriptor.dependencies).to.have.lengthOf(5)
         .and.to.contain({
           "type": "css",
           "location": "resources/css/base.css",
-          "resolvedDestination": "/Users/samm/Documents/dev/open-blocks-contrib/fake-testing-output-directory/css/base.css",
-          "resolvedSource": "/Users/samm/Documents/dev/open-blocks-contrib/resources/css/base.css"
+          "resolvedDestination": path.join(__dirname, "..", sectionOutputDirectoryName, "css/base.css"),
+          "resolvedSource": path.join(__dirname, "..", "resources/css/base.css")
         })
         .and.to.contain({
           "type": "img",
           "location": "img/VanGogh-starry_night.jpg",
-          "resolvedDestination": "/Users/samm/Documents/dev/open-blocks-contrib/fake-testing-output-directory/img/VanGogh-starry_night.jpg",
-          "resolvedSource": "/Users/samm/Documents/dev/open-blocks-contrib/fake-testing-source-directory/img/VanGogh-starry_night.jpg"
+          "resolvedDestination": path.join(__dirname, "..", sectionOutputDirectoryName, "img/VanGogh-starry_night.jpg"),
+          "resolvedSource": path.join(__dirname, "..", sectionSourceDirectoryName, "img/VanGogh-starry_night.jpg")
         })
         .and.to.contain({
           "type": "javascript",
           "location": "resources/js/jquery.loupe.min.js",
-          "resolvedDestination": "/Users/samm/Documents/dev/open-blocks-contrib/fake-testing-output-directory/javascript/jquery.loupe.min.js",
-          "resolvedSource": "/Users/samm/Documents/dev/open-blocks-contrib/resources/js/jquery.loupe.min.js"
+          "resolvedDestination": path.join(__dirname, "..", sectionOutputDirectoryName, "javascript/jquery.loupe.min.js"),
+          "resolvedSource": path.join(__dirname, "..", "resources/js/jquery.loupe.min.js")
         })
     })
     it("successfully establishes the output directory name", function() {
