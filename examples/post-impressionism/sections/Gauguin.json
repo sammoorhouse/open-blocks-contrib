@@ -1,9 +1,9 @@
 {
   "templateName": "picture-with-text",
-  "pageTitle": "Discovering Van Gogh",
-  "name": "Discovering-Van-Gogh",
+  "pageTitle": "Discovering Gauguin",
+  "name": "Discovering-Gauguin",
   "imageTitle": "The Starry Night",
-  "imageSubtitle": "Vincent Van Gogh",
+  "imageSubtitle": "Gauguin",
   "credit": {
     "uri": "https://en.wikipedia.org/wiki/The_Starry_Night",
     "text": "Wikipedia"

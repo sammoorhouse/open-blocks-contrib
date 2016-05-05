@@ -1,17 +1,24 @@
-mixin flags24(selectedCountryCode, ...countryCodes)
+mixin flags24(selectedCountryCode, countryCodes)
   ul.flags
     li
       img(src="/img/icons/flags-iso/24/" + selectedCountryCode + ".png")
     each countryCode in countryCodes
       li
         img(src="/img/icons/flags-iso/24/" + countryCode + ".png")
-mixin flags64(selectedCountryCode, ...countryCodes)
+mixin flags64(selectedCountryCode, countryCodes)
   ul.flags
     li
       img(src="/img/icons/flags-iso/24/" + selectedCountryCode + ".png")
     each countryCode in countryCodes
       li
         img(src="/img/icons/flags-iso/24/" + countryCode + ".png")
+mixin breadcrumbs(lessonTitle, sectionHeadings)
+  h1=lessonTitle
+  ul.sections
+    each sectionHeading in sectionHeadings
+      li
+        a(href=sectionHeading.sectionUrl)=sectionHeading.sectionTitle
+
 
 html
   head
@@ -21,4 +28,5 @@ html
     for dep in js
       script(src="javascript/"+dep.filename)
   body
+    +breadcrumbs(lessonTitle, headingSectionDetails)
     |!{ body }

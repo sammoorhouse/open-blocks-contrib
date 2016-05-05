@@ -36,10 +36,44 @@ module.exports = function() {
     return path.join(lessonDescriptorFilenamePathElements.dir, lessonDescriptorFilenamePathElements.name)
   }
 
-  function processLessonDescriptorElement(lessonElement, sourceDirectoryName, outputDirectoryName) {
-    //keep a running log of which include files (css, js, media elements)
-    //should be bundled with the lesson
+  function resolveHeadingSectionDetails(sections) {
+    return sections.map(function(sectionDescriptor) {
+      return {
+        "sectionTitle": sectionDescriptor.sectionName,
+        "sectionUrl": sectionDescriptor.relativeUrl
+      }
+    })
+  }
 
+  function resolveTypedDepencies(sectionDescriptor, outputDirectoryName) {
+
+    var globalDependencies = [{
+      type: "css",
+      location: "resources/css/base.css"
+    }, {
+      type: "javascript",
+      location: "resources/js/jquery/2.2.2/jquery.min.js"
+    }].map(function(dependency) {
+      return resolveDependencyPaths(dependency, __dirname, outputDirectoryName)
+    })
+
+    var blockDependencies = globalDependencies
+      .concat(sectionDescriptor.dependencies)
+
+    var jsDependencies = blockDependencies.filter(function(dep) {
+      return dep.type === "javascript"
+    })
+    var cssDependencies = blockDependencies.filter(function(dep) {
+      return dep.type === "css"
+    })
+
+    return merge(sectionDescriptor, {
+      "jsDependencies": jsDependencies,
+      "cssDependencies": cssDependencies
+    })
+  }
+
+  function processLessonDescriptorElement(lessonElement, sourceDirectoryName, outputDirectoryName) {
     //required elements
     var title = lessonElement["title"],
       culture = lessonElement["culture"],
@@ -54,42 +88,37 @@ module.exports = function() {
       lessonDependencies = lessonElement["lesson-dependencies"] || [],
       physicalDependencies = lessonElement["physical-dependencies"] || []
 
-    var globalDependencies = [{
-      type: "css",
-      location: "resources/css/base.css"
-    }, {
-      type: "javascript",
-      location: "resources/js/jquery/2.2.2/jquery.min.js"
-    }].map(function(dependency) {
-      return resolveDependencyPaths(dependency, __dirname, outputDirectoryName)
-    })
-
     var sectionDescriptors = sections.map(function(section) {
       var sectionDescriptor = processSectionDescriptor(sourceDirectoryName, outputDirectoryName, section)
-      var fullOutputFilename = generateOutputFilename(outputDirectoryName, sectionDescriptor.filename, ".html")
+      var filename = sectionDescriptor.filename + ".html"
+      var augmentedDescriptor = merge(
+        resolveTypedDepencies(sectionDescriptor, outputDirectoryName), {
+          "url": generateOutputFilename(outputDirectoryName, filename),
+          "relativeUrl": filename
+        })
 
-      var blockDependencies = globalDependencies
-        .concat(sectionDescriptor.dependencies)
-
-      var jsDependencies = blockDependencies.filter(function(dep) {
-        return dep.type === "javascript"
-      })
-      var cssDependencies = blockDependencies.filter(function(dep) {
-        return dep.type === "css"
-      })
-
-      var html = generatePageElement(pug.renderFile, "template/header.pug", merge(sectionDescriptor, {
-        pretty: true,
-        js: jsDependencies,
-        css: cssDependencies,
-        body: sectionDescriptor.body
-      }))
-
-      writeFile(fullOutputFilename, html)
-
-      sectionDescriptor.dependencies.forEach(function(dependency) {
+      augmentedDescriptor.dependencies.forEach(function(dependency) {
         fs.copySync(dependency.resolvedSource, dependency.resolvedDestination);
       })
+      return augmentedDescriptor
+    })
+
+    //generate header
+    var headingSectionDetails = resolveHeadingSectionDetails(sectionDescriptors)
+
+    //render page element
+    sectionDescriptors.map(function(sectionDescriptor) {
+      var html = generatePageElement(pug.renderFile, "template/header.pug", {
+        pretty: true,
+        lessonTitle: title,
+        js: sectionDescriptor.jsDependencies,
+        css: sectionDescriptor.cssDependencies,
+        body: sectionDescriptor.body,
+        pageTitle: sectionDescriptor.pageTitle,
+        headingSectionDetails: headingSectionDetails
+      })
+
+      writeFile(sectionDescriptor.url, html)
     })
 
     //generate main page
@@ -197,10 +226,10 @@ module.exports = function() {
     }
   }
 
-  function generateOutputFilename(outputDirectoryName, filename, extension) {
+  function generateOutputFilename(outputDirectoryName, filename) {
     return path.format({
       dir: outputDirectoryName,
-      base: filename + extension
+      base: filename
     })
   }
 
