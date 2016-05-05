@@ -1,12 +1,13 @@
 {
   "templateName": "picture-with-text",
-  "pageTitle": "Discovering Cezanne",
+  "pageTitle": "Discovering C&eacute;zanne",
   "name": "Discovering-Cezanne",
-  "dependencies": [
-    {"type": "img", "location": "../img/Card_Players-Paul_Cezanne.jpg"}
-  ],
-  "imageTitle": "The Card Players",
-  "imageSubtitle": "Paul Cezanne",
+  "dependencies": [{
+    "type": "img",
+    "location": "../img/Card_Players-Paul_Cezanne.jpg"
+  }],
+  "imageTitle": "Discovering C&eacute;zanne",
+  "imageSubtitle": "The Card Players",
   "credit": {
     "uri": "https://en.wikipedia.org/wiki/The_Card_Players",
     "text": "Wikipedia"
@@ -16,8 +17,8 @@
     "type": "image/jpeg"
   },
   "commentary": [{
-    "text": "The Card Players is a series of oil paintings by the French Post-Impressionist artist Paul Cézanne. Painted during Cézanne's final period in the early 1890s, there are five paintings in the series. The versions vary in size and in the number of players depicted. Cézanne also completed numerous drawings and studies in preparation for The Card Players series. One version of The Card Players was sold in 2011 to the Royal Family of Qatar for a price variously estimated at between $250 million and $300 million, making it the second most expensive work of art ever sold."
+    "text": "The Card Players is a series of oil paintings by the French Post-Impressionist artist Paul C&eacute;zanne. Painted during C&eacute;zanne's final period in the early 1890s, there are five paintings in the series. The versions vary in size and in the number of players depicted. C&eacute;zanne also completed numerous drawings and studies in preparation for The Card Players series. One version of The Card Players was sold in 2011 to the Royal Family of Qatar for a price variously estimated at between $250 million and $300 million, making it the second most expensive work of art ever sold."
   }, {
-    "text": "While there are, in total, five paintings of card players by Cézanne, the final three works were similar in composition and number of players (two), causing them to sometimes be grouped together as one version. The exact dates of the paintings are uncertain, but it is long believed Cézanne began with larger canvases and pared down in size with successive versions, though research in recent years has cast doubt on this assumption."
+    "text": "While there are, in total, five paintings of card players by C&eacute;zanne, the final three works were similar in composition and number of players (two), causing them to sometimes be grouped together as one version. The exact dates of the paintings are uncertain, but it is long believed C&eacute;zanne began with larger canvases and pared down in size with successive versions, though research in recent years has cast doubt on this assumption."
   }]
 }

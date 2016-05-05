@@ -1,6 +1,6 @@
 div
-	h1=imageTitle
-	h2=imageSubtitle
+	h1!=imageTitle
+	h2!=imageSubtitle
 	div.container
 		div#image
 			img#thumb(width="600px", src=imageFile.name, type=imageFile.type)
@@ -8,5 +8,7 @@ div
 			for line in commentary
 				p!=line.text
 		div.clear
-		p commentary from
-			a(href=credit.uri)= credit.text
+		div.credit
+			p commentary from
+				| 
+				a(href=credit.uri)=credit.text

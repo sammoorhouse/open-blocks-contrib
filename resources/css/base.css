@@ -2,49 +2,75 @@ body {
   background: #FFF;
   color: #111;
   font: 14px Baskerville, "Palatino Linotype", "Times New Roman", Times, serif;
+}
+div.credit {
   text-align: center;
 }
-
-div,
-h1,
-h2,
-p {
+div, h1, h2, p {
   margin: 0;
   padding: 0;
 }
-
-h1,
-h2 {
+h1, h2 {
   font-weight: normal;
   text-align: center;
 }
-
 h1 {
   font-size: 34px;
   line-height: 1.2;
   margin-bottom: 10px;
 }
-
 h2 {
   color: #666;
   font-size: 18px;
   font-style: italic;
   margin-bottom: 30px;
 }
-
+hr.headingSplitter {
+  border: 0;
+  height: 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+div.head li {
+  display: inline;
+}
+div.head ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+#crumbs {
+  border: 1px solid #dedede;
+  height: 2.3em;
+}
+#crumbs li {
+  float: left;
+  line-height: 2.3em;
+  padding-left: .75em;
+  color: #777;
+}
+#crumbs li a {
+  display: block;
+  padding: 0 15px 0 0;
+  background: url(/img/crumbs.gif) no-repeat right center;
+}
+#crumbs li a:link, #crumbs li a:visited {
+  text-decoration: none;
+  color: #777;
+}
+#crumbs li a:hover, #crumbs li a:focus {
+  color: #dd2c0d;
+}
 audio {
   margin-bottom: 30px;
 }
-
 p {
   line-height: 1.5;
   margin-bottom: 15px;
 }
-
 h2:before {
   content: '- ';
 }
-
 h2:after {
   content: ' -';
 }

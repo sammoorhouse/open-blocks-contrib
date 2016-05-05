@@ -12,12 +12,11 @@ mixin flags64(selectedCountryCode, countryCodes)
     each countryCode in countryCodes
       li
         img(src="/img/icons/flags-iso/24/" + countryCode + ".png")
-mixin breadcrumbs(lessonTitle, sectionHeadings)
-  h1=lessonTitle
-  ul.sections
+mixin breadcrumbs(sectionHeadings)
+  ul#crumbs
     each sectionHeading in sectionHeadings
       li
-        a(href=sectionHeading.sectionUrl)=sectionHeading.sectionTitle
+        a(href=sectionHeading.sectionUrl)!=sectionHeading.sectionTitle
 
 
 html
@@ -28,5 +27,8 @@ html
     for dep in js
       script(src="javascript/"+dep.filename)
   body
-    +breadcrumbs(lessonTitle, headingSectionDetails)
+    div.head
+      h2=lessonTitle
+      +breadcrumbs(headingSectionDetails)
+      hr.headingSplitter
     |!{ body }

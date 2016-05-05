@@ -53,6 +53,9 @@ module.exports = function() {
     }, {
       type: "javascript",
       location: "resources/js/jquery/2.2.2/jquery.min.js"
+    }, {
+      type: "img",
+      location: "resources/img/crumbs.gif"
     }].map(function(dependency) {
       return resolveDependencyPaths(dependency, __dirname, outputDirectoryName)
     })
@@ -69,7 +72,8 @@ module.exports = function() {
 
     return merge(sectionDescriptor, {
       "jsDependencies": jsDependencies,
-      "cssDependencies": cssDependencies
+      "cssDependencies": cssDependencies,
+      "allDependencies": blockDependencies
     })
   }
 
@@ -97,7 +101,7 @@ module.exports = function() {
           "relativeUrl": filename
         })
 
-      augmentedDescriptor.dependencies.forEach(function(dependency) {
+      augmentedDescriptor.allDependencies.forEach(function(dependency) {
         fs.copySync(dependency.resolvedSource, dependency.resolvedDestination);
       })
       return augmentedDescriptor
@@ -114,7 +118,7 @@ module.exports = function() {
         js: sectionDescriptor.jsDependencies,
         css: sectionDescriptor.cssDependencies,
         body: sectionDescriptor.body,
-        pageTitle: sectionDescriptor.pageTitle,
+        pageTitle: sectionDescriptor.sectionName,
         headingSectionDetails: headingSectionDetails
       })
 
