@@ -36,29 +36,41 @@ module.exports = function() {
     return path.join(lessonDescriptorFilenamePathElements.dir, lessonDescriptorFilenamePathElements.name)
   }
 
-  function resolveHeadingSectionDetails(sections) {
+  function resolveHeadingSectionDetails(sections, currentSectionName) {
     return sections.map(function(sectionDescriptor) {
       return {
         "sectionTitle": sectionDescriptor.sectionName,
-        "sectionUrl": sectionDescriptor.relativeUrl
+        "sectionUrl": sectionDescriptor.relativeUrl,
+        "isCurrentSection": sectionDescriptor.sectionName === currentSectionName
       }
     })
   }
 
-  function resolveTypedDepencies(sectionDescriptor, outputDirectoryName) {
-
-    var globalDependencies = [{
+  function resolveTypedDepencies(sectionDescriptor, outputDirectoryName, hasTransitions) {
+    var conditionalDependencies = hasTransitions ? [{
       type: "css",
-      location: "resources/css/base.css"
+      location: "resources/css/section-transitions.css"
     }, {
       type: "javascript",
-      location: "resources/js/jquery/2.2.2/jquery.min.js"
+      location: "resources/js/jquery.smoothState.min.js"
     }, {
-      type: "img",
-      location: "resources/img/crumbs.gif"
-    }].map(function(dependency) {
-      return resolveDependencyPaths(dependency, __dirname, outputDirectoryName)
-    })
+      type: "javascript",
+      location: "resources/js/smoothState-init.js"
+    }] : []
+    var globalDependencies = [{
+        type: "css",
+        location: "resources/css/base.css"
+      }, {
+        type: "javascript",
+        location: "resources/js/jquery/2.2.2/jquery.min.js"
+      }, {
+        type: "img",
+        location: "resources/img/crumbs.gif"
+      }]
+      .concat(conditionalDependencies)
+      .map(function(dependency) {
+        return resolveDependencyPaths(dependency, __dirname, outputDirectoryName)
+      })
 
     var blockDependencies = globalDependencies
       .concat(sectionDescriptor.dependencies)
@@ -90,13 +102,14 @@ module.exports = function() {
       teachingNotes = lessonElement["teaching-notes"] || "",
       instructorLed = lessonElement["instructor-led"] || false,
       lessonDependencies = lessonElement["lesson-dependencies"] || [],
-      physicalDependencies = lessonElement["physical-dependencies"] || []
+      physicalDependencies = lessonElement["physical-dependencies"] || [],
+      hasTransitions = lessonElement["has-transitions"] || false
 
     var sectionDescriptors = sections.map(function(section) {
       var sectionDescriptor = processSectionDescriptor(sourceDirectoryName, outputDirectoryName, section)
       var filename = sectionDescriptor.filename + ".html"
       var augmentedDescriptor = merge(
-        resolveTypedDepencies(sectionDescriptor, outputDirectoryName), {
+        resolveTypedDepencies(sectionDescriptor, outputDirectoryName, hasTransitions), {
           "url": generateOutputFilename(outputDirectoryName, filename),
           "relativeUrl": filename
         })
@@ -107,11 +120,10 @@ module.exports = function() {
       return augmentedDescriptor
     })
 
-    //generate header
-    var headingSectionDetails = resolveHeadingSectionDetails(sectionDescriptors)
-
     //render page element
     sectionDescriptors.map(function(sectionDescriptor) {
+      //generate header
+      var headingSectionDetails = resolveHeadingSectionDetails(sectionDescriptors, sectionDescriptor.sectionName)
       var html = generatePageElement(pug.renderFile, "template/header.pug", {
         pretty: true,
         lessonTitle: title,
@@ -119,9 +131,10 @@ module.exports = function() {
         css: sectionDescriptor.cssDependencies,
         body: sectionDescriptor.body,
         pageTitle: sectionDescriptor.sectionName,
-        headingSectionDetails: headingSectionDetails
+        headingSectionDetails: headingSectionDetails,
+        hasTransitions: hasTransitions
       })
-
+      console.log(headingSectionDetails)
       writeFile(sectionDescriptor.url, html)
     })
 

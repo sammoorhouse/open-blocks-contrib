@@ -15,7 +15,7 @@ mixin flags64(selectedCountryCode, countryCodes)
 mixin breadcrumbs(sectionHeadings)
   ul#crumbs
     each sectionHeading in sectionHeadings
-      li
+      li(class=sectionHeading.isCurrentSection === false ? "" : "current")
         a(href=sectionHeading.sectionUrl)!=sectionHeading.sectionTitle
 
 
@@ -31,4 +31,5 @@ html
       h2=lessonTitle
       +breadcrumbs(headingSectionDetails)
       hr.headingSplitter
-    |!{ body }
+    div.content(class=hasTransitions === true  ? "scene_element scene_element--fadeinright" : "")
+      |!{ body }
