@@ -27,7 +27,7 @@ describe("openblocks", function() {
     it("resolves the dependencies of the section", function() {
       expect(descriptor.dependencies).to.be.an("array")
       console.log(descriptor.dependencies)
-      expect(descriptor.dependencies).to.have.lengthOf(6)
+      expect(descriptor.dependencies).to.have.lengthOf(4)
         .and.to.contain({
           "type": "img",
           "location": "img/VanGogh-starry_night.jpg",
@@ -59,7 +59,7 @@ describe("openblocks", function() {
       })
       it("creates the html", function() {
         expect(openBlocks.processSectionDescriptionElement(audioWithTranscriptExample, sectionOutputDirectoryName, sectionSourceDirectoryName))
-          .to.have.property("html")
+          .to.have.property("body")
           .and.to.be.ok
       })
     })
@@ -71,7 +71,7 @@ describe("openblocks", function() {
       })
       it("creates the html", function() {
         expect(openBlocks.processSectionDescriptionElement(pictureWithTextExample, sectionOutputDirectoryName, sectionSourceDirectoryName))
-          .to.have.property("html")
+          .to.have.property("body")
           .and.to.be.ok
       })
     })
@@ -82,7 +82,7 @@ describe("openblocks", function() {
       })
       it("creates the html", function() {
         expect(openBlocks.processSectionDescriptionElement(quizExample, sectionOutputDirectoryName, sectionSourceDirectoryName))
-          .to.have.property("html")
+          .to.have.property("body")
           .and.to.be.ok
       })
     })
@@ -91,7 +91,7 @@ describe("openblocks", function() {
         expect(openBlocks.resolveTemplateFilename(textExample.templateName))
           .to.equal("template/text.pug")
         expect(openBlocks.processSectionDescriptionElement(textExample, sectionOutputDirectoryName, sectionSourceDirectoryName))
-          .to.have.property("html")
+          .to.have.property("body")
           .and.to.be.ok
       })
       it("creates the html", function() {})

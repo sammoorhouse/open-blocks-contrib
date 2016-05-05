@@ -21,18 +21,6 @@ module.exports = function() {
     }
   }
 
-  function resolveGlobalDependencies(outputDirectoryName) {
-    return [{
-      type: "css",
-      location: "resources/css/base.css"
-    }, {
-      type: "javascript",
-      location: "resources/js/jquery/2.2.2/jquery.min.js"
-    }].map(function(dependency) {
-      return resolveDependencyPaths(dependency, __dirname, outputDirectoryName)
-    })
-  }
-
   function processLessonDescriptorFile(lessonDescriptorFilename) {
     console.log("Parsing input file: " + lessonDescriptorFilename)
 
@@ -66,11 +54,38 @@ module.exports = function() {
       lessonDependencies = lessonElement["lesson-dependencies"] || [],
       physicalDependencies = lessonElement["physical-dependencies"] || []
 
+    var globalDependencies = [{
+      type: "css",
+      location: "resources/css/base.css"
+    }, {
+      type: "javascript",
+      location: "resources/js/jquery/2.2.2/jquery.min.js"
+    }].map(function(dependency) {
+      return resolveDependencyPaths(dependency, __dirname, outputDirectoryName)
+    })
+
     var sectionDescriptors = sections.map(function(section) {
       var sectionDescriptor = processSectionDescriptor(sourceDirectoryName, outputDirectoryName, section)
       var fullOutputFilename = generateOutputFilename(outputDirectoryName, sectionDescriptor.filename, ".html")
 
-      writeFile(fullOutputFilename, sectionDescriptor.html)
+      var blockDependencies = globalDependencies
+        .concat(sectionDescriptor.dependencies)
+
+      var jsDependencies = blockDependencies.filter(function(dep) {
+        return dep.type === "javascript"
+      })
+      var cssDependencies = blockDependencies.filter(function(dep) {
+        return dep.type === "css"
+      })
+
+      var html = generatePageElement(pug.renderFile, "template/header.pug", merge(sectionDescriptor, {
+        pretty: true,
+        js: jsDependencies,
+        css: cssDependencies,
+        body: sectionDescriptor.body
+      }))
+
+      writeFile(fullOutputFilename, html)
 
       sectionDescriptor.dependencies.forEach(function(dependency) {
         fs.copySync(dependency.resolvedSource, dependency.resolvedDestination);
@@ -167,33 +182,18 @@ module.exports = function() {
 
     //we copy all dependencies to the appropriate output directory,
     //but only include js and css in the header
-    var blockDependencies = resolveGlobalDependencies(outputDirectoryName)
-      .concat(templateDependenciesWithPathsResolved)
+    var blockDependencies = templateDependenciesWithPathsResolved
       .concat(sectionDependenciesWithPathsResolved)
-
-    var jsDependencies = blockDependencies.filter(function(dep) {
-      return dep.type === "javascript"
-    })
-    var cssDependencies = blockDependencies.filter(function(dep) {
-      return dep.type === "css"
-    })
 
     var body = generatePageElement(pug.renderFile, templateFilename, merge(sectionElement, {
       pretty: true
-    }))
-
-    var html = generatePageElement(pug.renderFile, "template/header.pug", merge(sectionElement, {
-      pretty: true,
-      js: jsDependencies,
-      css: cssDependencies,
-      body: body
     }))
 
     return {
       "filename": outputFilename,
       "dependencies": blockDependencies,
       "sectionName": sectionName,
-      "html": html
+      "body": body
     }
   }
 
